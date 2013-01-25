@@ -73,11 +73,18 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AI\BehaviourInterfaces.cs" />
+    <Compile Include="AI\BehaviourTree.cs" />
+    <Compile Include="Bow.cs" />
+    <Compile Include="Entities\AIControlledEntity.cs" />
+    <Compile Include="Entities\SpinelessEntity.cs" />
     <Compile Include="LevelScreen.cs" />
+    <Compile Include="Princess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="SpinelessGame.cs" />
+    <Compile Include="Weapon.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />

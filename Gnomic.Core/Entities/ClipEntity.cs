@@ -152,7 +152,7 @@ namespace Gnomic.Entities
             ClipInstance.Update(dt);
         }
 
-        public void Draw2D(SpriteBatch spriteBatch)
+        public virtual void Draw2D(SpriteBatch spriteBatch)
         {
             ClipInstance.Draw(spriteBatch);
         }
