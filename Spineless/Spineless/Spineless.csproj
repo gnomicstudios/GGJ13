@@ -72,6 +72,7 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AI\BehaviourInterfaces.cs" />
     <Compile Include="AI\BehaviourTree.cs" />
     <Compile Include="Entities\AIControlledEntity.cs" />
     <Compile Include="Entities\SpinelessEntity.cs" />
