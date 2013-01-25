@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using Gnomic.Core;
 
 namespace Spineless
 {
@@ -18,10 +19,14 @@ namespace Spineless
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        SpinelessGame game;
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
+            graphics.PreferredBackBufferWidth = 1280;
+            graphics.PreferredBackBufferHeight = 720;
+
             Content.RootDirectory = "Content";
         }
 
@@ -34,6 +39,9 @@ namespace Spineless
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+
+            game = new SpinelessGame();
+            game.Initialize((IGraphicsDeviceService)Services.GetService(typeof(IGraphicsDeviceService)));
 
             base.Initialize();
         }
@@ -71,6 +79,7 @@ namespace Spineless
                 this.Exit();
 
             // TODO: Add your update logic here
+            game.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
 
             base.Update(gameTime);
         }
@@ -84,6 +93,7 @@ namespace Spineless
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
+            game.Draw();
 
             base.Draw(gameTime);
         }

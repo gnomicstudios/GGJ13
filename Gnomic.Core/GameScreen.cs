@@ -63,7 +63,7 @@ namespace Gnomic
         protected Action<int> PostDrawGroup;
         
         private Dictionary<int, List<IDrawable3D>> DrawGroups = new Dictionary<int, List<IDrawable3D>>(10);
-        private List<IDrawable2D> drawable2DEntities = new List<IDrawable2D>(20);
+        protected List<IDrawable2D> drawable2DEntities = new List<IDrawable2D>(20);
 
         // Active entities
         private List<Entity> activeEntities = new List<Entity>(200);
