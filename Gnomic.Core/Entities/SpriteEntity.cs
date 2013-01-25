@@ -11,12 +11,12 @@ namespace Gnomic.Entities
 {
 	public class SpriteEntity : Entity, IDrawable2D
 	{
-		protected SpriteState spriteState = new SpriteState();
+		public SpriteState SpriteState = new SpriteState();
 
         public Vector2 Position
         {
-            get { return spriteState.Transform.Pos; }
-            set { spriteState.Transform.Pos = value; }
+            get { return SpriteState.Transform.Pos; }
+            set { SpriteState.Transform.Pos = value; }
         }
 
         bool isVisible = true;
@@ -28,14 +28,14 @@ namespace Gnomic.Entities
 		public void Draw2D(SpriteBatch spriteBatch)
 		{
 			spriteBatch.Draw(
-				spriteState.Texture,
-				spriteState.Transform.Pos,
-				new Rectangle?(spriteState.TextureRect),
-				spriteState.Color,
-				spriteState.Transform.Rot,
-				spriteState.Transform.Origin,
-				spriteState.Transform.Scale,
-				spriteState.FlipState,
+				SpriteState.Texture,
+				SpriteState.Transform.Pos,
+				new Rectangle?(SpriteState.TextureRect),
+				SpriteState.Color,
+				SpriteState.Transform.Rot,
+				SpriteState.Transform.Origin,
+				SpriteState.Transform.Scale,
+				SpriteState.FlipState,
 				0.0f);
 		}
 	}
