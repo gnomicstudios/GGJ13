@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spineless", "Spineless\Spineless\Spineless.csproj", "{55209810-911E-4AB6-9244-BC6D585F98A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpinelessContent", "Spineless\SpinelessContent\SpinelessContent.contentproj", "{08D224D1-FB6E-448A-BC15-210BA16A8009}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gnomic", "Gnomic.Core\Gnomic.csproj", "{7D332245-61CB-4C80-9F4E-3AEE593BD5BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gnomic.Anim", "Gnomic.Anim\Gnomic.Anim.csproj", "{B670D9A3-79F0-4501-9D79-43183346F011}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farseer Physics XNA", "FarseerPhysics\Farseer Physics XNA.csproj", "{0A850700-1ABB-4288-A391-6726B90EBEB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55209810-911E-4AB6-9244-BC6D585F98A7}.Debug|x86.ActiveCfg = Debug|x86
+		{55209810-911E-4AB6-9244-BC6D585F98A7}.Debug|x86.Build.0 = Debug|x86
+		{55209810-911E-4AB6-9244-BC6D585F98A7}.Release|x86.ActiveCfg = Release|x86
+		{55209810-911E-4AB6-9244-BC6D585F98A7}.Release|x86.Build.0 = Release|x86
+		{08D224D1-FB6E-448A-BC15-210BA16A8009}.Debug|x86.ActiveCfg = Debug|x86
+		{08D224D1-FB6E-448A-BC15-210BA16A8009}.Release|x86.ActiveCfg = Release|x86
+		{7D332245-61CB-4C80-9F4E-3AEE593BD5BF}.Debug|x86.ActiveCfg = Debug|x86
+		{7D332245-61CB-4C80-9F4E-3AEE593BD5BF}.Debug|x86.Build.0 = Debug|x86
+		{7D332245-61CB-4C80-9F4E-3AEE593BD5BF}.Release|x86.ActiveCfg = Release|x86
+		{7D332245-61CB-4C80-9F4E-3AEE593BD5BF}.Release|x86.Build.0 = Release|x86
+		{B670D9A3-79F0-4501-9D79-43183346F011}.Debug|x86.ActiveCfg = Debug|x86
+		{B670D9A3-79F0-4501-9D79-43183346F011}.Debug|x86.Build.0 = Debug|x86
+		{B670D9A3-79F0-4501-9D79-43183346F011}.Release|x86.ActiveCfg = Release|x86
+		{B670D9A3-79F0-4501-9D79-43183346F011}.Release|x86.Build.0 = Release|x86
+		{0A850700-1ABB-4288-A391-6726B90EBEB9}.Debug|x86.ActiveCfg = Debug|x86
+		{0A850700-1ABB-4288-A391-6726B90EBEB9}.Debug|x86.Build.0 = Debug|x86
+		{0A850700-1ABB-4288-A391-6726B90EBEB9}.Release|x86.ActiveCfg = Release|x86
+		{0A850700-1ABB-4288-A391-6726B90EBEB9}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

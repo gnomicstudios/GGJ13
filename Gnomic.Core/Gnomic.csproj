@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{7D332245-61CB-4C80-9F4E-3AEE593BD5BF}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gnomic</RootNamespace>
+    <AssemblyName>Gnomic</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>Reach</XnaProfile>
+    <XnaCrossPlatformGroupID>c7587df7-d71e-4952-afd9-d41fa8cbc364</XnaCrossPlatformGroupID>
+    <XnaOutputType>Library</XnaOutputType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Net" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\AudioManager.cs" />
+    <Compile Include="Graphics\Camera2D.cs" />
+    <Compile Include="Entities\ClipEntity3D.cs" />
+    <Compile Include="Graphics\Camera3D.cs" />
+    <Compile Include="Graphics\RenderBatch.cs" />
+    <Compile Include="Graphics\IDrawable2D.cs" />
+    <Compile Include="Entities\ClipEntity.cs" />
+    <Compile Include="Graphics\IDrawable3D.cs" />
+    <Compile Include="Entities\SpriteEntity.cs" />
+    <Compile Include="Physics\PhysicsSettings.cs" />
+    <Compile Include="Physics\PhysicsStructure.cs" />
+    <Compile Include="Physics\PhysicsSystem.cs" />
+    <Compile Include="UI\Image.cs" />
+    <Compile Include="UI\OverlaySettings.cs" />
+    <Compile Include="UI\Text.cs" />
+    <Compile Include="Entities\EntityCommand.cs" />
+    <Compile Include="Entities\Entity.cs" />
+    <Compile Include="Entities\EntitySettings.cs" />
+    <Compile Include="UI\IClickable.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="GameScreen.cs" />
+    <Compile Include="Input.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\AssemblyBuilder.cs" />
+    <Compile Include="Util\ColourUtils.cs" />
+    <Compile Include="Util\ContentManagerExtensions.cs" />
+    <Compile Include="Util\Curve2D.cs" />
+    <Compile Include="Util\DebugTimers.cs" />
+    <Compile Include="Util\GenericList.cs" />
+    <Compile Include="Util\Pool.cs" />
+    <Compile Include="Util\SaveDeviceAllPlayers.cs" />
+    <Compile Include="Util\StringBuilderExtension.cs" />
+    <Compile Include="Util\TextElement.cs" />
+    <Compile Include="Util\TextUtils.cs" />
+    <Compile Include="Util\VectorUtils.cs" />
+    <Compile Include="Util\ViewportEx.cs" />
+    <Compile Include="Util\XmlSerializerUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FarseerPhysics\Farseer Physics XNA.csproj">
+      <Project>{0A850700-1ABB-4288-A391-6726B90EBEB9}</Project>
+      <Name>Farseer Physics XNA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gnomic.Anim\Gnomic.Anim.csproj">
+      <Project>{B670D9A3-79F0-4501-9D79-43183346F011}</Project>
+      <Name>Gnomic.Anim</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>
