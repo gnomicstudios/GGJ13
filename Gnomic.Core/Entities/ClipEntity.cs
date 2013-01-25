@@ -156,5 +156,8 @@ namespace Gnomic.Entities
         {
             ClipInstance.Draw(spriteBatch);
         }
+
+        protected int layerID = 0;
+        public virtual int LayerID { get { return layerID; } }
     }
 }

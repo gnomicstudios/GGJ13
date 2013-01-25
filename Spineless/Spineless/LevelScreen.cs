@@ -17,11 +17,11 @@ namespace Spineless
     public class LevelScreen : Gnomic.GameScreen
     {
         Camera2D camera;
-
+        
         public LevelScreen()
         {
         }
-                
+        
         public override void Initialize(GnomicGame game)
         {
             Physics = new Gnomic.Physics.PhysicsSystem(this);
@@ -29,12 +29,7 @@ namespace Spineless
             // Create a 3D camera
             base.Camera2D = camera = new Camera2D(ParentGame.GraphicsDevice.Viewport);
 
-            SpriteEntity background = new SpriteEntity();
-            background.SpriteState = 
-                new Gnomic.Anim.SpriteState(Content.Load<Texture2D>("Background"));
-            background.SpriteState.Transform.Origin = Vector2.Zero;
-
-            base.AddEntity(background);
+            CreateBackground();
 
             ClipEntitySettings ces = new ClipEntitySettings();
             ces.ClipFile = "player_player.clipxml";
@@ -45,23 +40,60 @@ namespace Spineless
             base.Initialize(game);
         }
 
+        private void CreateBackground()
+        {
+            base.Layers.Add(new Layer2D(new Vector2(1.0f, 1.0f)));
+            base.Layers.Add(new Layer2D(new Vector2(0.7f, 1.0f)));
+            base.Layers.Add(new Layer2D(new Vector2(0.3f, 1.0f)));
+            base.Layers.Add(new Layer2D(new Vector2(0.0f, 1.0f)));
+
+            for (int i = 0; i < 20; ++i)
+            {
+                SpriteEntity background = new SpriteEntity();
+                background.SpriteState =
+                    new Gnomic.Anim.SpriteState(Content.Load<Texture2D>("Background_Ground"));
+                background.SpriteState.Transform.Origin = Vector2.Zero;
+                background.LayerID = 0;
+                background.Position = new Vector2(ParentGame.ScreenWidth * i, 0.0f);
+                base.AddEntity(background);
+            
+                background = new SpriteEntity();
+                background.SpriteState =
+                    new Gnomic.Anim.SpriteState(Content.Load<Texture2D>("Background_Clouds"));
+                background.SpriteState.Transform.Origin = Vector2.Zero;
+                background.LayerID = 1;
+                background.Position = new Vector2(ParentGame.ScreenWidth * i, 0.0f);
+                base.AddEntity(background);
+
+                background = new SpriteEntity();
+                background.SpriteState =
+                    new Gnomic.Anim.SpriteState(Content.Load<Texture2D>("Background_Mountains"));
+                background.SpriteState.Transform.Origin = Vector2.Zero;
+                background.LayerID = 2;
+                background.Position = new Vector2(ParentGame.ScreenWidth * i, 0.0f);
+                base.AddEntity(background);
+
+                background = new SpriteEntity();
+                background.SpriteState =
+                    new Gnomic.Anim.SpriteState(Content.Load<Texture2D>("Background_Sky"));
+                background.SpriteState.Transform.Origin = Vector2.Zero;
+                background.LayerID = 3;
+                background.Position = new Vector2(ParentGame.ScreenWidth * i, 0.0f);
+                base.AddEntity(background);
+            }
+        }
+
         public override void Update(float dt)
         {
+            // TODO: remove hacky scroll
+            Camera2D.Position = new Vector2(100.0f * (float)TotalTime, 0.0f);
+
             base.Update(dt);
         }
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-            // Draw 2D layer with SpriteBatch
-            if (base.drawable2DEntities.Count > 0)
-            {
-                spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, null, null, null, null, Camera2D.GetViewMatrix(Vector2.Zero));
-                foreach (IDrawable2D e in drawable2DEntities)
-                {
-                    if (e.IsVisible) e.Draw2D(spriteBatch);
-                }
-                spriteBatch.End();
-            }
+            base.Draw(spriteBatch);
         }
     }
 }

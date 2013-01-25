@@ -74,6 +74,7 @@
     <Compile Include="Entities\ClipEntity.cs" />
     <Compile Include="Graphics\IDrawable3D.cs" />
     <Compile Include="Entities\SpriteEntity.cs" />
+    <Compile Include="Graphics\Layer2D.cs" />
     <Compile Include="Physics\PhysicsSettings.cs" />
     <Compile Include="Physics\PhysicsStructure.cs" />
     <Compile Include="Physics\PhysicsSystem.cs" />
