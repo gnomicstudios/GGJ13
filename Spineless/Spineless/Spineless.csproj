@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectGuid>{55209810-911E-4AB6-9244-BC6D585F98A7}</ProjectGuid>
@@ -73,6 +73,10 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AI\BehaviourInterfaces.cs" />
+    <Compile Include="AI\BehaviourTree.cs" />
+    <Compile Include="Entities\AIControlledEntity.cs" />
+    <Compile Include="Entities\SpinelessEntity.cs" />
     <Compile Include="LevelScreen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
