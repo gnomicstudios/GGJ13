@@ -1,0 +1,3626 @@
+<XnaContent>
+  <Asset Type="Gnomic.Anim.Clip">
+    <Joint>
+      <ParentId>-1</ParentId>
+      <Name>player.Root0</Name>
+    </Joint>
+    <Joint>
+      <ParentId>0</ParentId>
+      <Name>player.shadow0</Name>
+    </Joint>
+    <Joint>
+      <ParentId>0</ParentId>
+      <Name>player.hand-back0</Name>
+    </Joint>
+    <Joint>
+      <ParentId>0</ParentId>
+      <Name>player.legs0</Name>
+    </Joint>
+    <Joint>
+      <ParentId>0</ParentId>
+      <Name>player.body0</Name>
+    </Joint>
+    <Joint>
+      <ParentId>0</ParentId>
+      <Name>player.body1</Name>
+    </Joint>
+    <Joint>
+      <ParentId>0</ParentId>
+      <Name>player.body2</Name>
+    </Joint>
+    <Joint>
+      <ParentId>0</ParentId>
+      <Name>player.hand-front0</Name>
+    </Joint>
+    <DrawOrder>1 2 3 4 5 6 7</DrawOrder>
+    <AnimSet>
+      <Anim>
+        <Name>rig</Name>
+        <Duration>1</Duration>
+        <Framerate>24</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.hand-front0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-14.45 39.25</Pos>
+              <Scale>1 1</Scale>
+              <Origin>12.7 10.649999999999999</Origin>
+              <Rot>1.389785528559955</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.hand-front0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.hand-front0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 207 27 21</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-20.2 -2</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.301 41.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.body1</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>0.5 5.8</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.451 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.body1</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.body1</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.body2</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-1.7 -37.25</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.349999999999994 50.401</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.body2</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.body2</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.legs0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>3.5 39.8</Pos>
+              <Scale>1 1</Scale>
+              <Origin>25.05 24.25</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.legs0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.legs0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 121 51 50</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.hand-back0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>37.05 27.05</Pos>
+              <Scale>0.999969482421875 0.999969482421875</Scale>
+              <Origin>11.8 9.25</Origin>
+              <Rot>-0.01565432720359477</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.hand-back0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.hand-back0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>28 207 25 20</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>0.3 62.2</Pos>
+              <Scale>1 1</Scale>
+              <Origin>39.55 11.5</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>127</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 43 81 24</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+      </Anim>
+      <Anim>
+        <Name>idle-right</Name>
+        <Duration>1</Duration>
+        <Framerate>24</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.hand-front0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-14.45 39.25</Pos>
+              <Scale>1 1</Scale>
+              <Origin>12.7 10.549999999999999</Origin>
+              <Rot>1.389785528559955</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.hand-front0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.hand-front0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 207 27 21</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-20.2 -2</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.401 41.701</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.body1</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>0.5 5.8</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.451 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.body1</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.body1</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.body2</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-1.7 -37.25</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.449999999999996 50.501000000000005</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.body2</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.body2</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.legs0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>3.5 39.8</Pos>
+              <Scale>1 1</Scale>
+              <Origin>25.05 24.25</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.legs0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.legs0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 121 51 50</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.hand-back0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>4.05 35.05</Pos>
+              <Scale>0.999969482421875 0.999969482421875</Scale>
+              <Origin>11.8 9.25</Origin>
+              <Rot>1.2388953485699183</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.hand-back0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.hand-back0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>28 207 25 20</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>0.3 62.2</Pos>
+              <Scale>1 1</Scale>
+              <Origin>39.55 11.5</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>127</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 43 81 24</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+      </Anim>
+      <Anim>
+        <Name>idle-left</Name>
+        <Duration>1</Duration>
+        <Framerate>24</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.hand-front0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-0.9 39.2</Pos>
+              <Scale>1 1</Scale>
+              <Origin>13 10.25</Origin>
+              <Rot>-1.389785528559955</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.hand-front0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.hand-front0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 207 27 21</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>4.9 -2</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.998999999999995 41.701</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.body1</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-15.75 5.8</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.35 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.body1</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.body1</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.body2</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-13.55 -37.25</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.900000000000006 50.501000000000005</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.body2</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.body2</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.legs0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-18.75 39.8</Pos>
+              <Scale>1 1</Scale>
+              <Origin>24.95 24.25</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.legs0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.legs0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 121 51 50</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.hand-back0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-19.25 35.05</Pos>
+              <Scale>0.999969482421875 0.999969482421875</Scale>
+              <Origin>11.75 9.101</Origin>
+              <Rot>-1.2388681843267995</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.hand-back0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.hand-back0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>28 207 25 20</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-15.55 62.2</Pos>
+              <Scale>1 1</Scale>
+              <Origin>40.050000000000004 11.5</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>127</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 43 81 24</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+      </Anim>
+      <Anim>
+        <Name>run-right</Name>
+        <Duration>12</Duration>
+        <Framerate>24</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.hand-front0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-33.95 33</Pos>
+              <Scale>0.9999847412109375 0.9999847412109375</Scale>
+              <Origin>12.95 10.549999999999999</Origin>
+              <Rot>2.0564250831513906</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>-6.7 44.35</Pos>
+              <Scale>0.9999847412109375 0.9999847412109375</Scale>
+              <Origin>12.75 10.649999999999999</Origin>
+              <Rot>1.241202178706145</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Transform>
+              <Pos>12.1 32.45</Pos>
+              <Scale>1.0000152587890625 1.0000152587890625</Scale>
+              <Origin>12.85 10.25</Origin>
+              <Rot>0.4606768011552147</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Transform>
+              <Pos>-5.95 43.75</Pos>
+              <Scale>1.0000152587890625 1.0000152587890625</Scale>
+              <Origin>12.75 10.7</Origin>
+              <Rot>1.5028923769006013</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Transform>
+              <Pos>-31.95 32.7</Pos>
+              <Scale>1 1</Scale>
+              <Origin>12.9 10.7</Origin>
+              <Rot>2.147038872925228</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.hand-front0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.hand-front0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 207 27 21</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 207 27 21</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 207 27 21</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 207 27 21</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 207 27 21</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-20.2 -5</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.401 41.701</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Transform>
+              <Pos>-20.2 -2</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.401 41.701</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>-20.2 -1</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.301 41.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Transform>
+              <Pos>-20.2 -2.5</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.301 41.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Transform>
+              <Pos>-20.2 -4.75</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.301 41.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Transform>
+              <Pos>-20.2 -6.75</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.301 41.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <Transform>
+              <Pos>-20.2 -2.5</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.301 41.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <Transform>
+              <Pos>-20.2 -1.25</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.301 41.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Transform>
+              <Pos>-20.2 -1</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.301 41.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <Transform>
+              <Pos>-20.2 -2.5</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.301 41.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <Transform>
+              <Pos>-20.2 -3.75</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.301 41.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Transform>
+              <Pos>-20.2 -6.5</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.301 41.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.body1</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>0.5 2.8</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.451 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Transform>
+              <Pos>0.5 5.8</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.451 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>0.5 6.8</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.451 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Transform>
+              <Pos>0.5 5.3</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.451 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Transform>
+              <Pos>0.5 3.05</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.451 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Transform>
+              <Pos>0.5 1.05</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.451 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <Transform>
+              <Pos>0.5 5.3</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.451 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <Transform>
+              <Pos>0.5 6.55</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.451 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Transform>
+              <Pos>0.5 6.8</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.451 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <Transform>
+              <Pos>0.5 5.3</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.451 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <Transform>
+              <Pos>0.5 4.05</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.451 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Transform>
+              <Pos>0.5 1.3</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.451 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.body1</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.body1</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.body2</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-1.7 -40.25</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.449999999999996 50.501000000000005</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Transform>
+              <Pos>-1.7 -37.25</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.449999999999996 50.501000000000005</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>-1.7 -36.25</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.349999999999994 50.401</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Transform>
+              <Pos>-1.7 -37.75</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.349999999999994 50.401</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Transform>
+              <Pos>-1.7 -40</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.349999999999994 50.401</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Transform>
+              <Pos>-1.7 -42</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.349999999999994 50.401</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <Transform>
+              <Pos>-1.7 -37.75</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.349999999999994 50.401</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <Transform>
+              <Pos>-1.7 -36.5</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.349999999999994 50.401</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Transform>
+              <Pos>-1.7 -36.25</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.349999999999994 50.401</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <Transform>
+              <Pos>-1.7 -37.75</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.349999999999994 50.401</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <Transform>
+              <Pos>-1.7 -39</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.349999999999994 50.401</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Transform>
+              <Pos>-1.7 -41.75</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.349999999999994 50.401</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.body2</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.body2</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.legs0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>11.4 33.35</Pos>
+              <Scale>1.0000152587890625 1.0000152587890625</Scale>
+              <Origin>36.3 16.5</Origin>
+              <Rot>0.06489590944305088</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Transform>
+              <Pos>7.1 42.05</Pos>
+              <Scale>1 1</Scale>
+              <Origin>26.25 23.05</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>2.85 42.05</Pos>
+              <Scale>1 1</Scale>
+              <Origin>21 22.3</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Transform>
+              <Pos>-2.15 41.3</Pos>
+              <Scale>1 1</Scale>
+              <Origin>26.801000000000002 23.3</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Transform>
+              <Pos>-0.55 41.9</Pos>
+              <Scale>1 1</Scale>
+              <Origin>34.150999999999996 22.45</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Transform>
+              <Pos>2.8 35.95</Pos>
+              <Scale>1 1</Scale>
+              <Origin>42.05 20.45</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <Transform>
+              <Pos>3.8 36.95</Pos>
+              <Scale>1.0000152587890625 1.0000152587890625</Scale>
+              <Origin>42.05 20.45</Origin>
+              <Rot>0.03492842296082524</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <Transform>
+              <Pos>6.1 42.55</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.75 21.3</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Transform>
+              <Pos>0.5 42</Pos>
+              <Scale>1 1</Scale>
+              <Origin>27.15 21.85</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <Transform>
+              <Pos>2.5 41.9</Pos>
+              <Scale>1 1</Scale>
+              <Origin>20.9 22.75</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <Transform>
+              <Pos>6.35 40.15</Pos>
+              <Scale>1 1</Scale>
+              <Origin>30.25 22.25</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Transform>
+              <Pos>10.9 32.85</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.3 16.5</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.legs0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.legs0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 0 74 34</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>119 162 54 47</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>281 0 43 46</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>71 113 56 48</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 113 70 46</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 0 85 42</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 0 85 42</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 68 75 44</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>63 162 55 45</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>237 0 43 47</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 160 62 46</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 0 74 34</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.hand-back0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>27.3 26.8</Pos>
+              <Scale>1 1</Scale>
+              <Origin>11.8 9.25</Origin>
+              <Rot>0.6683069597499345</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>4.3 38.55</Pos>
+              <Scale>1.0000152587890625 1.0000152587890625</Scale>
+              <Origin>11.8 9.25</Origin>
+              <Rot>1.2179919308577773</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Transform>
+              <Pos>-23.95 29.1</Pos>
+              <Scale>0.9999847412109375 0.9999847412109375</Scale>
+              <Origin>12 9.65</Origin>
+              <Rot>2.00240632254855</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Transform>
+              <Pos>0.55 38.55</Pos>
+              <Scale>1.0000152587890625 1.0000152587890625</Scale>
+              <Origin>11.8 9.25</Origin>
+              <Rot>1.62314714960702</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Transform>
+              <Pos>29.55 24.55</Pos>
+              <Scale>1.0000152587890625 1.0000152587890625</Scale>
+              <Origin>11.8 9.25</Origin>
+              <Rot>0.5027755190349693</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.hand-back0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.hand-back0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>28 207 25 20</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>28 207 25 20</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>28 207 25 20</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>28 207 25 20</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>28 207 25 20</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>0.3 62.2</Pos>
+              <Scale>1 1</Scale>
+              <Origin>39.55 11.5</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>127</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 43 81 24</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+      </Anim>
+      <Anim>
+        <Name>run-left</Name>
+        <Duration>12</Duration>
+        <Framerate>24</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.hand-front0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>26.95 33</Pos>
+              <Scale>0.9999847412109375 0.9999847412109375</Scale>
+              <Origin>12.85 10.399999999999999</Origin>
+              <Rot>-2.0564250831513906</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>-0.35 44.25</Pos>
+              <Scale>0.999969482421875 0.999969482421875</Scale>
+              <Origin>13 10.299999999999999</Origin>
+              <Rot>-1.241202178706145</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Transform>
+              <Pos>-19.25 32.5</Pos>
+              <Scale>1.0000152587890625 1.0000152587890625</Scale>
+              <Origin>12.75 10.2</Origin>
+              <Rot>-0.4606768011552147</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Transform>
+              <Pos>-1.2 43.75</Pos>
+              <Scale>1 1</Scale>
+              <Origin>12.950000000000001 10.2</Origin>
+              <Rot>-1.5028923769006013</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Transform>
+              <Pos>24.85 32.7</Pos>
+              <Scale>0.999969482421875 0.999969482421875</Scale>
+              <Origin>12.9 10.45</Origin>
+              <Rot>-2.1470282202808675</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.hand-front0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.hand-front0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 207 27 21</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 207 27 21</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 207 27 21</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 207 27 21</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 207 27 21</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>13.1 -5</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.998999999999995 41.701</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Transform>
+              <Pos>13.1 -2</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.998999999999995 41.701</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>13.1 -1</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.998999999999995 41.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Transform>
+              <Pos>13.1 -2.5</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.998999999999995 41.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Transform>
+              <Pos>13.1 -4.75</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.998999999999995 41.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Transform>
+              <Pos>13.1 -6.75</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.998999999999995 41.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <Transform>
+              <Pos>13.1 -2.5</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.998999999999995 41.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <Transform>
+              <Pos>13.1 -1.25</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.998999999999995 41.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Transform>
+              <Pos>13.1 -1</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.998999999999995 41.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <Transform>
+              <Pos>13.1 -2.5</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.998999999999995 41.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <Transform>
+              <Pos>13.1 -3.75</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.998999999999995 41.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Transform>
+              <Pos>13.1 -6.5</Pos>
+              <Scale>1 1</Scale>
+              <Origin>35.998999999999995 41.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 35 73 85</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.body1</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-7.55 2.8</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.35 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Transform>
+              <Pos>-7.55 5.8</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.35 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>-7.55 6.8</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.250000000000004 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Transform>
+              <Pos>-7.55 5.3</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.250000000000004 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Transform>
+              <Pos>-7.55 3.05</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.250000000000004 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Transform>
+              <Pos>-7.55 1.05</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.250000000000004 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <Transform>
+              <Pos>-7.55 5.3</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.250000000000004 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <Transform>
+              <Pos>-7.55 6.55</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.250000000000004 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Transform>
+              <Pos>-7.55 6.8</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.250000000000004 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <Transform>
+              <Pos>-7.55 5.3</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.250000000000004 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <Transform>
+              <Pos>-7.55 4.05</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.250000000000004 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Transform>
+              <Pos>-7.55 1.3</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.250000000000004 30.801000000000002</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.body1</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.body1</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>174 172 48 63</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.body2</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-5.35 -40.25</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.900000000000006 50.501000000000005</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Transform>
+              <Pos>-5.35 -37.25</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.900000000000006 50.501000000000005</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>-5.35 -36.25</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.80000000000001 50.401</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Transform>
+              <Pos>-5.35 -37.75</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.80000000000001 50.401</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Transform>
+              <Pos>-5.35 -40</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.80000000000001 50.401</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Transform>
+              <Pos>-5.35 -42</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.80000000000001 50.401</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <Transform>
+              <Pos>-5.35 -37.75</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.80000000000001 50.401</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <Transform>
+              <Pos>-5.35 -36.5</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.80000000000001 50.401</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Transform>
+              <Pos>-5.35 -36.25</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.80000000000001 50.401</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <Transform>
+              <Pos>-5.35 -37.75</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.80000000000001 50.401</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <Transform>
+              <Pos>-5.35 -39</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.80000000000001 50.401</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Transform>
+              <Pos>-5.35 -41.75</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.80000000000001 50.401</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.body2</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.body2</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>86 0 75 103</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.legs0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-18.5 33.3</Pos>
+              <Scale>1.0000152587890625 1.0000152587890625</Scale>
+              <Origin>36.15 16.5</Origin>
+              <Rot>-0.06489590944305088</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Transform>
+              <Pos>-14.15 42.05</Pos>
+              <Scale>1 1</Scale>
+              <Origin>26.15 23.05</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>-9.9 42.05</Pos>
+              <Scale>1 1</Scale>
+              <Origin>20.799999999999997 22.3</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Transform>
+              <Pos>-4.9 41.3</Pos>
+              <Scale>1 1</Scale>
+              <Origin>27.249999999999996 23.3</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Transform>
+              <Pos>-6.5 41.9</Pos>
+              <Scale>1 1</Scale>
+              <Origin>34.6 22.45</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Transform>
+              <Pos>-9.85 35.95</Pos>
+              <Scale>1 1</Scale>
+              <Origin>41.85000000000001 20.45</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <Transform>
+              <Pos>-10.85 36.9</Pos>
+              <Scale>1.0000152587890625 1.0000152587890625</Scale>
+              <Origin>41.85000000000001 20.401</Origin>
+              <Rot>-0.03492842296082524</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <Transform>
+              <Pos>-13.15 42.55</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.55 21.3</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Transform>
+              <Pos>-7.55 42</Pos>
+              <Scale>1 1</Scale>
+              <Origin>26.950000000000003 21.85</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <Transform>
+              <Pos>-9.55 41.9</Pos>
+              <Scale>1 1</Scale>
+              <Origin>20.65 22.75</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <Transform>
+              <Pos>-13.4 40.15</Pos>
+              <Scale>1 1</Scale>
+              <Origin>30.049999999999997 22.25</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Transform>
+              <Pos>-17.95 32.85</Pos>
+              <Scale>1 1</Scale>
+              <Origin>36.05 16.5</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.legs0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.legs0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 0 74 34</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>119 162 54 47</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>281 0 43 46</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>71 113 56 48</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 113 70 46</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 0 85 42</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 0 85 42</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 68 75 44</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>63 162 55 45</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>237 0 43 47</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 160 62 46</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>162 0 74 34</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.hand-back0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-34.35 26.8</Pos>
+              <Scale>0.9999847412109375 0.9999847412109375</Scale>
+              <Origin>11.700000000000001 9.151</Origin>
+              <Rot>-0.6683069597499345</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>-11.35 38.55</Pos>
+              <Scale>1.0000152587890625 1.0000152587890625</Scale>
+              <Origin>11.75 9.101</Origin>
+              <Rot>-1.2179919308577773</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Transform>
+              <Pos>16.8 29.05</Pos>
+              <Scale>0.9999847412109375 0.9999847412109375</Scale>
+              <Origin>11.700000000000001 9.4</Origin>
+              <Rot>-2.00240632254855</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Transform>
+              <Pos>-7.6 38.5</Pos>
+              <Scale>1 1</Scale>
+              <Origin>11.8 9.001</Origin>
+              <Rot>-1.62314714960702</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Transform>
+              <Pos>-36.6 24.5</Pos>
+              <Scale>1 1</Scale>
+              <Origin>11.600000000000001 9.101</Origin>
+              <Rot>-0.502798954852562</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.hand-back0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.hand-back0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>28 207 25 20</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>28 207 25 20</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>28 207 25 20</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>28 207 25 20</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>28 207 25 20</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>player.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-7.35 62.2</Pos>
+              <Scale>1 1</Scale>
+              <Origin>40.050000000000004 11.5</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>player.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>127</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>player_playerSheet</Tex>
+            <TexRect>0 43 81 24</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>player.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+      </Anim>
+    </AnimSet>
+  </Asset>
+</XnaContent>

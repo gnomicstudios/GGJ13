@@ -89,9 +89,12 @@ namespace Gnomic
             Services.AddService(typeof(IGraphicsDeviceService), deviceSvc);
             deviceSvc.DeviceReset += new EventHandler<EventArgs>(deviceSvc_DeviceReset);
 
-            content = new ContentManager(Services); // ContentTracker
+            content = new Gnomic.Core.ContentTracker(Services);
             Content.RootDirectory = "Content";
-
+#if WINDOWS
+            ((Gnomic.Core.ContentTracker)content).UseSourceAssets = true;
+#endif
+            
             audio = new AudioManager();
 
             spriteBatch = new SpriteBatch(graphicsDevice);
