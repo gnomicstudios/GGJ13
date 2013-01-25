@@ -42,6 +42,18 @@ namespace Spineless
             ces.DefaultAnimName = "run-right";
             base.AddEntity(ces.CreateEntity());
 
+            
+            ClipEntitySettings princessClipSettings = new ClipEntitySettings();
+            princessClipSettings.ClipFile           = "player_player.clipxml";
+            princessClipSettings.Position           = new Vector2(120, 156);
+            princessClipSettings.DefaultAnimName    = "idle-right";
+            princessClipSettings.EntityClass        = "Spineless.Princess, Spineless";
+            Princess lilMissBadAss                  = (Princess)princessClipSettings.CreateEntity();
+            base.AddEntity(lilMissBadAss); // sets ParentScreen
+            lilMissBadAss.AimTexture                = new Texture2D(lilMissBadAss.ParentScreen.ParentGame.GraphicsDevice, 1, 1);
+            lilMissBadAss.AimTexture.SetData<Color>(new Color[] { Color.White });
+
+
             base.Initialize(game);
         }
 
