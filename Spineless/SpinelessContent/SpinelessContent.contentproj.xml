@@ -71,6 +71,12 @@
       <Processor>TextureProcessor</Processor>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="heartSheet.png">
+      <Name>heartSheet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="IconMove.png">
       <Name>IconMove</Name>
       <Importer>TextureImporter</Importer>
@@ -153,6 +159,9 @@
   <ItemGroup>
     <Content Include="projectiles.clipxml">
       <Name>projectiles</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="heart.clipxml">
+      <Name>heart</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

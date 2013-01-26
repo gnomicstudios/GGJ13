@@ -7,12 +7,14 @@ namespace Spineless.Entities
 {
     public class Princess : SpinelessEntity
     {
-        const float     MAX_DRAG_DISTANCE   = 80;
-        const float     MIN_DRAG_DISTANCE   = 20;       // distance at which to register was indeed a "drag"
-        const int       DRAG_RADIUS         = 100;
-        const float     POWER               = 0.04f;
-        const float     MAX_RATE_OF_FIRE    = 1.0f;
-        
+        const float MAX_DRAG_DISTANCE   = 100;
+        const float MIN_DRAG_DISTANCE   = 20;       // distance at which to register was indeed a "drag"
+        const int DRAG_RADIUS           = 100;
+        const float POWER               = 0.05f;
+        const float MAX_RATE_OF_FIRE    = 1.0f;
+        const float FEAR_STRENGTH       = 2.0f;
+        const float FEAR_RATE_OF_CHANGE = 0.1f;
+
         internal Texture2D AimTexture;
 
         Vector2 dragStart, dragEnd, dragVector, fireOffset;
@@ -20,6 +22,9 @@ namespace Spineless.Entities
         bool isDragging;
         ProjectileType currentProjectileType = ProjectileType.DirectHit;
         
+        public float FearFactor { get; private set; }
+        float fearFactorTarget;
+
         public Princess()
         { 
         }
@@ -93,6 +98,19 @@ namespace Spineless.Entities
                     Fire();
                 }
             }
+
+            float fear = 0.0f;
+            foreach (Unit u in LevelScreen.Units.ActiveUnits)
+            {
+                if (u.UnitType != UnitType.Knight)
+                {
+                    float distToPrincess = Math.Abs(u.Physics.Bodies[0].Position.X - Physics.Bodies[0].Position.X);
+                    fear += FEAR_STRENGTH / (distToPrincess * distToPrincess);
+                }
+            }
+            fearFactorTarget = fear;
+            FearFactor += (fearFactorTarget - FearFactor) * dt * FEAR_RATE_OF_CHANGE;
+            FearFactor = Math.Min(1.0f, FearFactor);
 
             base.Update(dt);
         }
