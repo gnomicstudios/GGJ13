@@ -5,6 +5,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Gnomic.Entities;
 using FarseerPhysics.Dynamics;
+using FarseerPhysics.Dynamics.Contacts;
 
 namespace Spineless
 {
@@ -39,14 +40,24 @@ namespace Spineless
             ses.Physics.Offset = new Vector2(0, -(ses.Physics.Height / 2));
             ses.Position = new Vector2(100, 10);
             
-            Projectile p = (Projectile)ses.CreateEntity();
+            Projectile p    = (Projectile)ses.CreateEntity();
             p.Initialize(lvl);
-            p.Activated += new Action<Entity>(OnActivated);
-            p.Deactivated += new Action<Entity>(OnDeactivated);
-            p.DynamicBody.FixtureList[0].CollidesWith = (Category)SpinelessCollisionCategories.Terrain;
+            p.Activated     += new Action<Entity>(OnActivated);
+            p.Deactivated   += new Action<Entity>(OnDeactivated);
+            p.Physics.Bodies[0].FixtureList[0].CollidesWith = (Category)SpinelessCollisionCategories.All;
+            p.Physics.Bodies[0].FixtureList[0].CollisionCategories = (Category)SpinelessCollisionCategories.SplashProjectile;
+            p.Physics.Bodies[0].FixtureList[0].OnCollision = OnProjectileCollision;
+            p.Physics.Bodies[0].FixtureList[0].UserData = p;
 
             return p;
         }
+
+        private bool OnProjectileCollision(Fixture fixtureA, Fixture fixtureB, Contact contact)
+        {
+            ((Projectile)fixtureA.UserData).Explode();
+            return true;
+        }
+
 
         private void OnDeactivated(Gnomic.Entities.Entity obj)
         {
