@@ -28,7 +28,7 @@ namespace Spineless
         {
         }
         
-        public override void Initialize(GnomicGame game)
+        public override void Initialize(GnomicGame game) 
         {
             Hud = ParentGame.GetScreen<HudScreen>();
 
@@ -101,6 +101,11 @@ namespace Spineless
         public void FireProjectile(Vector2 startPos, Vector2 impulse)
         {
             projectiles.Launch(startPos, impulse);
+        }
+
+        public void Splash(Vector2 pos, float radius, float maxDamage)
+        {
+ 
         }
 
         private void CreateBackground()
