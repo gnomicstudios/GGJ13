@@ -38,5 +38,12 @@ namespace Gnomic.Entities
 				SpriteState.FlipState,
 				0.0f);
 		}
+
+        protected int layerID = 0;
+        public virtual int LayerID 
+        { 
+            get { return layerID; } 
+            set { layerID = value; }
+        }
 	}
 }

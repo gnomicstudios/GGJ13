@@ -343,6 +343,8 @@ namespace Gnomic.UI
             spriteBatch.Draw(texture, offset, SourceRect, colorWithAlpha, rotation, origin, scale, Settings.SpriteEffects, Settings.LayerDepth);
         }
 
+        protected int layerID = 0;
+        public virtual int LayerID { get { return layerID; } }
 
         #region IEditableDiagnosticsProvider Members
         

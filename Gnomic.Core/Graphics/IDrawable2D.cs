@@ -9,7 +9,7 @@ namespace Gnomic.Graphics
     public interface IDrawable2D
     {
         void Draw2D(SpriteBatch spriteBatch);
-
+        int LayerID { get; }
         bool IsVisible { get; }
     }
 }
