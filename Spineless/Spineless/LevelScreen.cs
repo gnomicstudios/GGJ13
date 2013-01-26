@@ -50,9 +50,9 @@ namespace Spineless
             // base.AddEntity(settings.CreateEntity());
 
             SpinelessEntitySettings princessClipSettings = new SpinelessEntitySettings();
-            princessClipSettings.ClipFile           = "player_player.clipxml";
-            princessClipSettings.Position           = new Vector2(120, 156);
-            princessClipSettings.DefaultAnimName    = "idle-right";
+            princessClipSettings.ClipFile           = "princess.clipxml";
+            princessClipSettings.Position           = new Vector2(120, 220);
+            princessClipSettings.DefaultAnimName    = "idle";
             princessClipSettings.EntityClass        = "Spineless.Entities.Princess, Spineless";
             Princess lilMissBadAss                  = (Princess)princessClipSettings.CreateEntity();
             base.AddEntity(lilMissBadAss); // sets ParentScreen
