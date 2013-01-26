@@ -83,7 +83,7 @@ namespace Spineless.Entities
                     ConvertUnits.ToSimUnits(Settings.Position),
                     Settings.Physics.Offset);
                 body.BodyType = BodyType.Dynamic;
-
+                body.Inertia = float.MaxValue;
                 physics = new PhysicsStructure
                 {
                     Bodies = { body }

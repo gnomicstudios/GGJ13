@@ -74,6 +74,7 @@ namespace Gnomic.Entities
         public void Activate()
         {
             Debug.Assert(!isActivated);
+            isActivated = true;
             OnActivate();
         }
         protected virtual void OnActivate()
@@ -84,7 +85,6 @@ namespace Gnomic.Entities
                 Initialize(ParentScreen);
 
             countingDownToDeactivate = false;
-            isActivated = true;
 
             if (Activated != null)
                 Activated(this);

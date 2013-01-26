@@ -10,7 +10,7 @@ namespace Spineless.Entities
         const float MAX_DRAG_DISTANCE = 100;
         const float MIN_DRAG_DISTANCE = 20; // distance at which to register was indeed a "drag"
         const int DRAG_RADIUS = 100;
-        const float POWER = 0.07f;
+        const float POWER = 0.05f;
 
         internal Texture2D AimTexture;
 

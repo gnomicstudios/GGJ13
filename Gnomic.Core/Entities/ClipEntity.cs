@@ -150,6 +150,7 @@ namespace Gnomic.Entities
         public override void Update(float dt)
         {
             ClipInstance.Update(dt);
+            base.Update(dt);
         }
 
         public virtual void Draw2D(SpriteBatch spriteBatch)

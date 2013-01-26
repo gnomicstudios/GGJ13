@@ -11,6 +11,8 @@ namespace Spineless
 {
     class ProjectileManager
     {
+        static Vector2 PROJECTILE_START_POS = new Vector2(100, 10);
+
         LevelScreen lvl;
         List<Projectile> projectiles;
 
@@ -38,35 +40,17 @@ namespace Spineless
             ses.Physics.Height = 0.5f;
             ses.Physics.Density = 1;
             ses.Physics.Offset = new Vector2(0, -(ses.Physics.Height / 2));
-            ses.Position = new Vector2(100, 10);
+            ses.Position = PROJECTILE_START_POS;
             
             Projectile p    = (Projectile)ses.CreateEntity();
             p.Initialize(lvl);
-            p.Activated     += new Action<Entity>(OnActivated);
-            p.Deactivated   += new Action<Entity>(OnDeactivated);
+            p.Deactivated   += new Action<Entity>(OnProjectileDeactivated);
             p.Physics.Bodies[0].FixtureList[0].CollidesWith = (Category)SpinelessCollisionCategories.All;
             p.Physics.Bodies[0].FixtureList[0].CollisionCategories = (Category)SpinelessCollisionCategories.SplashProjectile;
-            p.Physics.Bodies[0].FixtureList[0].OnCollision = OnProjectileCollision;
+            p.Physics.Bodies[0].FixtureList[0].OnCollision = OnSplashProjectileCollision;
             p.Physics.Bodies[0].FixtureList[0].UserData = p;
 
             return p;
-        }
-
-        private bool OnProjectileCollision(Fixture fixtureA, Fixture fixtureB, Contact contact)
-        {
-            ((Projectile)fixtureA.UserData).Explode();
-            return true;
-        }
-
-
-        private void OnDeactivated(Gnomic.Entities.Entity obj)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void OnActivated(Gnomic.Entities.Entity obj)
-        {
-            throw new NotImplementedException();
         }
 
         public void Launch(Vector2 impulse)
@@ -75,13 +59,32 @@ namespace Spineless
             {
                 if (!p.IsActive)
                 {
+                    p.IsActive = true;
                     p.Physics.Enabled = true;
                     p.Physics.Bodies[0].ApplyLinearImpulse(impulse);
-                    p.IsActive = true;
-                    lvl.AddEntity(p);
+                    p.Activate();
                     break;
                 }
             }
+        }
+
+        private bool OnSplashProjectileCollision(Fixture fixtureA, Fixture fixtureB, Contact contact)
+        {
+            Projectile p = (Projectile)fixtureA.UserData;
+            p.ClipInstance.Play("death", false);
+            p.Deactivate(p.ClipInstance.CurrentAnim.DurationInSeconds);
+            p.Physics.Enabled = false;
+            
+            return true;
+        }
+
+        private void OnProjectileDeactivated(Gnomic.Entities.Entity obj)
+        {
+            Projectile p = (Projectile)obj;
+            p.IsActive = false;
+            p.Position = PROJECTILE_START_POS;
+            p.Physics.Position = PROJECTILE_START_POS;
+            // p.Physics is already deactivated
         }
     }
 }
