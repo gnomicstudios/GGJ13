@@ -48,7 +48,8 @@ namespace Spineless
                 if (!e.IsAdded)
                 {
                     e.IsAdded = true;
-                    //e.DynamicBody.Position = pos;
+                    e.Physics.Position = pos;
+                    e.Physics.Enabled = true;
                     screen.AddEntity(e);
                     return e;
                 }
@@ -60,12 +61,19 @@ namespace Spineless
         {
             SpinelessEntitySettings es = new SpinelessEntitySettings();
             es.EntityClass = "Spineless.Entities.Enemy,Spineless";
+            es.DefaultAnimName = "run-left";
+            es.Scale = new Vector2(0.5f, 0.5f);
             es.ClipFile = enemyClipNames[et];
+            es.Physics = new SpinelessPhysicsSettings();
+            es.Physics.Width = 2f;
+            es.Physics.Height = 2.75f;
+            es.ActivateByDefault = false;
             var e = (Enemy)es.CreateEntity();
             e.EnemyType = et;
             e.Activated += EnemyActivated;
             e.Deactivated += EnemyDeactivated;
             e.Initialize(screen);
+            
             enemyLists[et].Add(e);
             return e;
         }
