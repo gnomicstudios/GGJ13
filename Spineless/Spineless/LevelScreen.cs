@@ -29,7 +29,7 @@ namespace Spineless
             Physics = new Gnomic.Physics.PhysicsSystem(this);
             Physics.CreateBorder(ParentGame.ScreenWidth,
                                  ParentGame.ScreenHeight,
-                                 Vector2.Zero);
+                                 new Vector2(0.0f, -25.0f));
 
             // Create a 3D camera
             base.Camera2D = camera = new Camera2D(ParentGame.GraphicsDevice.Viewport);
@@ -41,9 +41,11 @@ namespace Spineless
             settings.Position = new Vector2(ParentGame.ScreenWidth / 2,
                                             ParentGame.ScreenHeight / 2);
             settings.DefaultAnimName = "run-right";
+            settings.Scale   = new Vector2(0.5f, 0.5f);
             settings.Physics = new SpinelessPhysicsSettings();
+            settings.Physics.Width = 2f;
+            settings.Physics.Height = 2.75f;
             base.AddEntity(settings.CreateEntity());
-
 
             SpinelessEntitySettings princessClipSettings = new SpinelessEntitySettings();
             princessClipSettings.ClipFile           = "player_player.clipxml";
