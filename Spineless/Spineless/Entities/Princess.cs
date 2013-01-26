@@ -11,10 +11,10 @@ namespace Spineless.Entities
         const float MIN_DRAG_DISTANCE = 20; // distance at which to register was indeed a "drag"
         const int DRAG_RADIUS = 100;
         const float POWER = 0.05f;
-
+        
         internal Texture2D AimTexture;
 
-        Vector2 dragStart, dragEnd, dragVector;
+        Vector2 dragStart, dragEnd, dragVector, fireOffset;
         float dragDistance, angle;
         bool isDragging;
         
@@ -26,7 +26,7 @@ namespace Spineless.Entities
         {
             dragVector = dragStart - dragEnd;
             dragVector *= POWER;
-            this.LevelScreen.FireProjectile(dragVector);
+            this.LevelScreen.FireProjectile(this.Position + fireOffset, dragVector);
         }
 
         public override void Update(float dt)
@@ -43,7 +43,7 @@ namespace Spineless.Entities
                 }
 
                 dragEnd = new Vector2(Input.MouseX, Input.MouseY);
-                dragDistance = MathHelper.Clamp(Vector2.Distance(dragStart, dragEnd), MIN_DRAG_DISTANCE, MAX_DRAG_DISTANCE);
+                dragDistance = MathHelper.Clamp(Vector2.Distance(dragStart, dragEnd), 0, MAX_DRAG_DISTANCE);
 
                 // TODO update drag distance sound
                 // TODO update drag distance animation
