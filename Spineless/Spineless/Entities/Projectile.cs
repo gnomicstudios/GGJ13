@@ -27,10 +27,5 @@ namespace Spineless.Entities
         {
             IsActive = false;
         }
-
-        public void Explode()
-        {
-            this.ClipInstance.Play("death", false);
-        }
     }
 }
