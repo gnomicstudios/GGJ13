@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Gnomic;
+using Gnomic.Audio;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 
@@ -12,9 +13,12 @@ namespace Spineless.Entities
     {
         Vector2 moveForce;
         Vector2 cameraOffset;
+        Cue cueMove;
+        float cueVolume = 0.1f;
 
         const float MOVE_FORCE = 15.0f;
         const float STOP_FORCE = 40.0f;
+        const float CUE_MIN_VOL = 0.1f;
 
         public override void Initialize(GameScreen parentScreen)
         {
@@ -33,12 +37,22 @@ namespace Spineless.Entities
             {
                 moveForce = new Vector2(MOVE_FORCE, 0.0f);
                 ClipInstance.Play("moving", true, true, 1.0f);
+                if (Cue.IsValidForPlay(cueMove))
+                {
+                    cueMove = ParentScreen.ParentGame.Audio.Play("seige");
+                    cueMove.Sound.Volume = CUE_MIN_VOL;
+                }
             }
             else if ((Input.MouseJustDown(MouseButton.Left) && iconMoveLeft.DestRect.Contains(Input.MouseX, Input.MouseY)) ||
                  Input.KeyJustDown(Keys.Left))
             {
                 moveForce = new Vector2(-MOVE_FORCE, 0.0f);
                 ClipInstance.Play("moving", true, false, 1.0f);
+                if (Cue.IsValidForPlay(cueMove))
+                {
+                    cueMove = ParentScreen.ParentGame.Audio.Play("seige");
+                    cueMove.Sound.Volume = CUE_MIN_VOL;
+                }
             }
             
             if (moveForce != Vector2.Zero)
@@ -47,6 +61,32 @@ namespace Spineless.Entities
                 {
                     moveForce = Vector2.Zero;
                     ClipInstance.Stop();
+                }
+                
+                if (cueMove != null && !cueMove.IsDisposed && cueMove.IsPlaying)
+                {
+                    if (cueVolume < cueMove.Settings.Volume)
+                    {
+                        cueVolume += Math.Max(dt, (cueMove.Settings.Volume - cueVolume) * 4f * dt);
+                        cueVolume = Math.Min(1.0f, cueVolume);
+                        cueMove.Sound.Volume = cueVolume;
+                    }          
+                }
+            }
+            else
+            {
+                if (cueMove != null && !cueMove.IsDisposed && cueMove.IsPlaying)
+                {
+                    if (cueVolume > CUE_MIN_VOL)
+                    {
+                        cueVolume -= Math.Max(dt, (cueVolume - CUE_MIN_VOL) * 4f * dt);
+                        cueVolume = Math.Max(0.0f, cueVolume);
+                        cueMove.Sound.Volume = cueVolume;
+                    }
+                    else
+                    {
+                        cueMove.Stop(AudioStopOptions.Immediate);
+                    }
                 }
             }
 

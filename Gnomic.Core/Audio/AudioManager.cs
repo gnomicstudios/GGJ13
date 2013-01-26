@@ -92,6 +92,15 @@ namespace Gnomic.Audio
         {
             Sound.Dispose();
         }
+
+        public static bool IsValidForPlay(Cue c)
+        {
+            return c == null || c.IsDisposed || !c.IsPlaying;
+        }
+        public static bool IsValidForStop(Cue c)
+        {
+            return c != null && !c.IsDisposed && c.IsPlaying;
+        }
     }
 #endif
 
