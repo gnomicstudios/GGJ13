@@ -73,10 +73,10 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AI\BehaviourActions.cs" />
-    <Compile Include="AI\BehaviourChecks.cs" />
-    <Compile Include="AI\BehaviourInterfaces.cs" />
+    <Compile Include="AI\BehaviourManager.cs" />
     <Compile Include="AI\BehaviourTree.cs" />
+    <Compile Include="AI\IMoveable.cs" />
+    <Compile Include="AI\IPerceptive.cs" />
     <Compile Include="Entities\AIControlledEntity.cs" />
     <Compile Include="Entities\Projectile.cs" />
     <Compile Include="Entities\SpinelessEntity.cs" />

@@ -76,7 +76,6 @@ namespace Spineless
         public void FireProjectile(Vector2 impulse)
         {
             projectiles.Launch(impulse);
-            units.AddUnitToScene(et, Camera2D.Position + new Vector2(ParentGame.ScreenWidth * offsets.X, ParentGame.ScreenHeight * offsets.Y));
         }
 
         private void CreateBackground()
