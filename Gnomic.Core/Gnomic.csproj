@@ -74,9 +74,11 @@
     <Compile Include="Entities\ClipEntity.cs" />
     <Compile Include="Graphics\IDrawable3D.cs" />
     <Compile Include="Entities\SpriteEntity.cs" />
+    <Compile Include="Physics\ConvertUnits.cs" />
     <Compile Include="Physics\PhysicsSettings.cs" />
     <Compile Include="Physics\PhysicsStructure.cs" />
     <Compile Include="Physics\PhysicsSystem.cs" />
+    <Compile Include="Physics\SimplePhysicsFactory.cs" />
     <Compile Include="UI\Image.cs" />
     <Compile Include="UI\OverlaySettings.cs" />
     <Compile Include="UI\Text.cs" />

@@ -32,14 +32,30 @@ namespace Spineless.Entities
 
         protected PhysicsStructure physics;
 
+        public override void ApplySettings(EntitySettings settings)
+        {
+            base.ApplySettings(settings);
+            this.Settings = CastSettings<SpinelessEntitySettings>(settings);
+        }
+
         public override void Initialize(GameScreen parentScreen)
         {
             base.Initialize(parentScreen);
+
+            Settings.Physics = SimplePhysicsFactory.CreateBox(
+                new Vector2(0,0), 100.0f, 100.0f);
 
             physics = Settings.Physics.CreateStructure(
                 parentScreen.Physics.World, this.Position);
             physics.SetVelocityLimit(
                 parentScreen.Physics.World, Settings.MaxSpeed, 0.0f);
+        }
+
+        public override void Update(float dt)
+        {
+            base.Update(dt);
+
+            this.Position = physics.Position;
         }
     }
 }

@@ -24,7 +24,7 @@ namespace Gnomic.Physics
 
             // Todo: pass in a PhysicsSystemSetting with gravity, worldMin and worldMax
             world = new World(
-                new Vector2(0.0f, -10.0f), 
+                new Vector2(0.0f, 20.0f),
                 new FarseerPhysics.Collision.AABB(Vector2.One * -500.0f, Vector2.One * 500.0f));
         }
 

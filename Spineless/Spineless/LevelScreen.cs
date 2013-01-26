@@ -12,6 +12,8 @@ using Gnomic;
 using Gnomic.Graphics;
 using Gnomic.Entities;
 
+using Spineless.Entities;
+
 namespace Spineless
 {
     public class LevelScreen : Gnomic.GameScreen
@@ -36,11 +38,12 @@ namespace Spineless
 
             base.AddEntity(background);
 
-            ClipEntitySettings ces = new ClipEntitySettings();
-            ces.ClipFile = "player_player.clipxml";
-            ces.Position = new Vector2(ParentGame.ScreenWidth / 2, ParentGame.ScreenHeight / 2);
-            ces.DefaultAnimName = "run-right";
-            base.AddEntity(ces.CreateEntity());
+            SpinelessEntitySettings settings = new SpinelessEntitySettings();
+            settings.ClipFile = "player_player.clipxml";
+            settings.Position = new Vector2(ParentGame.ScreenWidth / 2,
+                                            ParentGame.ScreenHeight / 2);
+            settings.DefaultAnimName = "run-right";
+            base.AddEntity(settings.CreateEntity());
 
             base.Initialize(game);
         }

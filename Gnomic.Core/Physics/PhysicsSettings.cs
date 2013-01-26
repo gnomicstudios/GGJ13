@@ -30,9 +30,10 @@ namespace Gnomic.Physics
         [ContentSerializer(Optional = true)]
         public List<FixtureSettings> Fixtures { get; set; }
 
-
         public BodySettings() 
         {
+            Fixtures = new List<FixtureSettings>();
+
             Inertia = 2f;
             Friction = 2f;
             IsStatic = false;
