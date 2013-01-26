@@ -59,8 +59,8 @@ namespace Spineless.Entities
             {
                 var body = BodyFactory.CreateRectangle(
                     parentScreen.Physics.World,
-                    Settings.Physics.Width,
-                    Settings.Physics.Height,
+                    Settings.Physics.Width * Settings.Scale.X,
+                    Settings.Physics.Height * Settings.Scale.Y,
                     Settings.Physics.Density,
                     ConvertUnits.ToSimUnits(Settings.Position));
                 body.BodyType = BodyType.Dynamic;
