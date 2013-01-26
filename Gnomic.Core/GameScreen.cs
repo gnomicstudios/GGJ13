@@ -398,7 +398,7 @@ namespace Gnomic
                 if (layer.Sprites.Count > 0)
                 {
                     LastViewMatrix2D = Camera2D.GetViewMatrix(layer.Parallax);
-                    spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend,
+                    spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.NonPremultiplied,
                                       null, null, null, null,
                                       LastViewMatrix2D);
 

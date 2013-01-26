@@ -30,6 +30,7 @@ namespace Spineless.Entities
         public float MoveForce = 50.0f;
         [ContentSerializer(Optional = true)]
         public float MaxSpeed = 0.1f;
+        [ContentSerializer(Optional = true)]
 
         public SpinelessPhysicsSettings Physics;
         
@@ -42,8 +43,22 @@ namespace Spineless.Entities
     public class SpinelessEntity : ClipEntity
     {
         new SpinelessEntitySettings Settings;
-
+        
         protected PhysicsStructure physics;
+        public PhysicsStructure Physics
+        { 
+            get { return physics; }
+        }
+
+        protected override void OnActivate()
+        {
+            base.OnActivate();
+        }
+
+        protected override void OnDeactivate()
+        {
+            base.OnDeactivate();
+        }
 
         public override void ApplySettings(EntitySettings settings)
         {
@@ -69,6 +84,8 @@ namespace Spineless.Entities
                 {
                     Bodies = { body }
                 };
+
+                physics.Enabled = Settings.ActivateByDefault;
             }
         }
 
@@ -76,7 +93,10 @@ namespace Spineless.Entities
         {
             base.Update(dt);
 
-            this.Position = physics.Position;
+            if (physics != null && physics.Enabled)
+            {
+                this.Position = physics.Position;
+            }
         }
     }
 }

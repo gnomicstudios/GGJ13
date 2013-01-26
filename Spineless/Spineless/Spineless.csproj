@@ -76,7 +76,9 @@
     <Compile Include="AI\BehaviourInterfaces.cs" />
     <Compile Include="AI\BehaviourTree.cs" />
     <Compile Include="Bow.cs" />
+    <Compile Include="EnemyManager.cs" />
     <Compile Include="Entities\AIControlledEntity.cs" />
+    <Compile Include="Entities\Enemy.cs" />
     <Compile Include="Entities\SpinelessEntity.cs" />
     <Compile Include="LevelScreen.cs" />
     <Compile Include="Entities\Princess.cs" />
