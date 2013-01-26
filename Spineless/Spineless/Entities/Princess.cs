@@ -12,13 +12,18 @@ namespace Spineless.Entities
         const int DRAG_RADIUS           = 100;
         const float POWER               = 0.05f;
         const float MAX_RATE_OF_FIRE    = 1.0f;
-        
+        const float FEAR_STRENGTH       = 2.0f;
+        const float FEAR_RATE_OF_CHANGE = 0.1f;
+
         internal Texture2D AimTexture;
 
         Vector2 dragStart, dragEnd, dragVector, fireOffset;
         float dragDistance, angle, lastFired;
         bool isDragging;
         
+        public float FearFactor { get; private set; }
+        float fearFactorTarget;
+
         public Princess()
         { 
         }
@@ -92,6 +97,16 @@ namespace Spineless.Entities
                     Fire();
                 }
             }
+
+            float fear = 0.0f;
+            foreach (Unit u in LevelScreen.Units.ActiveUnits)
+            {
+                float distToPrincess = Math.Abs(u.Physics.Bodies[0].Position.X - Physics.Bodies[0].Position.X);
+                fear += FEAR_STRENGTH / (distToPrincess * distToPrincess);
+            }
+            fearFactorTarget = fear;
+            FearFactor += (fearFactorTarget - FearFactor) * dt * FEAR_RATE_OF_CHANGE;
+            FearFactor = Math.Min(1.0f, FearFactor);
 
             base.Update(dt);
         }

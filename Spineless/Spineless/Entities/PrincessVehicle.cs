@@ -10,8 +10,12 @@ namespace Spineless.Entities
 {
     public class PrincessVehicle : SpinelessEntity
     {
-        bool isMoving;
+        Vector2 moveForce;
         Vector2 cameraOffset;
+
+        const float MOVE_FORCE = 15.0f;
+        const float STOP_FORCE = 40.0f;
+
         public override void Initialize(GameScreen parentScreen)
         {
             base.Initialize(parentScreen);
@@ -20,24 +24,47 @@ namespace Spineless.Entities
         }
 
         public override void Update(float dt)
-        {       
+        {
             base.Update(dt);
-            var iconMove = ((LevelScreen)ParentScreen).Hud.IconMove;
-            if ((Input.MouseJustDown(MouseButton.Left) && iconMove.DestRect.Contains(Input.MouseX, Input.MouseY)) ||
+            var iconMoveRight = ((LevelScreen)ParentScreen).Hud.IconMoveRight;
+            var iconMoveLeft = ((LevelScreen)ParentScreen).Hud.IconMoveLeft;
+            if ((Input.MouseJustDown(MouseButton.Left) && iconMoveRight.DestRect.Contains(Input.MouseX, Input.MouseY)) ||
                  Input.KeyJustDown(Keys.Right))
             {
-                isMoving = true;
-                ClipInstance.Play("moving");
+                moveForce = new Vector2(MOVE_FORCE, 0.0f);
+                ClipInstance.Play("moving", true, true, 1.0f);
             }
-            else if (isMoving && !(Input.MouseDown(MouseButton.Left) || Input.KeyDown(Keys.Right)))
+            else if ((Input.MouseJustDown(MouseButton.Left) && iconMoveLeft.DestRect.Contains(Input.MouseX, Input.MouseY)) ||
+                 Input.KeyJustDown(Keys.Left))
             {
-                isMoving = false;
-                ClipInstance.Stop();
+                moveForce = new Vector2(-MOVE_FORCE, 0.0f);
+                ClipInstance.Play("moving", true, false, 1.0f);
             }
             
-            if (isMoving)
+            if (moveForce != Vector2.Zero)
             {
-                physics.Bodies[0].ApplyForce(new Vector2(50f, 0.0f));
+                if (!Input.MouseDown(MouseButton.Left) && !Input.KeyDown(Keys.Right) && !Input.KeyDown(Keys.Left))
+                {
+                    moveForce = Vector2.Zero;
+                    ClipInstance.Stop();
+                }
+            }
+
+            if (moveForce != Vector2.Zero && moveForce.X * physics.Bodies[0].LinearVelocity.X >= 0)
+            {
+                physics.Bodies[0].ApplyForce(ref moveForce);
+            }
+            else 
+            {
+                if (physics.Bodies[0].LinearVelocity.Length() > 0.001f)
+                {
+                    Vector2 stopForce = -STOP_FORCE * Vector2.Normalize(physics.Bodies[0].LinearVelocity);
+                    physics.Bodies[0].ApplyForce(ref stopForce);
+                }
+                else
+                {
+                    physics.Bodies[0].LinearVelocity = Vector2.Zero;
+                }
             }
 
             // Follow!

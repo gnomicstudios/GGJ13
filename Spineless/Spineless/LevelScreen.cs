@@ -22,12 +22,15 @@ namespace Spineless
     {
         Camera2D camera;
         UnitManager units;
+        public UnitManager Units { get { return units; } }
         ProjectileManager projectiles;
         public HudScreen Hud;
         public PrincessVehicle Vehicle;
         public Princess lilMissBadAss;
         RevoluteJoint standingJoint;
 
+        const int PLAY_AREA_WIDTH_IN_SCREENS = 20;
+        const int PLAY_AREA_HEIGHT_IN_SCREENS = 30;
 
         public LevelScreen()
         {
@@ -39,8 +42,8 @@ namespace Spineless
 
             int floorHeight = 60;
             Physics = new Gnomic.Physics.PhysicsSystem(this);
-            Physics.CreateBorder(ParentGame.ScreenWidth,
-                                 ParentGame.ScreenHeight,
+            Physics.CreateBorder(ParentGame.ScreenWidth * PLAY_AREA_WIDTH_IN_SCREENS,
+                                 ParentGame.ScreenHeight, // * PLAY_AREA_HEIGHT_IN_SCREENS,
                                  new Vector2(0.0f, -floorHeight),
                                  /*friction*/ 0.0f);
 
@@ -93,18 +96,18 @@ namespace Spineless
         private void CreateBackground()
         {
             base.Layers.Add(new Layer2D(new Vector2(1.0f, 1.0f)));
-            base.Layers.Add(new Layer2D(new Vector2(0.4f, 1.0f)));
-            base.Layers.Add(new Layer2D(new Vector2(0.2f, 1.0f)));
-            base.Layers.Add(new Layer2D(new Vector2(0.0f, 1.0f)));
+            base.Layers.Add(new Layer2D(new Vector2(0.05f, 1.0f)));
+            base.Layers.Add(new Layer2D(new Vector2(0.2f, 0.2f)));
+            base.Layers.Add(new Layer2D(new Vector2(0.0f, 0.1f)));
 
-            for (int i = 0; i < 20; ++i)
+            for (int i = 0; i < PLAY_AREA_WIDTH_IN_SCREENS; ++i)
             {
                 SpriteEntity background = new SpriteEntity();
                 background.SpriteState =
                     new Gnomic.Anim.SpriteState(Content.Load<Texture2D>("Background_Ground"));
                 background.SpriteState.Transform.Origin = Vector2.Zero;
                 background.LayerID = 0;
-                background.Position = new Vector2(ParentGame.ScreenWidth * i, 0.0f);
+                background.Position = new Vector2(ParentGame.ScreenWidth * (i - 1), 0.0f);
                 base.AddEntity(background);
             
                 background = new SpriteEntity();
@@ -112,7 +115,7 @@ namespace Spineless
                     new Gnomic.Anim.SpriteState(Content.Load<Texture2D>("Background_Clouds"));
                 background.SpriteState.Transform.Origin = Vector2.Zero;
                 background.LayerID = 1;
-                background.Position = new Vector2(ParentGame.ScreenWidth * i, 0.0f);
+                background.Position = new Vector2(ParentGame.ScreenWidth * (i - 1), 0.0f);
                 base.AddEntity(background);
 
                 background = new SpriteEntity();
@@ -120,17 +123,17 @@ namespace Spineless
                     new Gnomic.Anim.SpriteState(Content.Load<Texture2D>("Background_Mountains"));
                 background.SpriteState.Transform.Origin = Vector2.Zero;
                 background.LayerID = 2;
-                background.Position = new Vector2(ParentGame.ScreenWidth * i, 0.0f);
-                base.AddEntity(background);
-
-                background = new SpriteEntity();
-                background.SpriteState =
-                    new Gnomic.Anim.SpriteState(Content.Load<Texture2D>("Background_Sky"));
-                background.SpriteState.Transform.Origin = Vector2.Zero;
-                background.LayerID = 3;
-                background.Position = new Vector2(ParentGame.ScreenWidth * i, 0.0f);
+                background.Position = new Vector2(ParentGame.ScreenWidth * (i - 1), 0.0f);
                 base.AddEntity(background);
             }
+
+            SpriteEntity sky = new SpriteEntity();
+            sky.SpriteState =
+                new Gnomic.Anim.SpriteState(Content.Load<Texture2D>("Background_Sky"));
+            sky.SpriteState.Transform.Origin = Vector2.Zero;
+            sky.LayerID = 3;
+            sky.Position = new Vector2(0.0f, 0.0f);
+            base.AddEntity(sky);
         }
 
         public override void Update(float dt)

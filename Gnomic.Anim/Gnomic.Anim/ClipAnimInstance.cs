@@ -36,6 +36,18 @@ namespace Gnomic.Anim
             }
         }
 
+        float speedModifier = 1.0f;
+        public float SpeedModifier
+        {
+            get { return speedModifier; }
+            set
+            {
+                System.Diagnostics.Debug.Assert(value > 0);
+                speedModifier = value;
+                durationInSeconds = (1f / speedModifier) * ((float)Anim.Duration / Anim.Framerate);
+            }
+        }
+
         ClipInstance parentClipInstance;
         float durationInSeconds;
         AnimPlayingState playingState = AnimPlayingState.Stopped;
@@ -58,18 +70,25 @@ namespace Gnomic.Anim
         public void Play(ClipAnim anim, bool loop, bool forwards, float speedMod=1f)
         {
             System.Diagnostics.Debug.Assert(anim != null);
+            System.Diagnostics.Debug.Assert(speedMod > 0.0f);
 
             Anim = anim;
             AnimPos = 0.0f;
             Loop = loop;
+            speedModifier = speedMod;
             durationInSeconds =
-                (1f / speedMod) * ((float)Anim.Duration / Anim.Framerate);
+                (1f / speedModifier) * ((float)Anim.Duration / Anim.Framerate);
             playingState = forwards ? AnimPlayingState.Playing : AnimPlayingState.PlayingInReverse;
 
             for (int i = 0; i < Anim.JointAnims.Count; ++i)
             {
                 JointAnimStates[i] = Anim.JointAnims[i].CreateState();
             }
+        }
+
+        public void Stop()
+        {
+            playingState = AnimPlayingState.Stopped;
         }
 
         public void Update(float dt)
