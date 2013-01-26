@@ -45,10 +45,13 @@ namespace Spineless.Entities
             Settings.Physics = SimplePhysicsFactory.CreateBox(
                 new Vector2(0,0), 100.0f, 100.0f);
 
-            physics = Settings.Physics.CreateStructure(
-                parentScreen.Physics.World, this.Position);
-            physics.SetVelocityLimit(
-                parentScreen.Physics.World, Settings.MaxSpeed, 0.0f);
+            if (Settings.Physics != null)
+            {
+                physics = Settings.Physics.CreateStructure(
+                    parentScreen.Physics.World, this.Position);
+                physics.SetVelocityLimit(
+                    parentScreen.Physics.World, Settings.MaxSpeed, 0.0f);
+            }
         }
 
         public override void Update(float dt)
