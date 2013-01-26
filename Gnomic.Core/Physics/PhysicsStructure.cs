@@ -24,12 +24,17 @@ namespace Gnomic.Physics
         internal Vector2 position;
         public Vector2 Position 
         {
-            get { return Bodies[0].Position; }
+            get
+            {
+                return ConvertUnits.ToDisplayUnits(Bodies[0].Position);
+            }
             set 
             {
-                if (position != value)
+                Vector2 simVal = ConvertUnits.ToSimUnits(value);
+
+                if (position != simVal)
                 {
-                    position = value;
+                    position = simVal;
 
                     if (Bodies.Count == 0)
                         return;

@@ -27,6 +27,9 @@ namespace Spineless
         public override void Initialize(GnomicGame game)
         {
             Physics = new Gnomic.Physics.PhysicsSystem(this);
+            Physics.CreateBorder(ParentGame.ScreenWidth,
+                                 ParentGame.ScreenHeight,
+                                 Vector2.Zero);
 
             // Create a 3D camera
             base.Camera2D = camera = new Camera2D(ParentGame.GraphicsDevice.Viewport);
