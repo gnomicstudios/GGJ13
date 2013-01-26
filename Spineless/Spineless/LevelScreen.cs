@@ -27,6 +27,9 @@ namespace Spineless
         public override void Initialize(GnomicGame game)
         {
             Physics = new Gnomic.Physics.PhysicsSystem(this);
+            Physics.CreateBorder(ParentGame.ScreenWidth,
+                                 ParentGame.ScreenHeight,
+                                 Vector2.Zero);
 
             // Create a 3D camera
             base.Camera2D = camera = new Camera2D(ParentGame.GraphicsDevice.Viewport);
@@ -38,6 +41,7 @@ namespace Spineless
             settings.Position = new Vector2(ParentGame.ScreenWidth / 2,
                                             ParentGame.ScreenHeight / 2);
             settings.DefaultAnimName = "run-right";
+            settings.Physics = new SpinelessPhysicsSettings();
             base.AddEntity(settings.CreateEntity());
 
 
