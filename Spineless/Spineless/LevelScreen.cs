@@ -19,7 +19,7 @@ namespace Spineless
     public class LevelScreen : Gnomic.GameScreen
     {
         Camera2D camera;
-        EnemyManager enemies;
+        UnitManager units;
 
         public LevelScreen()
         {
@@ -58,15 +58,15 @@ namespace Spineless
             lilMissBadAss.AimTexture                = new Texture2D(lilMissBadAss.ParentScreen.ParentGame.GraphicsDevice, 1, 1);
             lilMissBadAss.AimTexture.SetData<Color>(new Color[] { Color.White });
 
-            enemies = new EnemyManager(this);
-            AddEnemy(EnemyType.Grunt);
+            units = new UnitManager(this);
+            AddUnit(UnitType.Grunt);
 
             base.Initialize(game);
         }
 
-        void AddEnemy(EnemyType et)
+        void AddUnit(UnitType et)
         {
-            enemies.AddEnemyToScene(et, Camera2D.Position + new Vector2(ParentGame.ScreenWidth * 0.9f, ParentGame.ScreenHeight * 0.7f));
+            units.AddUnitToScene(et, Camera2D.Position + new Vector2(ParentGame.ScreenWidth * 0.9f, ParentGame.ScreenHeight * 0.7f));
         }
 
         private void CreateBackground()

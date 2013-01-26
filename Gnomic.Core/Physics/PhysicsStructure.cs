@@ -140,8 +140,12 @@ namespace Gnomic.Physics
                 }
             }
         }
+
+        public void ApplyForceToBody(
+            int index, float magnitude, Vector2 direction)
+        {
+            Bodies[index].ApplyForce(ConvertUnits.ToSimUnits(magnitude) *
+                                     ConvertUnits.ToSimUnits(direction));
+        }
     }
-
-
-
 }
