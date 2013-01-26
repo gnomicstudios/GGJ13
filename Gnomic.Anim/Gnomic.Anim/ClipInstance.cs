@@ -73,30 +73,40 @@ namespace Gnomic.Anim
 
         public void Play(ClipAnim anim)
         {
-            Play(anim, true);
+            Play(anim, true, true);
         }
-
-        public void Play(ClipAnim anim, bool loop, float speedMod=1f)
-        {
-            currentAnim.Play(anim, loop, speedMod);
-        }
-
+        
         public void Play(string animName)
         {
-            Play(animName, true);
+            Play(animName, true, true);
         }
 
-        public void Play(string animName, bool loop, float speedMod=1f)
+        public void Play(string animName, bool loop, float speedMod = 1f)
+        {
+            Play(animName, loop, true, speedMod);
+        }
+
+        public void Play(string animName, bool loop, bool forwards, float speedMod = 1f)
         {
             ClipAnim animToPlay = Clip.AnimSet[animName];
             System.Diagnostics.Debug.Assert(animToPlay != null);
 
-            Play(animToPlay, loop, speedMod);
+            Play(animToPlay, loop, forwards, speedMod);
+        }
+
+        public void Play(ClipAnim anim, bool loop, float speedMod = 1f)
+        {
+            currentAnim.Play(anim, loop, speedMod);
+        }
+
+        public void Play(ClipAnim anim, bool loop, bool forwards, float speedMod = 1f)
+        {
+            currentAnim.Play(anim, loop, forwards, speedMod);
         }
 
         public void Stop()
         {
-            currentAnim.Anim = null;
+            currentAnim.Stop();
         }
         
         public void Update(float dt)
