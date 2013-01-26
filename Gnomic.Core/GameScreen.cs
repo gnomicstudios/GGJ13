@@ -44,6 +44,7 @@ namespace Gnomic
             get { return camera2D; }
             set { camera2D = value; }
         }
+        public Matrix LastViewMatrix2D;
 
         PhysicsSystem physics;
         public PhysicsSystem Physics
@@ -63,7 +64,8 @@ namespace Gnomic
         protected Action<int> PostDrawGroup;
         
         private Dictionary<int, List<IDrawable3D>> DrawGroups = new Dictionary<int, List<IDrawable3D>>(10);
-        protected List<IDrawable2D> drawable2DEntities = new List<IDrawable2D>(20);
+        public List<Layer2D> Layers = new List<Layer2D>();
+
 
         // Active entities
         private List<Entity> activeEntities = new List<Entity>(200);
@@ -388,15 +390,24 @@ namespace Gnomic
                 }
             }
 
-            // Draw 2D layer with SpriteBatch
-            if (drawable2DEntities.Count > 0)
+
+            // Draw 2D layers with SpriteBatch
+            for (int i = Layers.Count - 1; i >= 0; --i)
             {
-                spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, null, null, null);
-                foreach (IDrawable2D e in drawable2DEntities)
+                Layer2D layer = Layers[i];
+                if (layer.Sprites.Count > 0)
                 {
-                    if (e.IsVisible) e.Draw2D(spriteBatch);
+                    LastViewMatrix2D = Camera2D.GetViewMatrix(layer.Parallax);
+                    spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend,
+                                      null, null, null, null,
+                                      LastViewMatrix2D);
+
+                    foreach (IDrawable2D e in layer.Sprites)
+                    {
+                        if (e.IsVisible) e.Draw2D(spriteBatch);
+                    }
+                    spriteBatch.End();
                 }
-                spriteBatch.End();
             }
         }
 
@@ -456,7 +467,7 @@ namespace Gnomic
                     var drawble2D = e as IDrawable2D;
                     if (drawble2D != null)
                     {
-                        drawable2DEntities.Remove(drawble2D);
+                        Layers[drawble2D.LayerID].Sprites.Remove(drawble2D);
                     }
                     var drawble3D = e as IDrawable3D;
                     if (drawble3D != null)
@@ -482,7 +493,11 @@ namespace Gnomic
                     var drawble2D = e as IDrawable2D;
                     if (drawble2D != null)
                     {
-                        drawable2DEntities.Add(drawble2D);
+                        while (drawble2D.LayerID >= Layers.Count)
+                        {
+                            Layers.Add(new Layer2D(Vector2.One));
+                        }
+                        Layers[drawble2D.LayerID].Sprites.Add(drawble2D);
                     }
                     var drawble3D = e as IDrawable3D;
                     if (drawble3D != null)
