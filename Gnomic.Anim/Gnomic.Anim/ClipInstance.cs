@@ -94,6 +94,11 @@ namespace Gnomic.Anim
             Play(animToPlay, loop, speedMod);
         }
 
+        public void Stop()
+        {
+            currentAnim.Anim = null;
+        }
+        
         public void Update(float dt)
         {
             currentAnim.Update(dt);
@@ -103,7 +108,7 @@ namespace Gnomic.Anim
         public void ComputeAbsoluteTransforms()
         {
             Vector2 localFlipping = flipping;
-            if (currentAnim != null)
+            if (currentAnim != null && currentAnim.Anim != null)
             {
                 localFlipping *= currentAnim.Anim.Flipping;
             }

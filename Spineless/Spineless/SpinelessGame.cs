@@ -18,10 +18,12 @@ namespace Spineless
 		public override void Initialize(Microsoft.Xna.Framework.Graphics.IGraphicsDeviceService deviceSvc)
 		{
             AddScreen("level", new LevelScreen());
+            AddScreen("hud", new HudScreen());
 
 			base.Initialize(deviceSvc);
 
             GetScreen("level").Activate();
+            GetScreen("hud").Activate();
 		}
     }
 }

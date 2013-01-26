@@ -66,6 +66,12 @@
       <Processor>TextureProcessor</Processor>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="IconMove.png">
+      <Name>IconMove</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="knightSheet.png">
       <Name>knightSheet</Name>
       <Importer>TextureImporter</Importer>
@@ -74,6 +80,12 @@
     </Content>
     <Content Include="player_player.clipxml">
       <Name>player_player</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="siegeTowerSheet.png">
+      <Name>siegeTowerSheet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="princessSheet.png">
@@ -118,6 +130,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="siegeTower.clipxml">
+      <Name>siegeTower</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="princess.clipxml">
       <Name>princess</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
