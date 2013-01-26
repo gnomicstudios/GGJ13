@@ -9,35 +9,23 @@ using Spineless;
 
 namespace Spineless.AI
 {
-    // TODO: Add interfaces here!
-
     public interface IMoveable
     {
         Vector2 Position { get; set; }
-
-#if false
-        Vector2 Heading { get; set; }
         float Speed { get; set; }
 
-        void MoveTowards();
-        void Stop();
-#endif
+        void MoveTowards(Vector2 position);
     }
 
-#if false
-    public class SetHeadingAction<IMoveable> : Behaviour<IMoveable>
+    public class SetSpeedAction<T> : Behaviour<T> where T: IMoveable
     {
-        Vector2 _heading;
+        float _speed;
 
-        public SetHeadingAction(Vector2 heading)
+        public SetSpeedAction(float speed) { _speed = speed; }
+        public override bool Evaluate(T entity)
         {
-            _heading = heading;
-        }
-
-        public override bool Evaluate(IMoveable entity)
-        {
-            entity.Heading = _heading;
+            entity.Speed = _speed;
+            return true;
         }
     }
-#endif
 }
