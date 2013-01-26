@@ -409,6 +409,11 @@ namespace Gnomic
                     spriteBatch.End();
                 }
             }
+
+            if (Physics.DebugView != null)
+            {
+                Physics.RenderDebugView();
+            }
         }
 
         protected void ProcessCommands(float dt)
