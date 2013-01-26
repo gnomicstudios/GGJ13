@@ -51,18 +51,19 @@ namespace Gnomic.Anim
         {
             Play(anim, true);
         }
-        public void Play(ClipAnim anim, bool loop)
+        public void Play(ClipAnim anim, bool loop, float speedMod=1f)
         {
-            Play(anim, loop, true);
+            Play(anim, loop, true, speedMod);
         }
-        public void Play(ClipAnim anim, bool loop, bool forwards)
+        public void Play(ClipAnim anim, bool loop, bool forwards, float speedMod=1f)
         {
             System.Diagnostics.Debug.Assert(anim != null);
 
             Anim = anim;
             AnimPos = 0.0f;
             Loop = loop;
-            durationInSeconds = (float)Anim.Duration / Anim.Framerate;
+            durationInSeconds =
+                (1f / speedMod) * ((float)Anim.Duration / Anim.Framerate);
             playingState = forwards ? AnimPlayingState.Playing : AnimPlayingState.PlayingInReverse;
 
             for (int i = 0; i < Anim.JointAnims.Count; ++i)

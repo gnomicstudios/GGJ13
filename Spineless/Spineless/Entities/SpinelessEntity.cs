@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -83,6 +83,7 @@ namespace Spineless.Entities
                     ConvertUnits.ToSimUnits(Settings.Position),
                     Settings.Physics.Offset);
                 body.BodyType = BodyType.Dynamic;
+                body.Friction = 0.0f;
 
                 physics = new PhysicsStructure
                 {

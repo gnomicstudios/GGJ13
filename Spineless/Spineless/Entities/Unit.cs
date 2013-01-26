@@ -17,8 +17,6 @@ namespace Spineless.Entities
         Knight
     }
 
-    public interface IBaseUnit : IMoveable, IPerceptive { }
-
     public class Unit : SpinelessEntity, IBaseUnit
     {
         public UnitType UnitType;
@@ -29,20 +27,19 @@ namespace Spineless.Entities
         public override void Update(float dt)
         {
             base.Update(dt);
-            Behaviour.Evaluate(this);
+            Behaviour.Evaluate((IBaseUnit)this);
         }
 
         #region IMoveable
 
-#if false
-        public Vector2 Heading { get; set; }
         public float Speed { get; set; }
-
-        public void MoveTowards()
+        public void MoveTowards(Vector2 target)
         {
-            physics.ApplyForceToBody(0, Speed, Heading);
+            Vector2 direction = target - Position;
+            direction.Normalize();
+
+            physics.ApplyForceToBody(0, Speed, direction);
         }
-#endif
 
         #endregion
 
@@ -54,6 +51,10 @@ namespace Spineless.Entities
         {
             Selected = this.UnitManager.FindNearestTypeTo(type, this);
         }
+
+        #endregion
+
+        #region IBaseUnit
 
         #endregion
     }
