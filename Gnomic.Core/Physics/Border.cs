@@ -37,7 +37,7 @@ namespace Gnomic.Physics
             edgeLeft = BodyFactory.CreateEdge(world, new Vector2(simOffsetWidth, simOffsetHeight), new Vector2(simOffsetWidth, simOffsetHeight + simHeight));
             edgeTop = BodyFactory.CreateEdge(world, new Vector2(simOffsetWidth, simOffsetHeight), new Vector2(simOffsetWidth + simWidth, simOffsetHeight));
             edgeRight = BodyFactory.CreateEdge(world, new Vector2(simOffsetWidth + simWidth, simOffsetHeight), new Vector2(simOffsetWidth + simWidth, simOffsetHeight + simHeight));
-            edgeBottom = BodyFactory.CreateEdge(world, new Vector2(simOffsetWidth, simOffsetHeight + simHeight), new Vector2(simOffsetWidth + simWidth, simOffsetHeight + simHeight));
+            edgeBottom = BodyFactory.CreateEdge(world, new Vector2(0, simOffsetHeight + simHeight), new Vector2(simOffsetWidth + simWidth + 1000, simOffsetHeight + simHeight));
 
             edgeLeft.CollisionCategories    = Category.Cat8; //}
             edgeTop.CollisionCategories     = Category.Cat8; //} i.e. Border

@@ -1,33 +1,28 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media;
 using FarseerPhysics.Dynamics.Joints;
 using Gnomic;
-using Gnomic.Graphics;
+using Gnomic.Audio;
 using Gnomic.Entities;
+using Gnomic.Graphics;
 using Gnomic.Physics;
-
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using Spineless.Entities;
 
 namespace Spineless
 {
     public class LevelScreen : Gnomic.GameScreen
     {
-        Camera2D camera;
-        UnitManager units;
-        ProjectileManager projectiles;
         public HudScreen Hud;
         public PrincessVehicle Vehicle;
         public Princess lilMissBadAss;
-        RevoluteJoint standingJoint;
+        public AudioManager Audio;
 
+        private Camera2D camera;
+        private UnitManager units;
+        private ProjectileManager projectiles;
+        private RevoluteJoint standingJoint;
+        
         public LevelScreen()
         {
         }
@@ -72,6 +67,10 @@ namespace Spineless
             AddUnit(UnitType.Knight, new Vector2(0.5f, 0.7f));
 
             projectiles = new ProjectileManager(this);
+                        
+            this.Audio = this.ParentGame.Audio;
+            Audio.AddMediaPlayerSong("heartbeat", "Audio/heartbeat");
+            Cue music = Audio.PlaySong("heartbeat");
 
             base.Initialize(game);
 
@@ -79,39 +78,9 @@ namespace Spineless
             Physics.World.AddJoint(standingJoint);
         }
 
-        void AddUnit(UnitType et, Vector2 offsets)
+        private void AddUnit(UnitType et, Vector2 offsets)
         {
             units.AddUnitToScene(et, Camera2D.Position + new Vector2(ParentGame.ScreenWidth * offsets.X, ParentGame.ScreenHeight * offsets.Y));
-        }
-
-        public void FireProjectile(Vector2 startPos, Vector2 impulse)
-        {
-            projectiles.Launch(startPos, impulse);
-        }
-
-        public void Splash(Vector2 pos, float radius, float maxDamage)
-        {
-            foreach (List<Unit> us in units.UnitLists.Values)
-            {
-                foreach (Unit u in us)
-                {
-                    if (u.Health > 0)
-                    {
-                        float distance = Vector2.Distance(pos, u.Position);
-
-                        if (distance <= radius)
-                        {
-                            // push
-                            Vector2 blastVector = u.Position - pos;
-                            blastVector.Y *= -1; // make things always fly
-                            u.Physics.Bodies[0].ApplyLinearImpulse(blastVector);
-
-                            // remove health
-                            u.Health -= (1.0f - distance / radius) * maxDamage; 
-                        }
-                    }
-                }
-            }
         }
 
         private void CreateBackground()
@@ -130,7 +99,7 @@ namespace Spineless
                 background.LayerID = 0;
                 background.Position = new Vector2(ParentGame.ScreenWidth * i, 0.0f);
                 base.AddEntity(background);
-            
+
                 background = new SpriteEntity();
                 background.SpriteState =
                     new Gnomic.Anim.SpriteState(Content.Load<Texture2D>("Background_Clouds"));
@@ -154,6 +123,36 @@ namespace Spineless
                 background.LayerID = 3;
                 background.Position = new Vector2(ParentGame.ScreenWidth * i, 0.0f);
                 base.AddEntity(background);
+            }
+        }
+
+        public void FireProjectile(Vector2 startPos, Vector2 impulse)
+        {
+            projectiles.Launch(startPos, impulse);
+        }
+
+        public void Splash(Vector2 pos, float radius, float maxDamage)
+        {
+            foreach (List<Unit> us in units.UnitLists.Values)
+            {
+                foreach (Unit u in us)
+                {
+                    if (u.Health > 0)
+                    {
+                        float distance = Vector2.Distance(pos, u.Position);
+
+                        if (distance <= radius)
+                        {
+                            // push
+                            Vector2 blastVector = u.Position - pos;
+                            //blastVector.Y *= -1; // make things always fly
+                            u.Physics.Bodies[0].ApplyLinearImpulse(blastVector);
+
+                            // remove health
+                            u.Health -= (1.0f - distance / radius) * maxDamage; 
+                        }
+                    }
+                }
             }
         }
 
