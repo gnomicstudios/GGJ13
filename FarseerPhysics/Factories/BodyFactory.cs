@@ -75,16 +75,20 @@ namespace FarseerPhysics.Factories
 
         public static Body CreateRectangle(World world, float width, float height, float density, object userData)
         {
-            return CreateRectangle(world, width, height, density, Vector2.Zero, userData);
+            return CreateRectangle(world, width, height, density, Vector2.Zero, Vector2.Zero, userData);
         }
 
         public static Body CreateRectangle(World world, float width, float height, float density, Vector2 position)
         {
-            return CreateRectangle(world, width, height, density, position, null);
+            return CreateRectangle(world, width, height, density, position, Vector2.Zero, null);
+        }
+        
+        public static Body CreateRectangle(World world, float width, float height, float density, Vector2 position, Vector2 shapeOffset)
+        {
+            return CreateRectangle(world, width, height, density, position, shapeOffset, null);
         }
 
-        public static Body CreateRectangle(World world, float width, float height, float density, Vector2 position,
-                                           object userData)
+        public static Body CreateRectangle(World world, float width, float height, float density, Vector2 position, Vector2 shapeOffset, object userData)
         {
             if (width <= 0)
                 throw new ArgumentOutOfRangeException("width", "Width must be more than 0 meters");
@@ -94,6 +98,10 @@ namespace FarseerPhysics.Factories
 
             Body newBody = CreateBody(world, position);
             Vertices rectangleVertices = PolygonTools.CreateRectangle(width / 2, height / 2);
+            for (int i = 0; i < rectangleVertices.Count; ++i)
+            {
+                rectangleVertices[i] = rectangleVertices[i] + shapeOffset;
+            }
             PolygonShape rectangleShape = new PolygonShape(rectangleVertices, density);
             newBody.CreateFixture(rectangleShape, userData);
 
