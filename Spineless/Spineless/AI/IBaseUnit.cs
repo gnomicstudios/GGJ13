@@ -5,14 +5,15 @@ using System.Text;
 
 namespace Spineless.AI
 {
-    public interface IBaseUnit : IMoveable, IPerceptive
+    public interface IBaseUnit : IMoveable, IPerceptive, IAnimated,
+        IHealthy, IAggressive
     {
 
     }
 
     public class MoveTowardsSelectedAction<T> : Behaviour<T> where T: IBaseUnit
     {
-        public override bool Evaluate(T entity)
+        public override bool Evaluate(T entity, float dt)
         {
             entity.MoveTowards(entity.Selected.Position);
             return true;
@@ -23,7 +24,7 @@ namespace Spineless.AI
     {
         float _dist;
         public CloseToSelectedCheck(float dist) { _dist = dist; }
-        public override bool Evaluate(T entity)
+        public override bool Evaluate(T entity, float dt)
         {
             if (entity.Selected == null)
             {

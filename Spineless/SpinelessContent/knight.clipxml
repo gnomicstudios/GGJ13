@@ -20,12 +20,92 @@
       <ParentId>0</ParentId>
       <Name>knight.head0</Name>
     </Joint>
-    <DrawOrder>1 2 3 4</DrawOrder>
+    <Joint>
+      <ParentId>0</ParentId>
+      <Name>knight.sword0</Name>
+    </Joint>
+    <Joint>
+      <ParentId>0</ParentId>
+      <Name>knight.rig0</Name>
+    </Joint>
+    <Joint>
+      <ParentId>0</ParentId>
+      <Name>knight.fx0</Name>
+    </Joint>
+    <Joint>
+      <ParentId>0</ParentId>
+      <Name>knight.fx1</Name>
+    </Joint>
+    <DrawOrder>1 2 3 4 5 6 7 8</DrawOrder>
     <AnimSet>
       <Anim>
         <Name>rig</Name>
         <Duration>1</Duration>
         <Framerate>12</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>knight.rig0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-100.75 -30.5</Pos>
+              <Scale>1 1</Scale>
+              <Origin>62.951 31.051</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>knight.rig0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.rig0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>0 0 127 63</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>knight.sword0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>13.55 -13</Pos>
+              <Scale>1 1</Scale>
+              <Origin>9.051 31.001</Origin>
+              <Rot>1.8222986022392547</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>knight.sword0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.sword0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>52 140 19 62</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
         <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
           <JointName>knight.head0</JointName>
           <Frame>
@@ -33,7 +113,7 @@
             <Transform>
               <Pos>0.25 -53.4</Pos>
               <Scale>1 1</Scale>
-              <Origin>20.9 18.801</Origin>
+              <Origin>20.9 18.551</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -53,7 +133,7 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>knightSheet</Tex>
-            <TexRect>57 62 43 40</TexRect>
+            <TexRect>57 99 43 40</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -65,7 +145,7 @@
             <Transform>
               <Pos>1.5 -27.7</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.15 27.051</Origin>
+              <Origin>27.15 26.801</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -85,7 +165,7 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>knightSheet</Tex>
-            <TexRect>119 0 55 56</TexRect>
+            <TexRect>188 59 55 56</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -97,7 +177,7 @@
             <Transform>
               <Pos>22.55 -28.5</Pos>
               <Scale>1.0000152587890625 1.0000152587890625</Scale>
-              <Origin>16.451 24.401</Origin>
+              <Origin>16.401 24.151</Origin>
               <Rot>0.22280112206046507</Rot>
             </Transform>
           </Frame>
@@ -117,7 +197,7 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>knightSheet</Tex>
-            <TexRect>101 59 34 50</TexRect>
+            <TexRect>0 171 34 50</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -129,7 +209,7 @@
             <Transform>
               <Pos>3.05 -1</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.349999999999998 6.501</Origin>
+              <Origin>27.349999999999998 6.251</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -149,13 +229,33 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>knightSheet</Tex>
-            <TexRect>0 62 56 14</TexRect>
+            <TexRect>0 99 56 14</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
         </JointAnim>
         <JointAnim Type="Gnomic.Anim.JointAnimTexture">
           <JointName>knight.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.fx0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.fx1</JointName>
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex/>
@@ -170,13 +270,45 @@
         <Duration>1</Duration>
         <Framerate>12</Framerate>
         <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>knight.sword0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>13.55 -13</Pos>
+              <Scale>1 1</Scale>
+              <Origin>9.051 31.001</Origin>
+              <Rot>1.8222986022392547</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>knight.sword0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.sword0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>52 140 19 62</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
           <JointName>knight.head0</JointName>
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Transform>
               <Pos>0.25 -53.4</Pos>
               <Scale>1 1</Scale>
-              <Origin>20.9 18.801</Origin>
+              <Origin>20.9 18.551</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -196,7 +328,7 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>knightSheet</Tex>
-            <TexRect>57 62 43 40</TexRect>
+            <TexRect>57 99 43 40</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -208,7 +340,7 @@
             <Transform>
               <Pos>1.5 -27.7</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.15 27.051</Origin>
+              <Origin>27.15 26.801</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -228,7 +360,7 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>knightSheet</Tex>
-            <TexRect>119 0 55 56</TexRect>
+            <TexRect>188 59 55 56</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -240,7 +372,7 @@
             <Transform>
               <Pos>22.55 -28.5</Pos>
               <Scale>1.0000152587890625 1.0000152587890625</Scale>
-              <Origin>16.451 24.401</Origin>
+              <Origin>16.401 24.151</Origin>
               <Rot>0.22280112206046507</Rot>
             </Transform>
           </Frame>
@@ -260,7 +392,7 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>knightSheet</Tex>
-            <TexRect>101 59 34 50</TexRect>
+            <TexRect>0 171 34 50</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -272,7 +404,7 @@
             <Transform>
               <Pos>3.05 -1</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.349999999999998 6.501</Origin>
+              <Origin>27.349999999999998 6.251</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -292,7 +424,7 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>knightSheet</Tex>
-            <TexRect>0 62 56 14</TexRect>
+            <TexRect>0 99 56 14</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -307,19 +439,104 @@
             <Visible>false</Visible>
           </Frame>
         </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.rig0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.fx0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.fx1</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
       </Anim>
       <Anim>
         <Name>walk</Name>
         <Duration>6</Duration>
         <Framerate>12</Framerate>
         <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>knight.sword0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>8.35 -13.95</Pos>
+              <Scale>1 1</Scale>
+              <Origin>9.001 30.901</Origin>
+              <Rot>1.9038560464101684</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Transform>
+              <Pos>26.85 -34.45</Pos>
+              <Scale>1 1</Scale>
+              <Origin>9.001 30.501</Origin>
+              <Rot>1.1921118640166053</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>knight.sword0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.sword0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>52 140 19 62</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>52 140 19 62</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
           <JointName>knight.head0</JointName>
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Transform>
               <Pos>2.5 -57.4</Pos>
-              <Scale>1.0000152587890625 1.0000152587890625</Scale>
-              <Origin>20.95 18.751</Origin>
+              <Scale>1 1</Scale>
+              <Origin>20.95 18.501</Origin>
               <Rot>0.11275531107675586</Rot>
             </Transform>
           </Frame>
@@ -328,7 +545,7 @@
             <Transform>
               <Pos>3.5 -56.4</Pos>
               <Scale>1 1</Scale>
-              <Origin>20.9 18.801</Origin>
+              <Origin>20.9 18.551</Origin>
               <Rot>0.0960626173641392</Rot>
             </Transform>
           </Frame>
@@ -355,14 +572,14 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>knightSheet</Tex>
-            <TexRect>57 62 43 40</TexRect>
+            <TexRect>57 99 43 40</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>3</FrameNumber>
             <Tex>knightSheet</Tex>
-            <TexRect>57 62 43 40</TexRect>
+            <TexRect>57 99 43 40</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -374,7 +591,7 @@
             <Transform>
               <Pos>3.85 -28.65</Pos>
               <Scale>1 1</Scale>
-              <Origin>33.1 29.401</Origin>
+              <Origin>33.1 29.151</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -383,7 +600,7 @@
             <Transform>
               <Pos>1.6 -28.3</Pos>
               <Scale>1 1</Scale>
-              <Origin>28.3 27.851</Origin>
+              <Origin>28.3 27.601</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -410,14 +627,14 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>knightSheet</Tex>
-            <TexRect>0 0 59 61</TexRect>
+            <TexRect>128 57 59 61</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>3</FrameNumber>
             <Tex>knightSheet</Tex>
-            <TexRect>60 0 58 58</TexRect>
+            <TexRect>191 0 58 58</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -429,7 +646,7 @@
             <Transform>
               <Pos>22.3 -28.5</Pos>
               <Scale>1 1</Scale>
-              <Origin>16.5 24.401</Origin>
+              <Origin>16.451 24.151</Origin>
               <Rot>0.13064509569936314</Rot>
             </Transform>
           </Frame>
@@ -438,7 +655,7 @@
             <Transform>
               <Pos>23.55 -28.75</Pos>
               <Scale>1 1</Scale>
-              <Origin>16.401 24.450999999999997</Origin>
+              <Origin>16.401 24.200999999999997</Origin>
               <Rot>0.09347668794567225</Rot>
             </Transform>
           </Frame>
@@ -465,14 +682,14 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>knightSheet</Tex>
-            <TexRect>101 59 34 50</TexRect>
+            <TexRect>0 171 34 50</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>3</FrameNumber>
             <Tex>knightSheet</Tex>
-            <TexRect>101 59 34 50</TexRect>
+            <TexRect>0 171 34 50</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -484,7 +701,7 @@
             <Transform>
               <Pos>3.05 -1</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.349999999999998 6.501</Origin>
+              <Origin>27.349999999999998 6.251</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -504,13 +721,1098 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>knightSheet</Tex>
-            <TexRect>0 62 56 14</TexRect>
+            <TexRect>0 99 56 14</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
         </JointAnim>
         <JointAnim Type="Gnomic.Anim.JointAnimTexture">
           <JointName>knight.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.rig0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.fx0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.fx1</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+      </Anim>
+      <Anim>
+        <Name>attackA</Name>
+        <Duration>6</Duration>
+        <Framerate>12</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.fx0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>knight.fx1</JointName>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>-5.75 -22.1</Pos>
+              <Scale>1 1</Scale>
+              <Origin>62.951 31.051</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>knight.fx1</JointName>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>204</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.fx1</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>0 0 127 63</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>knight.sword0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-30.45 -46.1</Pos>
+              <Scale>0.999969482421875 0.999969482421875</Scale>
+              <Origin>8.700999999999999 57.851</Origin>
+              <Rot>-1.291785461502783</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Transform>
+              <Pos>-30.45 -46.1</Pos>
+              <Scale>0.9999847412109375 0.9999847412109375</Scale>
+              <Origin>8.700999999999999 57.851</Origin>
+              <Rot>-1.2090993696618937</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>12.9 -22.5</Pos>
+              <Scale>1 1</Scale>
+              <Origin>8.501 58.051</Origin>
+              <Rot>1.8540466782263072</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Transform>
+              <Pos>12.9 -22.5</Pos>
+              <Scale>1 1</Scale>
+              <Origin>8.501 58.051</Origin>
+              <Rot>1.8540466782263072</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>knight.sword0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.sword0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>52 140 19 62</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>52 140 19 62</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>52 140 19 62</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>52 140 19 62</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>knight.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-5.7 -55.35</Pos>
+              <Scale>1.000030517578125 1.02825927734375</Scale>
+              <Origin>20.801 18.551</Origin>
+              <Rot>-0.25216060886582564</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Transform>
+              <Pos>0.25 -53.4</Pos>
+              <Scale>1.059814453125 1</Scale>
+              <Origin>20.9 18.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>10.6 -50.7</Pos>
+              <Scale>1 1</Scale>
+              <Origin>20.851 18.651</Origin>
+              <Rot>0.27043042657598726</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Transform>
+              <Pos>2.75 -52.9</Pos>
+              <Scale>1 1</Scale>
+              <Origin>20.9 18.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>knight.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>57 99 43 40</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>57 99 43 40</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>57 99 43 40</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>57 99 43 40</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>knight.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-0.6 -28.3</Pos>
+              <Scale>1 1.028228759765625</Scale>
+              <Origin>33.801 27.101</Origin>
+              <Rot>-0.07831557817596016</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Transform>
+              <Pos>1.5 -27.7</Pos>
+              <Scale>1 1</Scale>
+              <Origin>33.9 27.101</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>2.75 -27.65</Pos>
+              <Scale>1 1</Scale>
+              <Origin>22.5 27.151</Origin>
+              <Rot>0.04420634356644329</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Transform>
+              <Pos>1.5 -27.7</Pos>
+              <Scale>1 1</Scale>
+              <Origin>22.5 27.101</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>knight.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>128 0 62 56</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>128 0 62 56</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>0 114 51 56</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>0 114 51 56</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>knight.shield0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>22.05 -30.55</Pos>
+              <Scale>1.0000152587890625 1.0000152587890625</Scale>
+              <Origin>16.401 24.301</Origin>
+              <Rot>0.10095857271214087</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Transform>
+              <Pos>22.55 -28.5</Pos>
+              <Scale>1.0000152587890625 1.0000152587890625</Scale>
+              <Origin>16.401 24.200999999999997</Origin>
+              <Rot>0.22280112206046507</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>22.55 -28.5</Pos>
+              <Scale>1 1</Scale>
+              <Origin>16.401 24.200999999999997</Origin>
+              <Rot>0.3317917886202849</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Transform>
+              <Pos>19.3 -28.5</Pos>
+              <Scale>1.0000152587890625 1.0000152587890625</Scale>
+              <Origin>16.401 24.200999999999997</Origin>
+              <Rot>0.22280112206046507</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>knight.shield0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.shield0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>0 171 34 50</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>0 171 34 50</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>0 171 34 50</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>0 171 34 50</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>knight.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>3.05 -1</Pos>
+              <Scale>1 1</Scale>
+              <Origin>27.349999999999998 6.301</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>knight.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>89</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>0 99 56 14</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.rig0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+      </Anim>
+      <Anim>
+        <Name>attackB</Name>
+        <Duration>6</Duration>
+        <Framerate>12</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>knight.fx0</JointName>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>-5 -32.45</Pos>
+              <Scale>1 1</Scale>
+              <Origin>63.099 1.701</Origin>
+              <Rot>-2.5913865018566216</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>knight.fx0</JointName>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>204</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.fx0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>0 64 127 34</TexRect>
+            <FlipState>1</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.fx1</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>knight.sword0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-30.45 -46.1</Pos>
+              <Scale>0.999969482421875 0.999969482421875</Scale>
+              <Origin>8.700999999999999 57.851</Origin>
+              <Rot>-1.291785461502783</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Transform>
+              <Pos>-30.45 -46.1</Pos>
+              <Scale>0.9999847412109375 0.9999847412109375</Scale>
+              <Origin>8.700999999999999 57.851</Origin>
+              <Rot>-1.2090993696618937</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>12.9 -22.5</Pos>
+              <Scale>1 1</Scale>
+              <Origin>8.501 58.051</Origin>
+              <Rot>1.8540466782263072</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Transform>
+              <Pos>12.9 -22.5</Pos>
+              <Scale>1 1</Scale>
+              <Origin>8.501 58.051</Origin>
+              <Rot>1.8540466782263072</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>knight.sword0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.sword0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>52 140 19 62</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>52 140 19 62</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>52 140 19 62</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>52 140 19 62</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>knight.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-5.7 -55.35</Pos>
+              <Scale>1.000030517578125 1.02825927734375</Scale>
+              <Origin>20.801 18.551</Origin>
+              <Rot>-0.25216060886582564</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Transform>
+              <Pos>0.25 -53.4</Pos>
+              <Scale>1.059814453125 1</Scale>
+              <Origin>20.9 18.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>10.6 -50.7</Pos>
+              <Scale>1 1</Scale>
+              <Origin>20.851 18.651</Origin>
+              <Rot>0.27043042657598726</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Transform>
+              <Pos>2.75 -52.9</Pos>
+              <Scale>1 1</Scale>
+              <Origin>20.9 18.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>knight.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>57 99 43 40</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>57 99 43 40</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>57 99 43 40</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>57 99 43 40</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>knight.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-0.6 -28.3</Pos>
+              <Scale>1 1.028228759765625</Scale>
+              <Origin>33.801 27.101</Origin>
+              <Rot>-0.07831557817596016</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Transform>
+              <Pos>1.5 -27.7</Pos>
+              <Scale>1 1</Scale>
+              <Origin>33.9 27.101</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>2.75 -27.65</Pos>
+              <Scale>1 1</Scale>
+              <Origin>22.5 27.151</Origin>
+              <Rot>0.04420634356644329</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Transform>
+              <Pos>1.5 -27.7</Pos>
+              <Scale>1 1</Scale>
+              <Origin>22.5 27.101</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>knight.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>128 0 62 56</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>128 0 62 56</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>0 114 51 56</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>0 114 51 56</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>knight.shield0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>22.05 -30.55</Pos>
+              <Scale>1.0000152587890625 1.0000152587890625</Scale>
+              <Origin>16.401 24.301</Origin>
+              <Rot>0.10095857271214087</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Transform>
+              <Pos>22.55 -28.5</Pos>
+              <Scale>1.0000152587890625 1.0000152587890625</Scale>
+              <Origin>16.401 24.200999999999997</Origin>
+              <Rot>0.22280112206046507</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>22.55 -28.5</Pos>
+              <Scale>1 1</Scale>
+              <Origin>16.401 24.200999999999997</Origin>
+              <Rot>0.3317917886202849</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Transform>
+              <Pos>19.3 -28.5</Pos>
+              <Scale>1.0000152587890625 1.0000152587890625</Scale>
+              <Origin>16.401 24.200999999999997</Origin>
+              <Rot>0.22280112206046507</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>knight.shield0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.shield0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>0 171 34 50</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>0 171 34 50</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>0 171 34 50</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>0 171 34 50</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>knight.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>3.05 -1</Pos>
+              <Scale>1 1</Scale>
+              <Origin>27.349999999999998 6.301</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>knight.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>89</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>0 99 56 14</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.rig0</JointName>
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex/>

@@ -24,10 +24,15 @@ namespace Spineless.Entities
         public UnitManager UnitManager;
         public Behaviour<IBaseUnit> Behaviour;
 
+        public Unit()
+        {
+            AttackTimer = 0.0f;
+        }
+
         public override void Update(float dt)
         {
             base.Update(dt);
-            Behaviour.Evaluate((IBaseUnit)this);
+            Behaviour.Evaluate((IBaseUnit)this, dt);
         }
 
         #region IMoveable
@@ -44,7 +49,12 @@ namespace Spineless.Entities
 
         public void Stop()
         {
-            
+            physics.ZeroVelocity();
+        }
+
+        public void EnableBody(bool enabled)
+        {
+            physics.Enabled = enabled;
         }
 
         #endregion
@@ -60,8 +70,20 @@ namespace Spineless.Entities
 
         #endregion
 
-        #region IBaseUnit
+        #region IAggressive
+
+        public float AttackInterval { get; set; }
+        public float AttackTimer { get; set; }
+        public float Damage { get; set; }
 
         #endregion
+
+        #region IHealthy
+
+        public float Health { get; set; }
+
+        #endregion
+
+
     }
 }

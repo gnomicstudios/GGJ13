@@ -40,8 +40,18 @@ namespace Spineless.AI
                     new Sequence<IBaseUnit> {
                         Children =
                         {
-                            new CloseToSelectedCheck<IBaseUnit>(100.0f),
-                            new SetSpeedAction<IBaseUnit>(0.0f)
+                            new IsDeadCheck<IBaseUnit>(),
+                            new PlayAnimationAction<IBaseUnit>("death", false, false, 1.0f),
+                            new SetBodyEnabledAction<IBaseUnit>(false)
+                        }
+                    },
+                    new Sequence<IBaseUnit> {
+                        Children =
+                        {
+                            new CloseToSelectedCheck<IBaseUnit>(60.0f),
+                            new StopAction<IBaseUnit>(),
+                            new PlayAnimationAction<IBaseUnit>("attack", true, false, 1.0f),
+                            new AttackAction<IBaseUnit>()
                         }
                     },
                     new Sequence<IBaseUnit> {
@@ -55,6 +65,34 @@ namespace Spineless.AI
             };
 
             Add(UnitType.Grunt, beh);
+
+            #endregion
+
+            #region UnitType.Knight
+
+            beh = new Selector<IBaseUnit> {
+                Children =
+                {
+                    new Sequence<IBaseUnit> {
+                        Children =
+                        {
+                            new CloseToSelectedCheck<IBaseUnit>(60.0f),
+                            new StopAction<IBaseUnit>(),
+                            new PlayAnimationAction<IBaseUnit>("attackA", true, false, 1.0f),
+                            new AttackAction<IBaseUnit>()
+                        }
+                    },
+                    new Sequence<IBaseUnit> {
+                        Children =
+                        {
+                            new SelectNearestTypeAction<IBaseUnit>(UnitType.Grunt),
+                            new MoveTowardsSelectedAction<IBaseUnit>()
+                        }
+                    }
+                }
+            };
+
+            Add(UnitType.Knight, beh);
 
             #endregion
 
