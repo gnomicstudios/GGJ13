@@ -147,5 +147,13 @@ namespace Gnomic.Physics
             Bodies[index].ApplyForce(ConvertUnits.ToSimUnits(magnitude) *
                                      ConvertUnits.ToSimUnits(direction));
         }
+
+        public void ZeroVelocity()
+        {
+            foreach (Body body in Bodies)
+            {
+                body.ResetDynamics();
+            }
+        }
     }
 }

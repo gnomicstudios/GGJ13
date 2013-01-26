@@ -1,0 +1,177 @@
+<XnaContent>
+  <Asset Type="Gnomic.Anim.Clip">
+    <Joint>
+      <ParentId>-1</ParentId>
+      <Name>princess.Root0</Name>
+    </Joint>
+    <Joint>
+      <ParentId>0</ParentId>
+      <Name>princess.body0</Name>
+    </Joint>
+    <Joint>
+      <ParentId>0</ParentId>
+      <Name>princess.head0</Name>
+    </Joint>
+    <DrawOrder>1 2</DrawOrder>
+    <AnimSet>
+      <Anim>
+        <Name>rig</Name>
+        <Duration>1</Duration>
+        <Framerate>12</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>princess.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-2.45 -54.2</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.051000000000002 27.201</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>princess.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>princess.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>princessSheet</Tex>
+            <TexRect>0 0 47 56</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>princess.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-0.75 -19.7</Pos>
+              <Scale>1 1</Scale>
+              <Origin>22.751 26.5</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>princess.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>princess.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>princessSheet</Tex>
+            <TexRect>48 0 47 54</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>princess.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+      </Anim>
+      <Anim>
+        <Name>idle</Name>
+        <Duration>1</Duration>
+        <Framerate>12</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>princess.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-2.45 -54.2</Pos>
+              <Scale>1 1</Scale>
+              <Origin>23.051000000000002 27.201</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>princess.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>princess.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>princessSheet</Tex>
+            <TexRect>0 0 47 56</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>princess.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-0.75 -19.7</Pos>
+              <Scale>1 1</Scale>
+              <Origin>22.751 26.5</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>princess.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>princess.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>princessSheet</Tex>
+            <TexRect>48 0 47 54</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>princess.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+      </Anim>
+    </AnimSet>
+  </Asset>
+</XnaContent>
