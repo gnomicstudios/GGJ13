@@ -26,6 +26,11 @@ namespace Spineless.Entities
         public Projectile()
         {
             IsActive = false;
-        }        
+        }
+
+        public void Explode()
+        {
+            this.ClipInstance.Play("death", false);
+        }
     }
 }
