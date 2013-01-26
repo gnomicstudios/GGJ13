@@ -37,16 +37,16 @@ namespace Spineless
 
             CreateBackground();
             
-            SpinelessEntitySettings settings = new SpinelessEntitySettings();
-            settings.ClipFile = "knight";
-            settings.Position = new Vector2(ParentGame.ScreenWidth / 2,
-                                            ParentGame.ScreenHeight / 2);
-            settings.DefaultAnimName = "walk";
-            settings.Physics = new SpinelessPhysicsSettings();
-            settings.Physics.Width = 0.8f;
-            settings.Physics.Height = 1.2f;
-            settings.Physics.Offset = new Vector2(0.0f, -settings.Physics.Height / 2.0f);
-            base.AddEntity(settings.CreateEntity());
+            // SpinelessEntitySettings settings = new SpinelessEntitySettings();
+            // settings.ClipFile = "knight";
+            // settings.Position = new Vector2(ParentGame.ScreenWidth / 2,
+            //                                 ParentGame.ScreenHeight / 2);
+            // settings.DefaultAnimName = "walk";
+            // settings.Physics = new SpinelessPhysicsSettings();
+            // settings.Physics.Width = 0.8f;
+            // settings.Physics.Height = 1.2f;
+            // settings.Physics.Offset = new Vector2(0.0f, -settings.Physics.Height / 2.0f);
+            // base.AddEntity(settings.CreateEntity());
 
             SpinelessEntitySettings princessClipSettings = new SpinelessEntitySettings();
             princessClipSettings.ClipFile           = "player_player.clipxml";
@@ -59,14 +59,15 @@ namespace Spineless
             lilMissBadAss.AimTexture.SetData<Color>(new Color[] { Color.White });
 
             units = new UnitManager(this);
-            AddUnit(UnitType.Grunt);
+            AddUnit(UnitType.Grunt, new Vector2(0.9f, 0.7f));
+            AddUnit(UnitType.Knight, new Vector2(0.5f, 0.7f));
 
             base.Initialize(game);
         }
 
-        void AddUnit(UnitType et)
+        void AddUnit(UnitType et, Vector2 offsets)
         {
-            units.AddUnitToScene(et, Camera2D.Position + new Vector2(ParentGame.ScreenWidth * 0.9f, ParentGame.ScreenHeight * 0.7f));
+            units.AddUnitToScene(et, Camera2D.Position + new Vector2(ParentGame.ScreenWidth * offsets.X, ParentGame.ScreenHeight * offsets.Y));
         }
 
         private void CreateBackground()
