@@ -92,7 +92,27 @@ namespace Spineless
 
         public void Splash(Vector2 pos, float radius, float maxDamage)
         {
- 
+            foreach (List<Unit> us in units.UnitLists.Values)
+            {
+                foreach (Unit u in us)
+                {
+                    if (u.Health > 0)
+                    {
+                        float distance = Vector2.Distance(pos, u.Position);
+
+                        if (distance <= radius)
+                        {
+                            // push
+                            Vector2 blastVector = pos - u.Position;
+                            blastVector.Y *= -1; // make things always fly
+                            u.Physics.Bodies[0].ApplyLinearImpulse(blastVector);
+
+                            // remove health
+                            u.Health -= (1.0f - distance / radius) * maxDamage; 
+                        }
+                    }
+                }
+            }
         }
 
         private void CreateBackground()

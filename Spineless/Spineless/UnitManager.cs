@@ -20,6 +20,8 @@ namespace Spineless
         Dictionary<UnitType, List<Unit>> unitLists =
             new Dictionary<UnitType, List<Unit>>(new UnitTypeComparer());
 
+        public Dictionary<UnitType, List<Unit>> UnitLists { get { return unitLists; } }
+
         public List<Unit> ActiveEnemies = new List<Unit>();
 
         class Settings
@@ -128,6 +130,7 @@ namespace Spineless
             es.Physics.Width = 0.6f;
             es.Physics.Height = 1f;
             es.Physics.Offset = new Vector2(0.0f, RandomLaneOffset());
+            es.Physics.Density = 10.0f;
             es.ActivateByDefault = false;
             var e = (Unit)es.CreateEntity();
             e.UnitType = et;

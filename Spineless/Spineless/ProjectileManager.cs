@@ -81,7 +81,7 @@ namespace Spineless
             p.Physics.Enabled = false;
             p.Physics.Bodies[0].ResetDynamics();
             
-            //lvl.Splash(p.Physics.Position,  
+            lvl.Splash(p.Physics.Position, 100, 120);
 
             return true;
         }
