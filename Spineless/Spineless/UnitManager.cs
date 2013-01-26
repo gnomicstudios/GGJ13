@@ -22,7 +22,7 @@ namespace Spineless
 
         public Dictionary<UnitType, List<Unit>> UnitLists { get { return unitLists; } }
 
-        public List<Unit> ActiveEnemies = new List<Unit>();
+        public List<Unit> ActiveUnits = new List<Unit>();
 
         class Settings
         {
@@ -113,7 +113,7 @@ namespace Spineless
                     e.IsAdded = true;
                     e.Physics.Position = pos;
                     e.Physics.Enabled = true;
-                    screen.AddEntity(e);
+                    e.Activate();
                     return e;
                 }
             }
@@ -159,13 +159,13 @@ namespace Spineless
 
         void UnitActivated(Gnomic.Entities.Entity ent)
         {
-            ActiveEnemies.Add((Unit)ent);
+            ActiveUnits.Add((Unit)ent);
         }
 
         void UnitDeactivated(Gnomic.Entities.Entity ent)
         {
             var e =(Unit)ent;
-            ActiveEnemies.Remove(e);
+            ActiveUnits.Remove(e);
             e.IsAdded = false;
         }
 
