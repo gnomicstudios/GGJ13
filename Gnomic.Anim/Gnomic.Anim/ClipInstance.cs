@@ -71,9 +71,9 @@ namespace Gnomic.Anim
             Play(anim, true);
         }
 
-        public void Play(ClipAnim anim, bool loop)
+        public void Play(ClipAnim anim, bool loop, float speedMod=1f)
         {
-            currentAnim.Play(anim, loop);
+            currentAnim.Play(anim, loop, speedMod);
         }
 
         public void Play(string animName)
@@ -81,12 +81,12 @@ namespace Gnomic.Anim
             Play(animName, true);
         }
 
-        public void Play(string animName, bool loop)
+        public void Play(string animName, bool loop, float speedMod=1f)
         {
             ClipAnim animToPlay = Clip.AnimSet[animName];
             System.Diagnostics.Debug.Assert(animToPlay != null);
 
-            Play(animToPlay, loop);
+            Play(animToPlay, loop, speedMod);
         }
 
         public void Update(float dt)
