@@ -467,7 +467,7 @@ namespace Gnomic
             {
                 foreach (Entity e in toRemove)
                 {
-                    Debug.Assert(activeEntities.Contains(e) && e.IsActivated);
+                    Debug.Assert(activeEntities.Contains(e));
 
                     activeEntities.Remove(e);
                     onEntityRemoved(e);
@@ -490,7 +490,7 @@ namespace Gnomic
             {
                 foreach (Entity e in toAdd)
                 {
-                    Debug.Assert(!activeEntities.Contains(e) && !e.IsActivated);
+                    Debug.Assert(!activeEntities.Contains(e));
                     
                     activeEntities.Add(e);
                     onEntityAdded(e);
