@@ -79,7 +79,14 @@ namespace Spineless
             lilMissBadAss.AimTexture.SetData<Color>(new Color[] { Color.White });
 
             units = new UnitManager(this);
-            AddUnit(UnitType.Grunt, new Vector2(0.9f, 0.7f));
+
+            float startX = 0.7f;
+
+            for (int i = 0; i < 20; ++i)
+            {
+                AddUnit(UnitType.Grunt, new Vector2(startX+(i*0.05f), 0.7f));
+            }
+
             AddUnit(UnitType.Knight, new Vector2(0.5f, 0.7f));
 
             projectiles = new ProjectileManager(this);
@@ -89,7 +96,7 @@ namespace Spineless
 
         void AddUnit(UnitType et, Vector2 offsets)
         {
-            units.AddUnitToScene(et, Camera2D.Position + new Vector2(ParentGame.ScreenWidth * 0.9f, ParentGame.ScreenHeight * 0.7f));
+            units.AddUnitToScene(et, Camera2D.Position + new Vector2(ParentGame.ScreenWidth * offsets.X, ParentGame.ScreenHeight * offsets.Y));
         }
 
         public void FireProjectile(Vector2 impulse)

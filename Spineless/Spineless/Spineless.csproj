@@ -75,8 +75,10 @@
   <ItemGroup>
     <Compile Include="AI\BehaviourManager.cs" />
     <Compile Include="AI\BehaviourTree.cs" />
+    <Compile Include="AI\IAggressive.cs" />
     <Compile Include="AI\IAnimated.cs" />
     <Compile Include="AI\IBaseUnit.cs" />
+    <Compile Include="AI\IHealthy.cs" />
     <Compile Include="AI\IMoveable.cs" />
     <Compile Include="AI\IPerceptive.cs" />
     <Compile Include="Entities\AIControlledEntity.cs" />

@@ -13,6 +13,11 @@ namespace Gnomic.Anim
         ClipAnimInstance currentAnim;
         public ClipAnimInstance CurrentAnim { get { return currentAnim; } }
 
+        public string CurrentAnimationName
+        {
+            get { return CurrentAnim.Anim.Name; }
+        }
+
         ClipInstance linkToParentClipInstance;
         int linkToParetJointId;
 
