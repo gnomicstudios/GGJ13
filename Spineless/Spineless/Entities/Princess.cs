@@ -5,14 +5,14 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Spineless.Entities
 {
-    class Princess : SpinelessEntity
+    public class Princess : SpinelessEntity
     {
         const float MAX_DRAG_DISTANCE = 100;
         const float MIN_DRAG_DISTANCE = 20; // distance at which to register was indeed a "drag"
         const int DRAG_RADIUS = 100;
         const float POWER = 0.05f;
 
-        internal Texture2D AimTexture;
+        Texture2D AimTexture;
 
         Vector2 dragStart, dragEnd, dragVector;
         float dragDistance, angle;
@@ -20,6 +20,30 @@ namespace Spineless.Entities
         
         public Princess()
         { 
+        }
+
+        public static Princess CreatePrincess(
+            Vector2 position,
+            Vector2 sizePhysicsCoords,
+            Vector2 offsetPhysicsCoords)
+        {
+            SpinelessEntitySettings princessClipSettings = new SpinelessEntitySettings();
+            princessClipSettings.EntityClass = "Spineless.Entities.Princess, Spineless";
+            princessClipSettings.ClipFile = "princess.clipxml";
+            princessClipSettings.DefaultAnimName = "idle";
+            princessClipSettings.Position = position;
+            princessClipSettings.Physics = new SpinelessPhysicsSettings();
+            princessClipSettings.Physics.Width = sizePhysicsCoords.X;
+            princessClipSettings.Physics.Height = sizePhysicsCoords.Y;
+            princessClipSettings.Physics.Offset = offsetPhysicsCoords;
+            return (Princess)princessClipSettings.CreateEntity();
+        }
+        public override void Initialize(GameScreen parentScreen)
+        {
+            base.Initialize(parentScreen);
+
+            AimTexture = new Texture2D(ParentScreen.ParentGame.GraphicsDevice, 1, 1);
+            AimTexture.SetData<Color>(new Color[] { Color.White });
         }
 
         private void Fire()

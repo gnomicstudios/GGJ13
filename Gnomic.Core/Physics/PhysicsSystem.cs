@@ -29,9 +29,9 @@ namespace Gnomic.Physics
         }
 
         Matrix projection;
-        public void RenderDebugView()
+        public void RenderDebugView(ref Matrix view)
         {
-            DebugView.RenderDebugData(ref projection);
+            DebugView.RenderDebugData(ref projection, ref view);
         }
 
         public void CreateBorder(
