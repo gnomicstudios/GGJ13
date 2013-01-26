@@ -36,7 +36,7 @@ namespace Spineless
             Physics = new Gnomic.Physics.PhysicsSystem(this);
             Physics.CreateBorder(ParentGame.ScreenWidth,
                                  ParentGame.ScreenHeight,
-                                 new Vector2(0.0f, -floorHeight));
+                                 new Vector2(0.0f, -floorHeight),
                                  /*friction*/ 0.0f);
 
             // Create a 2D camera
