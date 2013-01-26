@@ -44,7 +44,7 @@ namespace Gnomic
             get { return camera2D; }
             set { camera2D = value; }
         }
-        public Matrix LastViewMatrix2D;
+        public Matrix LastViewMatrix2D = Matrix.Identity;
 
         PhysicsSystem physics;
         public PhysicsSystem Physics
@@ -397,7 +397,10 @@ namespace Gnomic
                 Layer2D layer = Layers[i];
                 if (layer.Sprites.Count > 0)
                 {
-                    LastViewMatrix2D = Camera2D.GetViewMatrix(layer.Parallax);
+                    if (Camera2D != null)
+                    {
+                        LastViewMatrix2D = Camera2D.GetViewMatrix(layer.Parallax);
+                    }
                     spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.NonPremultiplied,
                                       null, null, null, null,
                                       LastViewMatrix2D);
@@ -410,7 +413,7 @@ namespace Gnomic
                 }
             }
 
-            if (Physics.DebugView != null)
+            if (Physics != null && Physics.DebugView != null)
             {
                 Physics.RenderDebugView();
             }

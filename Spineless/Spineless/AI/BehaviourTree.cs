@@ -7,12 +7,12 @@ namespace Spineless.AI
 {
     public abstract class Behaviour<T>
     {
-        public abstract bool Evaluate(T actor);
+        public abstract bool Evaluate(T actor, float dt);
     }
 
     public class IdentityBehaviour<T> : Behaviour<T>
     {
-        public override bool Evaluate(T actor)
+        public override bool Evaluate(T actor, float dt)
         {
             return true;
         }
@@ -35,11 +35,11 @@ namespace Spineless.AI
 
     public class Selector<T> : Composite<T>
     {
-        public override bool Evaluate(T actor)
+        public override bool Evaluate(T actor, float dt)
         {
             foreach(Behaviour<T> beh in m_nodes)
             {
-                if (beh.Evaluate(actor))
+                if (beh.Evaluate(actor, dt))
                 {
                     return true;
                 }
@@ -51,11 +51,11 @@ namespace Spineless.AI
 
     public class Sequence<T> : Composite<T>
     {
-        public override bool Evaluate(T actor)
+        public override bool Evaluate(T actor, float dt)
         {
             foreach(Behaviour<T> beh in m_nodes)
             {
-                if (!beh.Evaluate(actor))
+                if (!beh.Evaluate(actor, dt))
                 {
                     return false;
                 }

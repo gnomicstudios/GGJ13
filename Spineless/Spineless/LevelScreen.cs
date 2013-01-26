@@ -21,6 +21,8 @@ namespace Spineless
         Camera2D camera;
         UnitManager units;
         ProjectileManager projectiles;
+        public HudScreen Hud;
+        public PrincessVehicle Vehicle;
 
         public LevelScreen()
         {
@@ -28,17 +30,33 @@ namespace Spineless
         
         public override void Initialize(GnomicGame game)
         {
+            Hud = ParentGame.GetScreen<HudScreen>();
+
+            int floorHeight = 60;
             Physics = new Gnomic.Physics.PhysicsSystem(this);
             Physics.CreateBorder(ParentGame.ScreenWidth,
                                  ParentGame.ScreenHeight,
-                                 new Vector2(0.0f, -60f),
+                                 new Vector2(0.0f, -floorHeight),
                                  /*friction*/ 0.0f);
 
-            // Create a 3D camera
+            // Create a 2D camera
             base.Camera2D = camera = new Camera2D(ParentGame.GraphicsDevice.Viewport);
 
             CreateBackground();
-            
+
+            SpinelessEntitySettings settings = new SpinelessEntitySettings();
+            settings.EntityClass = "Spineless.Entities.PrincessVehicle,Spineless";
+            settings.ClipFile = "siegeTower";
+            settings.Position = new Vector2(ParentGame.ScreenWidth / 5,
+                                            ParentGame.ScreenHeight - floorHeight);
+            settings.DefaultAnimName = "rig";
+            settings.Physics = new SpinelessPhysicsSettings();
+            settings.Physics.Width = 2.5f;
+            settings.Physics.Height = 4f;
+            settings.Physics.Offset = new Vector2(0.0f, -settings.Physics.Height / 2.0f);
+            Vehicle = (PrincessVehicle)settings.CreateEntity();
+            base.AddEntity(Vehicle);
+
             // SpinelessEntitySettings settings = new SpinelessEntitySettings();
             // settings.ClipFile = "knight";
             // settings.Position = new Vector2(ParentGame.ScreenWidth / 2,
@@ -61,7 +79,14 @@ namespace Spineless
             lilMissBadAss.AimTexture.SetData<Color>(new Color[] { Color.White });
 
             units = new UnitManager(this);
-            AddUnit(UnitType.Grunt, new Vector2(0.9f, 0.7f));
+
+            float startX = 0.7f;
+
+            for (int i = 0; i < 20; ++i)
+            {
+                AddUnit(UnitType.Grunt, new Vector2(startX+(i*0.05f), 0.7f));
+            }
+
             AddUnit(UnitType.Knight, new Vector2(0.5f, 0.7f));
 
             projectiles = new ProjectileManager(this);
@@ -71,7 +96,7 @@ namespace Spineless
 
         void AddUnit(UnitType et, Vector2 offsets)
         {
-            units.AddUnitToScene(et, Camera2D.Position + new Vector2(ParentGame.ScreenWidth * 0.9f, ParentGame.ScreenHeight * 0.7f));
+            units.AddUnitToScene(et, Camera2D.Position + new Vector2(ParentGame.ScreenWidth * offsets.X, ParentGame.ScreenHeight * offsets.Y));
         }
 
         public void FireProjectile(Vector2 impulse)
