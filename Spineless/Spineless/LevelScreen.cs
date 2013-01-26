@@ -43,9 +43,9 @@ namespace Spineless
                                             ParentGame.ScreenHeight / 2);
             settings.DefaultAnimName = "walk";
             settings.Physics = new SpinelessPhysicsSettings();
-            settings.Physics.Width = 0.6f;
-            settings.Physics.Height = 1f;
-            settings.Physics.Offset = new Vector2(0.0f, -0.5f);
+            settings.Physics.Width = 0.8f;
+            settings.Physics.Height = 1.2f;
+            settings.Physics.Offset = new Vector2(0.0f, -settings.Physics.Height / 2.0f);
             base.AddEntity(settings.CreateEntity());
 
             SpinelessEntitySettings princessClipSettings = new SpinelessEntitySettings();

@@ -23,13 +23,13 @@ namespace Spineless
         {
             this.screen = screen;
 
-            enemyClipNames[UnitType.Grunt] = "player_player";
+            enemyClipNames[UnitType.Grunt] = "enemy";
             enemyLists[UnitType.Grunt] = new List<Unit>(20);
 
-            enemyClipNames[UnitType.Captain] = "player_player";
+            enemyClipNames[UnitType.Captain] = "enemy";
             enemyLists[UnitType.Captain] = new List<Unit>(20);
 
-            enemyClipNames[UnitType.Boss] = "player_player";
+            enemyClipNames[UnitType.Boss] = "enemy";
             enemyLists[UnitType.Boss] = new List<Unit>(20);
 
             for (int i = 0; i < 10; ++i)
