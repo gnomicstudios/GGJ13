@@ -87,6 +87,7 @@ namespace Spineless
             Projectile p = (Projectile)obj;
             p.IsActive = false;
             p.Physics.Position = PROJECTILE_START_POS;
+            p.ClipInstance.Play("bounce", true);
             // p.Physics is already deactivated
         }
     }
