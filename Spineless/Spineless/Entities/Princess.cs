@@ -7,10 +7,10 @@ namespace Spineless.Entities
 {
     class Princess : SpinelessEntity
     {
-        const float MAX_DRAG_DISTANCE = 150;
+        const float MAX_DRAG_DISTANCE = 100;
         const float MIN_DRAG_DISTANCE = 20; // distance at which to register was indeed a "drag"
         const int DRAG_RADIUS = 100;
-
+        const float POWER = 0.07f;
 
         internal Texture2D AimTexture;
 
@@ -24,7 +24,8 @@ namespace Spineless.Entities
 
         private void Fire()
         {
-            dragVector = dragEnd - dragStart;
+            dragVector = dragStart - dragEnd;
+            dragVector *= POWER;
             this.LevelScreen.FireProjectile(dragVector);
         }
 

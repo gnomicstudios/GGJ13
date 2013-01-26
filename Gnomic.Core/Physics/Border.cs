@@ -26,7 +26,8 @@ namespace Gnomic.Physics
         
         public Border(World world,
                       float width, float height, // display units
-                      Vector2 offset)
+                      Vector2 offset,
+                      float friction)
         {
             float simWidth = ConvertUnits.ToSimUnits(width);
             float simHeight = ConvertUnits.ToSimUnits(height);
@@ -41,10 +42,7 @@ namespace Gnomic.Physics
             Corners.Add(new Vector2(.0f + simOffsetWidth, simHeight + +simOffsetHeight));
 
             _anchor = BodyFactory.CreateLoopShape(world, Corners);
-            // _anchor.CollisionCategories =
-            //     (Category)CharacterEntity.CollisionCategory.Environment;
-            // _anchor.CollidesWith =
-            //     (Category)CharacterEntity.CollidesWith.Environment;
+            _anchor.Friction = friction;
         }
     }
 }

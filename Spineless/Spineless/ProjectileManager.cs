@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using Spineless.Entities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Gnomic.Entities;
+using FarseerPhysics.Dynamics;
+using FarseerPhysics.Dynamics.Contacts;
 
 namespace Spineless
 {
@@ -31,14 +34,39 @@ namespace Spineless
             ses.EntityClass = "Spineless.Entities.Projectile, Spineless";
             ses.DefaultAnimName = "bounce";
             ses.Physics = new SpinelessPhysicsSettings();
-            ses.Physics.Width = 1;
-            ses.Physics.Height = 1;
+            ses.Physics.Width = 0.5f;
+            ses.Physics.Height = 0.5f;
+            ses.Physics.Density = 1;
+            ses.Physics.Offset = new Vector2(0, -(ses.Physics.Height / 2));
             ses.Position = new Vector2(100, 10);
             
-            Projectile p = (Projectile)ses.CreateEntity();
+            Projectile p    = (Projectile)ses.CreateEntity();
             p.Initialize(lvl);
+            p.Activated     += new Action<Entity>(OnActivated);
+            p.Deactivated   += new Action<Entity>(OnDeactivated);
+            p.Physics.Bodies[0].FixtureList[0].CollidesWith = (Category)SpinelessCollisionCategories.All;
+            p.Physics.Bodies[0].FixtureList[0].CollisionCategories = (Category)SpinelessCollisionCategories.SplashProjectile;
+            p.Physics.Bodies[0].FixtureList[0].OnCollision = OnProjectileCollision;
+            p.Physics.Bodies[0].FixtureList[0].UserData = p;
 
             return p;
+        }
+
+        private bool OnProjectileCollision(Fixture fixtureA, Fixture fixtureB, Contact contact)
+        {
+            ((Projectile)fixtureA.UserData).Explode();
+            return true;
+        }
+
+
+        private void OnDeactivated(Gnomic.Entities.Entity obj)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void OnActivated(Gnomic.Entities.Entity obj)
+        {
+            throw new NotImplementedException();
         }
 
         public void Launch(Vector2 impulse)
@@ -47,6 +75,7 @@ namespace Spineless
             {
                 if (!p.IsActive)
                 {
+                    p.Physics.Enabled = true;
                     p.Physics.Bodies[0].ApplyLinearImpulse(impulse);
                     p.IsActive = true;
                     lvl.AddEntity(p);

@@ -84,6 +84,7 @@ namespace Spineless
 
             e.UnitManager = this;
             e.Behaviour   = behaviours.Create<IBaseUnit>(et);
+            e.Speed       = 1000.0f;
             
             unitLists[et].Add(e);
             return e;

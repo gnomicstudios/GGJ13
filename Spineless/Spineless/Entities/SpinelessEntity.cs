@@ -103,6 +103,7 @@ namespace Spineless.Entities
             {
                 this.Position = physics.Position;
             }
+            
         }
     }
 }
