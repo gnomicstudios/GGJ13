@@ -87,6 +87,12 @@
       <Name>player_player</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="projectilesSheet.png">
+      <Name>projectilesSheet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="siegeTowerSheet.png">
       <Name>siegeTowerSheet</Name>
       <Importer>TextureImporter</Importer>
@@ -141,6 +147,12 @@
     </Content>
     <Content Include="princess.clipxml">
       <Name>princess</Name>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="projectiles.clipxml">
+      <Name>projectiles</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

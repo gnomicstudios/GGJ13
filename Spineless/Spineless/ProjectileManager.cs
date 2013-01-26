@@ -11,30 +11,44 @@ namespace Spineless
 {
     class ProjectileManager
     {
-        static Vector2 PROJECTILE_START_POS = new Vector2(100, 10);
+        static Vector2 PROJECTILE_START_POS = new Vector2(0, -100);
 
         LevelScreen lvl;
-        List<Projectile> projectiles;
+        List<Projectile> splashProjectiles;
+        List<Projectile> directProjectiles;
 
         public ProjectileManager(LevelScreen lvl)
         {
             this.lvl = lvl;
-            this.projectiles = new List<Projectile>();
+            this.splashProjectiles = new List<Projectile>();
+            this.directProjectiles = new List<Projectile>();
 
             // cache bunch of projectiles
+
             for (int i = 0; i < 10; i++)
             {
-                this.projectiles.Add(Create()); 
+                Projectile p = Create("ball");
+                p.Type = ProjectileType.Splash;
+                p.DefaultAnimName = "ball";
+                this.splashProjectiles.Add(p);
+            }
+
+            for (int i = 0; i < 50; i++)
+            {
+                Projectile p = Create("arrow");
+                p.Type = ProjectileType.DirectHit;
+                p.DefaultAnimName = "arrow";
+                this.directProjectiles.Add(p);
             }
         }
 
-        private Projectile Create()
+        private Projectile Create(string animName)
         {
             SpinelessEntitySettings ses = new SpinelessEntitySettings();
             ses.ActivateByDefault = false;
-            ses.ClipFile = "egg.clipxml";
-            ses.EntityClass = "Spineless.Entities.Projectile, Spineless";
-            ses.DefaultAnimName = "bounce";
+            ses.ClipFile        = "projectiles.clipxml";
+            ses.EntityClass     = "Spineless.Entities.Projectile, Spineless";
+            ses.DefaultAnimName = animName;
             ses.Physics = new SpinelessPhysicsSettings();
             ses.Physics.Width = 0.5f;
             ses.Physics.Height = 0.5f;
@@ -55,15 +69,21 @@ namespace Spineless
             return p;
         }
 
-        public void Launch(Vector2 startPos, Vector2 impulse)
+        public void Launch(Vector2 startPos, Vector2 impulse, float angle, ProjectileType type)
         {
-            foreach(Projectile p in this.projectiles)
+            List<Projectile> projectiles = splashProjectiles;
+
+            if(type == ProjectileType.DirectHit)
+                projectiles = directProjectiles;
+
+            foreach(Projectile p in projectiles)
             {
                 if (!p.IsActive)
                 {
                     p.Physics.Position = startPos;
                     p.IsActive = true;
                     p.Physics.Enabled = true;
+                    p.Physics.Bodies[0].Rotation = angle;
                     p.Physics.Bodies[0].ApplyLinearImpulse(impulse);
                     p.Activate();
                     break;
@@ -75,14 +95,21 @@ namespace Spineless
         {
             Projectile p = (Projectile)fixtureA.UserData;
 
-            // KABOOM!
-            p.ClipInstance.Play("death", false);
-            p.Deactivate(p.ClipInstance.CurrentAnim.DurationInSeconds);
+            if (p.Type == ProjectileType.Splash)
+            {
+                // KABOOM!
+                p.ClipInstance.Play("explode", false);
+                lvl.Splash(p.Physics.Position, 100, 120);
+                p.Deactivate(p.ClipInstance.CurrentAnim.DurationInSeconds);
+            }
+            else
+            {
+                p.Deactivate(10);
+            }
+
             p.Physics.Enabled = false;
             p.Physics.Bodies[0].ResetDynamics();
             
-            lvl.Splash(p.Physics.Position, 100, 120);
-
             return true;
         }
 
@@ -91,7 +118,7 @@ namespace Spineless
             Projectile p = (Projectile)obj;
             p.IsActive = false;
             p.Physics.Position = PROJECTILE_START_POS;
-            p.ClipInstance.Play("bounce", true);
+            p.ClipInstance.Play(p.DefaultAnimName, true);
             // p.Physics is already deactivated on collision
         }
     }

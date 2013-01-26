@@ -18,6 +18,7 @@ namespace Spineless.Entities
         Vector2 dragStart, dragEnd, dragVector, fireOffset;
         float dragDistance, angle, timeSinceLastFired;
         bool isDragging;
+        ProjectileType currentProjectileType = ProjectileType.DirectHit;
         
         public Princess()
         { 
@@ -51,7 +52,7 @@ namespace Spineless.Entities
         {
             dragVector = dragStart - dragEnd;
             dragVector *= POWER;
-            this.LevelScreen.FireProjectile(this.Position + fireOffset, dragVector);
+            this.LevelScreen.FireProjectile(this.Position + fireOffset, dragVector, angle, currentProjectileType);
             timeSinceLastFired = 0;
         }
 
