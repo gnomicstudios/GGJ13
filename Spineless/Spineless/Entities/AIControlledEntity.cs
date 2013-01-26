@@ -3,27 +3,58 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+using Microsoft.Xna.Framework;
+
 using Gnomic;
+using Gnomic.Entities;
 using Spineless.AI;
 
 namespace Spineless.Entities
 {
-    public abstract class AIControlledEntity : SpinelessEntity
+#if false
+    public class AIControlledEntitySettings : SpinelessEntitySettings
     {
-        Behaviour<AIControlledEntity> m_behaviour;
+        public string BehaviourName;
 
-        public abstract Behaviour<AIControlledEntity> CreateBehaviour();
+        public override void ApplySettings(EntitySettings settings)
+        {
+            base.ApplySettings(settings);
+            this.Settings = CastSettings<AIControlledEntitySettings>(settings);
+        }
+
+        public AIControlledEntitySettings()
+        {
+            this.EntityClass = "Spineless.Entities.AIControlledEntity,Spineless";
+        }
+    }
+
+    public class AIControlledEntity : SpinelessEntity, IMoveable
+    {
+        new AIControlledEntitySettings Settings;
+
+        public Behaviour<AIControlledEntity> Behaviour { get; set; }
+        public Vector2 Heading { get; set; }
+        public float Speed { get; set; }
 
         public override void Initialize(GameScreen parentScreen)
         {
             base.Initialize(parentScreen);
-            m_behaviour = CreateBehaviour();
+
+            LevelScreen screen = (LevelScreen)parentScreen;
+            Behaviour = screen.BehaviourFactory.Create<AIControlledEntity>(
+                Settings.BehaviourName);
+        }
+
+        public void MoveTowards()
+        {
+            physics.ApplyForceToBody(0, Speed, Heading);
         }
         
         public override void Update(float dt)
         {
             base.Update(dt);
-            m_behaviour.Evaluate(this);
+            Behaviour.Evaluate(this);
         }
     }
+#endif
 }
