@@ -22,6 +22,11 @@ namespace Spineless.AI
     {
         protected List<Behaviour<T>> m_nodes;
 
+        public Composite()
+        {
+            m_nodes = new List<Behaviour<T>>();
+        }
+
         public List<Behaviour<T>> Children
         {
             get { return m_nodes; }
