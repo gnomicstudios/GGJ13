@@ -80,7 +80,11 @@ namespace Spineless.Entities
 
         #region IHealthy
 
-        public float Health { get; set; }
+        public float Health 
+        { 
+            get; 
+            set; 
+        }
 
         #endregion
 

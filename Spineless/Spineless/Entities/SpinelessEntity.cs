@@ -28,7 +28,7 @@ namespace Spineless.Entities
     {
         // public PhysicsStructureSettings Physics;
         [ContentSerializer(Optional = true)]
-        public float MoveForce = 50.0f;
+        public float MoveForce = 500.0f;
         [ContentSerializer(Optional = true)]
         public float MaxSpeed = 0.1f;
         [ContentSerializer(Optional = true)]

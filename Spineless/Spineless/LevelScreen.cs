@@ -1,19 +1,12 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media;
 using FarseerPhysics.Dynamics.Joints;
 using Gnomic;
-using Gnomic.Graphics;
+using Gnomic.Audio;
 using Gnomic.Entities;
+using Gnomic.Graphics;
 using Gnomic.Physics;
-
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using Spineless.Entities;
 
 namespace Spineless
@@ -28,6 +21,7 @@ namespace Spineless
         public PrincessVehicle Vehicle;
         public Princess lilMissBadAss;
         RevoluteJoint standingJoint;
+        public AudioManager Audio;
 
         const int PLAY_AREA_WIDTH_IN_SCREENS = 20;
         const int PLAY_AREA_HEIGHT_IN_SCREENS = 30;
@@ -36,7 +30,7 @@ namespace Spineless
         {
         }
         
-        public override void Initialize(GnomicGame game)
+        public override void Initialize(GnomicGame game) 
         {
             Hud = ParentGame.GetScreen<HudScreen>();
 
@@ -76,6 +70,10 @@ namespace Spineless
             AddUnit(UnitType.Knight, new Vector2(0.5f, 0.7f));
 
             projectiles = new ProjectileManager(this);
+                        
+            this.Audio = this.ParentGame.Audio;
+            Audio.AddMediaPlayerSong("heartbeat", "Audio/heartbeat");
+            Cue music = Audio.PlaySong("heartbeat");
 
             base.Initialize(game);
 
@@ -83,14 +81,9 @@ namespace Spineless
             Physics.World.AddJoint(standingJoint);
         }
 
-        void AddUnit(UnitType et, Vector2 offsets)
+        private void AddUnit(UnitType et, Vector2 offsets)
         {
             units.AddUnitToScene(et, Camera2D.Position + new Vector2(ParentGame.ScreenWidth * offsets.X, ParentGame.ScreenHeight * offsets.Y));
-        }
-
-        public void FireProjectile(Vector2 startPos, Vector2 impulse)
-        {
-            projectiles.Launch(startPos, impulse);
         }
 
         private void CreateBackground()
@@ -109,7 +102,7 @@ namespace Spineless
                 background.LayerID = 0;
                 background.Position = new Vector2(ParentGame.ScreenWidth * (i - 1), 0.0f);
                 base.AddEntity(background);
-            
+
                 background = new SpriteEntity();
                 background.SpriteState =
                     new Gnomic.Anim.SpriteState(Content.Load<Texture2D>("Background_Clouds"));
@@ -134,6 +127,36 @@ namespace Spineless
             sky.LayerID = 3;
             sky.Position = new Vector2(0.0f, 0.0f);
             base.AddEntity(sky);
+        }
+
+        public void FireProjectile(Vector2 startPos, Vector2 impulse)
+        {
+            projectiles.Launch(startPos, impulse);
+        }
+
+        public void Splash(Vector2 pos, float radius, float maxDamage)
+        {
+            foreach (List<Unit> us in units.UnitLists.Values)
+            {
+                foreach (Unit u in us)
+                {
+                    if (u.Health > 0)
+                    {
+                        float distance = Vector2.Distance(pos, u.Position);
+
+                        if (distance <= radius)
+                        {
+                            // push
+                            Vector2 blastVector = u.Position - pos;
+                            //blastVector.Y *= -1; // make things always fly
+                            u.Physics.Bodies[0].ApplyLinearImpulse(blastVector);
+
+                            // remove health
+                            u.Health -= (1.0f - distance / radius) * maxDamage; 
+                        }
+                    }
+                }
+            }
         }
 
         public override void Update(float dt)

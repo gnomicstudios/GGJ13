@@ -46,7 +46,7 @@ namespace Spineless
             p.Initialize(lvl);
             p.Deactivated   += new Action<Entity>(OnProjectileDeactivated);
             p.Physics.Bodies[0].FixtureList[0].CollidesWith = (Category)(SpinelessCollisionCategories.Terrain 
-                | SpinelessCollisionCategories.Border
+                //| SpinelessCollisionCategories.Border
                 | SpinelessCollisionCategories.Enemy);
             p.Physics.Bodies[0].FixtureList[0].CollisionCategories = (Category)SpinelessCollisionCategories.SplashProjectile;
             p.Physics.Bodies[0].FixtureList[0].OnCollision = OnSplashProjectileCollision;
@@ -74,10 +74,14 @@ namespace Spineless
         private bool OnSplashProjectileCollision(Fixture fixtureA, Fixture fixtureB, Contact contact)
         {
             Projectile p = (Projectile)fixtureA.UserData;
+
+            // KABOOM!
             p.ClipInstance.Play("death", false);
             p.Deactivate(p.ClipInstance.CurrentAnim.DurationInSeconds);
             p.Physics.Enabled = false;
             p.Physics.Bodies[0].ResetDynamics();
+            
+            lvl.Splash(p.Physics.Position, 100, 120);
 
             return true;
         }
@@ -88,7 +92,7 @@ namespace Spineless
             p.IsActive = false;
             p.Physics.Position = PROJECTILE_START_POS;
             p.ClipInstance.Play("bounce", true);
-            // p.Physics is already deactivated
+            // p.Physics is already deactivated on collision
         }
     }
 }
