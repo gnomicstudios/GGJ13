@@ -1,0 +1,705 @@
+<XnaContent>
+  <Asset Type="Gnomic.Anim.Clip">
+    <Joint>
+      <ParentId>-1</ParentId>
+      <Name>egg.Root0</Name>
+    </Joint>
+    <Joint>
+      <ParentId>0</ParentId>
+      <Name>egg.shadow0</Name>
+    </Joint>
+    <Joint>
+      <ParentId>0</ParentId>
+      <Name>egg.egg0</Name>
+    </Joint>
+    <DrawOrder>1 2</DrawOrder>
+    <AnimSet>
+      <Anim>
+        <Name>rig</Name>
+        <Duration>1</Duration>
+        <Framerate>12</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>egg.egg0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>0.15 -18.6</Pos>
+              <Scale>1 1</Scale>
+              <Origin>17.4 20.751</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>egg.egg0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>egg.egg0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>eggSheet</Tex>
+            <TexRect>55 164 36 43</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>egg.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>0 0</Pos>
+              <Scale>1 1</Scale>
+              <Origin>14.2 5.85</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>egg.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>127</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>egg.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>eggSheet</Tex>
+            <TexRect>105 110 29 13</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>egg.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+      </Anim>
+      <Anim>
+        <Name>lay</Name>
+        <Duration>1</Duration>
+        <Framerate>12</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>egg.egg0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>0.15 -18.6</Pos>
+              <Scale>1 1</Scale>
+              <Origin>17.4 20.751</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>egg.egg0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>egg.egg0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>eggSheet</Tex>
+            <TexRect>55 164 36 43</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>egg.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>egg.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+      </Anim>
+      <Anim>
+        <Name>bounce</Name>
+        <Duration>16</Duration>
+        <Framerate>12</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>egg.egg0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-0.1 -0.35</Pos>
+              <Scale>1.000030517578125 0.96795654296875</Scale>
+              <Origin>17.151 39.001000000000005</Origin>
+              <Rot>-0.11764886957977645</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Transform>
+              <Pos>-0.1 -0.4</Pos>
+              <Scale>1.084747314453125 0.8204345703125</Scale>
+              <Origin>17.151 38.851</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Transform>
+              <Pos>-0.1 -0.4</Pos>
+              <Scale>0.9076385498046875 0.97119140625</Scale>
+              <Origin>17.101 38.901</Origin>
+              <Rot>0.10800689485314457</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>12</FrameNumber>
+            <Transform>
+              <Pos>-0.1 -0.4</Pos>
+              <Scale>1.084747314453125 0.8204345703125</Scale>
+              <Origin>17.151 38.851</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>egg.egg0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>12</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>egg.egg0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>eggSheet</Tex>
+            <TexRect>55 164 36 43</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Tex>eggSheet</Tex>
+            <TexRect>55 164 36 43</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Tex>eggSheet</Tex>
+            <TexRect>55 164 36 43</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>12</FrameNumber>
+            <Tex>eggSheet</Tex>
+            <TexRect>55 164 36 43</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>egg.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>0 0</Pos>
+              <Scale>1 1</Scale>
+              <Origin>14.2 5.85</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Transform>
+              <Pos>0 0</Pos>
+              <Scale>1.211273193359375 1</Scale>
+              <Origin>14.2 5.85</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Transform>
+              <Pos>0 0</Pos>
+              <Scale>1 1</Scale>
+              <Origin>14.2 5.85</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>12</FrameNumber>
+            <Transform>
+              <Pos>0 0</Pos>
+              <Scale>1.211273193359375 1</Scale>
+              <Origin>14.2 5.85</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>egg.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>127</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>127</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>127</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>12</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>127</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>egg.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>eggSheet</Tex>
+            <TexRect>105 110 29 13</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Tex>eggSheet</Tex>
+            <TexRect>105 110 29 13</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Tex>eggSheet</Tex>
+            <TexRect>105 110 29 13</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>12</FrameNumber>
+            <Tex>eggSheet</Tex>
+            <TexRect>105 110 29 13</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>egg.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+      </Anim>
+      <Anim>
+        <Name>death</Name>
+        <Duration>13</Duration>
+        <Framerate>12</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>egg.egg0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-0.15 -21.2</Pos>
+              <Scale>1 1</Scale>
+              <Origin>26.351 28.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Transform>
+              <Pos>-3.5 -34.7</Pos>
+              <Scale>1 1</Scale>
+              <Origin>33.051 51.800999999999995</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>-2.95 -61.25</Pos>
+              <Scale>1 1</Scale>
+              <Origin>41.001000000000005 90.301</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Transform>
+              <Pos>-4 -71.9</Pos>
+              <Scale>1 1</Scale>
+              <Origin>48.551 99.40100000000001</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Transform>
+              <Pos>-5.2 -69.35</Pos>
+              <Scale>1 1</Scale>
+              <Origin>55.751000000000005 103.601</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Transform>
+              <Pos>-8.95 -152.5</Pos>
+              <Scale>1 1</Scale>
+              <Origin>51.251000000000005 25.801</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <Transform>
+              <Pos>0.9 -145.85</Pos>
+              <Scale>1 1</Scale>
+              <Origin>67.05 30.451</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <Transform>
+              <Pos>0.9 -148.35</Pos>
+              <Scale>1 1</Scale>
+              <Origin>67.05 30.451</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Transform>
+              <Pos>0.9 -151.85</Pos>
+              <Scale>1 1</Scale>
+              <Origin>67.05 30.451</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <Transform>
+              <Pos>4.95 -160.45</Pos>
+              <Scale>1 1</Scale>
+              <Origin>69.6 22.101</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <Transform>
+              <Pos>4.95 -162.45</Pos>
+              <Scale>1 1</Scale>
+              <Origin>69.6 22.101</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Transform>
+              <Pos>4.95 -165.45</Pos>
+              <Scale>1 1</Scale>
+              <Origin>69.6 22.101</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>12</FrameNumber>
+            <Transform>
+              <Pos>4.95 -167.45</Pos>
+              <Scale>1 1</Scale>
+              <Origin>69.6 22.101</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>egg.egg0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>204</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>153</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>102</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>12</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>26</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>egg.egg0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>eggSheet</Tex>
+            <TexRect>0 164 54 59</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Tex>eggSheet</Tex>
+            <TexRect>439 0 68 105</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>eggSheet</Tex>
+            <TexRect>355 0 83 182</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex>eggSheet</Tex>
+            <TexRect>255 0 99 200</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Tex>eggSheet</Tex>
+            <TexRect>141 0 113 206</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Tex>eggSheet</Tex>
+            <TexRect>0 110 104 53</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <Tex>eggSheet</Tex>
+            <TexRect>0 47 135 62</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <Tex>eggSheet</Tex>
+            <TexRect>0 47 135 62</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Tex>eggSheet</Tex>
+            <TexRect>0 47 135 62</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <Tex>eggSheet</Tex>
+            <TexRect>0 0 140 46</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <Tex>eggSheet</Tex>
+            <TexRect>0 0 140 46</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Tex>eggSheet</Tex>
+            <TexRect>0 0 140 46</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>12</FrameNumber>
+            <Tex>eggSheet</Tex>
+            <TexRect>0 0 140 46</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>egg.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>egg.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+      </Anim>
+    </AnimSet>
+  </Asset>
+</XnaContent>

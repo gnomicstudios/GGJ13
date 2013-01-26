@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -51,6 +51,8 @@ namespace Spineless.Entities
             get { return physics; }
         }
 
+        public LevelScreen LevelScreen { get; set; }
+
         protected override void OnActivate()
         {
             base.OnActivate();
@@ -90,6 +92,8 @@ namespace Spineless.Entities
 
                 physics.Enabled = Settings.ActivateByDefault;
             }
+
+            this.LevelScreen = (LevelScreen)parentScreen;
         }
 
         public override void Update(float dt)

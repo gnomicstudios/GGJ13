@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.Xna.Framework;
-using Gnomic.Anim;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
 using Gnomic;
-using Gnomic.Entities;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace Spineless.Entities
 {
@@ -17,30 +11,21 @@ namespace Spineless.Entities
         const float MIN_DRAG_DISTANCE = 20; // distance at which to register was indeed a "drag"
         const int DRAG_RADIUS = 100;
 
-        public Vector2 Pos;
 
         internal Texture2D AimTexture;
 
-        Vector2 dragStart, dragEnd, lastDragEnd;
+        Vector2 dragStart, dragEnd, dragVector;
         float dragDistance, angle;
         bool isDragging;
-        //List<Weapon> weapons;
-        //Weapon currentWeapon;
         
         public Princess()
         { 
-            //this.weapons = new List<Weapon>();
-            //this.currentWeapon = new Bow() { 
-            //    Angle = MathHelper.Pi,
-            //    Pos = this.Origin,
-
-            //};
-            //this.weapons.Add(this.currentWeapon);
         }
 
         private void Fire()
         {
- 
+            dragVector = dragEnd - dragStart;
+            this.LevelScreen.FireProjectile(dragVector);
         }
 
         public override void Update(float dt)
@@ -64,7 +49,6 @@ namespace Spineless.Entities
 
                 angle = (float)Math.Atan2(dragEnd.Y - dragStart.Y, dragEnd.X - dragStart.X);
                 
-                //currentWeapon.Angle = angle;
             }
             else if (Input.MouseJustUp(MouseButton.Left) && isDragging)
             {
@@ -72,11 +56,15 @@ namespace Spineless.Entities
 
                 if (dragDistance < MIN_DRAG_DISTANCE)
                 {
+                    // do nothing...
                 }
                 else
                 {
+                    Fire();
                 }
             }
+
+            base.Update(dt);
         }
 
         public override void Draw2D(SpriteBatch spriteBatch)
@@ -85,8 +73,6 @@ namespace Spineless.Entities
 
             if(isDragging)
                 spriteBatch.Draw(this.AimTexture, dragStart, null, Color.Red, angle, Vector2.Zero, new Vector2(dragDistance, 2), SpriteEffects.None, 0);
-
-            //currentWeapon.Draw(spriteBatch);
         }
 
     }

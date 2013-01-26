@@ -79,18 +79,18 @@
     <Compile Include="AI\IBaseUnit.cs" />
     <Compile Include="AI\IMoveable.cs" />
     <Compile Include="AI\IPerceptive.cs" />
-    <Compile Include="Bow.cs" />
     <Compile Include="Entities\AIControlledEntity.cs" />
+    <Compile Include="Entities\Projectile.cs" />
     <Compile Include="Entities\SpinelessEntity.cs" />
     <Compile Include="Entities\Unit.cs" />
     <Compile Include="LevelScreen.cs" />
     <Compile Include="Entities\Princess.cs" />
+    <Compile Include="ProjectileManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="SpinelessGame.cs" />
     <Compile Include="UnitManager.cs" />
-    <Compile Include="Weapon.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />
