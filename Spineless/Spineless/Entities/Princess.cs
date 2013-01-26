@@ -7,15 +7,16 @@ namespace Spineless.Entities
 {
     class Princess : SpinelessEntity
     {
-        const float MAX_DRAG_DISTANCE = 100;
-        const float MIN_DRAG_DISTANCE = 20; // distance at which to register was indeed a "drag"
-        const int DRAG_RADIUS = 100;
-        const float POWER = 0.05f;
+        const float MAX_DRAG_DISTANCE   = 100;
+        const float MIN_DRAG_DISTANCE   = 20;       // distance at which to register was indeed a "drag"
+        const int DRAG_RADIUS           = 100;
+        const float POWER               = 0.05f;
+        const float MAX_RATE_OF_FIRE    = 1.0f;
         
         internal Texture2D AimTexture;
 
         Vector2 dragStart, dragEnd, dragVector, fireOffset;
-        float dragDistance, angle;
+        float dragDistance, angle, lastFired;
         bool isDragging;
         
         public Princess()
@@ -27,13 +28,16 @@ namespace Spineless.Entities
             dragVector = dragStart - dragEnd;
             dragVector *= POWER;
             this.LevelScreen.FireProjectile(this.Position + fireOffset, dragVector);
+            lastFired = 0;
         }
 
         public override void Update(float dt)
         {
+            lastFired += dt;
+
             if (Input.MouseDown(MouseButton.Left))
             {
-                if (!isDragging)
+                if (!isDragging && lastFired > MAX_RATE_OF_FIRE)
                 {
                     if (Vector2.Distance(this.Origin, new Vector2(Input.MouseX, Input.MouseY)) < DRAG_RADIUS)
                     {
