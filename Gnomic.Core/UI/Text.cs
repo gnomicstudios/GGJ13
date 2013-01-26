@@ -435,6 +435,8 @@ namespace Gnomic.UI
                                         rotation, origin, scale, SpriteEffects.None, Settings.LayerDepth);
 		}
 
+        protected int layerID = 0;
+        public virtual int LayerID { get { return layerID; } }
 #endregion
 
         Vector2 ToScreenSpace(Vector2 midSpace)
