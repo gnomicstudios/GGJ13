@@ -59,8 +59,8 @@ namespace Gnomic.Entities
 
         public ClipInstance ClipInstance;
         public Body DynamicBody;
-        
-        public Vector2 Position
+
+        public virtual Vector2 Position
         {
             get { return ClipInstance.Position; }
             set { ClipInstance.Position = value; }
