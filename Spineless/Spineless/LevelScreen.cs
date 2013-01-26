@@ -28,7 +28,6 @@ namespace Spineless
         public Princess lilMissBadAss;
         RevoluteJoint standingJoint;
 
-
         public LevelScreen()
         {
         }
@@ -103,7 +102,7 @@ namespace Spineless
                         if (distance <= radius)
                         {
                             // push
-                            Vector2 blastVector = pos - u.Position;
+                            Vector2 blastVector = u.Position - pos;
                             blastVector.Y *= -1; // make things always fly
                             u.Physics.Bodies[0].ApplyLinearImpulse(blastVector);
 
