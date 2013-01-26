@@ -47,8 +47,7 @@ namespace Spineless
             SpinelessEntitySettings settings = new SpinelessEntitySettings();
             settings.EntityClass = "Spineless.Entities.PrincessVehicle,Spineless";
             settings.ClipFile = "siegeTower";
-            settings.Position = new Vector2(ParentGame.ScreenWidth / 5,
-                                            ParentGame.ScreenHeight - floorHeight);
+            settings.Position = new Vector2(ParentGame.ScreenWidth / 5, ParentGame.ScreenHeight - floorHeight);
             settings.DefaultAnimName = "rig";
             settings.Physics = new SpinelessPhysicsSettings();
             settings.Physics.Width = 2.5f;
@@ -99,9 +98,9 @@ namespace Spineless
             units.AddUnitToScene(et, Camera2D.Position + new Vector2(ParentGame.ScreenWidth * offsets.X, ParentGame.ScreenHeight * offsets.Y));
         }
 
-        public void FireProjectile(Vector2 impulse)
+        public void FireProjectile(Vector2 startPos, Vector2 impulse)
         {
-            projectiles.Launch(impulse);
+            projectiles.Launch(startPos, impulse);
         }
 
         private void CreateBackground()
