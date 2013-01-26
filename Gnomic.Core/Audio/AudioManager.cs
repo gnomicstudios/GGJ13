@@ -129,12 +129,13 @@ namespace Gnomic.Audio
             get { return currentSongId; }
         }
 
-        public AudioManager()
+        public AudioManager(ContentManager content)
         {
 #if !USE_XACT
             for (int i = 0; i < 20; ++i)
                 cuePool.Add(new Cue());
 #endif
+            this.content = content;
         }
 
 #if !USE_XACT
@@ -167,7 +168,7 @@ namespace Gnomic.Audio
             SongList.Add(songCueName);
         }
 
-        public void Initialise(string settingsPath)
+        public void Initialise(string settingsPath, ContentManager content)
         {
 #if USE_XACT
             engine = new AudioEngine(settingsPath);
@@ -299,6 +300,10 @@ namespace Gnomic.Audio
             return null;
         }
 
+        public Cue PlaySong(string name)
+        {
+            return PlaySong(name, 0.0f);
+        }
 
         public Cue PlaySong(string name, float delayTime)
         {

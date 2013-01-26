@@ -95,7 +95,7 @@ namespace Gnomic
             ((Gnomic.Core.ContentTracker)content).UseSourceAssets = true;
 #endif
             
-            audio = new AudioManager();
+            audio = new AudioManager(Content);
 
             spriteBatch = new SpriteBatch(graphicsDevice);
 
