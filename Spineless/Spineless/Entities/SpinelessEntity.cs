@@ -35,8 +35,6 @@ namespace Spineless.Entities
         
         public SpinelessEntitySettings()
         {
-            Physics = new SpinelessPhysicsSettings();
-
             this.EntityClass = "Spineless.Entities.SpinelessEntity,Spineless";
         }
     }
@@ -57,26 +55,21 @@ namespace Spineless.Entities
         {
             base.Initialize(parentScreen);
 
-            // Settings.Physics = SimplePhysicsFactory.CreateBox(
-            //     new Vector2(0,0), 100.0f, 100.0f);
-
-            var body = BodyFactory.CreateRectangle(
-                parentScreen.Physics.World,
-                Settings.Physics.Width,
-                Settings.Physics.Height,
-                Settings.Physics.Density,
-                ConvertUnits.ToSimUnits(Settings.Position));
-            body.BodyType = BodyType.Dynamic;
-
-            physics = new PhysicsStructure
+            if (Settings.Physics != null)
             {
-                Bodies = { body }
-            };
+                var body = BodyFactory.CreateRectangle(
+                    parentScreen.Physics.World,
+                    Settings.Physics.Width,
+                    Settings.Physics.Height,
+                    Settings.Physics.Density,
+                    ConvertUnits.ToSimUnits(Settings.Position));
+                body.BodyType = BodyType.Dynamic;
 
-            // physics = Settings.Physics.CreateStructure(
-            //     parentScreen.Physics.World, this.Position);
-            // physics.SetVelocityLimit(
-            //     parentScreen.Physics.World, Settings.MaxSpeed, 0.0f);
+                physics = new PhysicsStructure
+                {
+                    Bodies = { body }
+                };
+            }
         }
 
         public override void Update(float dt)
