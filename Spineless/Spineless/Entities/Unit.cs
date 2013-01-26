@@ -33,12 +33,18 @@ namespace Spineless.Entities
         #region IMoveable
 
         public float Speed { get; set; }
+
         public void MoveTowards(Vector2 target)
         {
             Vector2 direction = target - Position;
             direction.Normalize();
 
             physics.ApplyForceToBody(0, Speed, direction);
+        }
+
+        public void Stop()
+        {
+            
         }
 
         #endregion

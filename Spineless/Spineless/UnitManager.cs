@@ -22,6 +22,13 @@ namespace Spineless
 
         public List<Unit> ActiveEnemies = new List<Unit>();
 
+        const int NUM_LANES = 5;
+        const float LANE_OFFSET = 0.1f;
+        const float LANE_START  = -0.25f;
+
+        Dictionary<int, float> lanes = new Dictionary<int, float>();
+        Random random = new Random();
+
         public UnitManager(LevelScreen screen)
         {
             this.screen = screen;
@@ -38,6 +45,11 @@ namespace Spineless
 
             enemyClipNames[UnitType.Knight] = "knight";
             unitLists[UnitType.Knight] = new List<Unit>(20);
+
+            for (int i = 0; i < NUM_LANES; ++i)
+            {
+                lanes[i] = LANE_START + (i * LANE_OFFSET);
+            }
 
             for (int i = 0; i < 10; ++i)
             {
@@ -74,7 +86,7 @@ namespace Spineless
             es.Physics = new SpinelessPhysicsSettings();
             es.Physics.Width = 0.6f;
             es.Physics.Height = 1f;
-            es.Physics.Offset = new Vector2(0.0f, -0.5f);
+            es.Physics.Offset = new Vector2(0.0f, RandomLaneOffset());
             es.ActivateByDefault = false;
             var e = (Unit)es.CreateEntity();
             e.UnitType = et;
@@ -88,6 +100,11 @@ namespace Spineless
             
             unitLists[et].Add(e);
             return e;
+        }
+
+        float RandomLaneOffset()
+        {
+            return lanes[random.Next(0, NUM_LANES-1)];
         }
 
         void UnitActivated(Gnomic.Entities.Entity ent)

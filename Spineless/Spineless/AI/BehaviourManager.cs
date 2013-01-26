@@ -34,11 +34,23 @@ namespace Spineless.AI
 
             #region UnitType.Grunt
 
-            beh = new Sequence<IBaseUnit> {
+            beh = new Selector<IBaseUnit> {
                 Children =
                 {
-                    new SelectNearestTypeAction<IBaseUnit>(UnitType.Knight),
-                    new MoveTowardsSelectedAction<IBaseUnit>()
+                    new Sequence<IBaseUnit> {
+                        Children =
+                        {
+                            new CloseToSelectedCheck<IBaseUnit>(100.0f),
+                            new SetSpeedAction<IBaseUnit>(0.0f)
+                        }
+                    },
+                    new Sequence<IBaseUnit> {
+                        Children =
+                        {
+                            new SelectNearestTypeAction<IBaseUnit>(UnitType.Knight),
+                            new MoveTowardsSelectedAction<IBaseUnit>()
+                        }
+                    }
                 }
             };
 

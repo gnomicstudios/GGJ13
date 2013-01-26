@@ -15,6 +15,7 @@ namespace Spineless.AI
         float Speed { get; set; }
 
         void MoveTowards(Vector2 position);
+        void Stop();
     }
 
     public class SetSpeedAction<T> : Behaviour<T> where T: IMoveable
