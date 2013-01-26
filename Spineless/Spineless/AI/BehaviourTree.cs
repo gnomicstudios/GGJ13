@@ -10,6 +10,14 @@ namespace Spineless.AI
         public abstract bool Evaluate(T actor);
     }
 
+    public class IdentityBehaviour<T> : Behaviour<T>
+    {
+        public override bool Evaluate(T actor)
+        {
+            return true;
+        }
+    }
+
     public abstract class Composite<T> : Behaviour<T>
     {
         protected List<Behaviour<T>> m_nodes;
