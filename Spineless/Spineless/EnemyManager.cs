@@ -23,13 +23,13 @@ namespace Spineless
         {
             this.screen = screen;
 
-            enemyClipNames[EnemyType.Grunt] = "player_player";
+            enemyClipNames[EnemyType.Grunt] = "enemy";
             enemyLists[EnemyType.Grunt] = new List<Enemy>(20);
 
-            enemyClipNames[EnemyType.Captain] = "player_player";
+            enemyClipNames[EnemyType.Captain] = "enemy";
             enemyLists[EnemyType.Captain] = new List<Enemy>(20);
 
-            enemyClipNames[EnemyType.Boss] = "player_player";
+            enemyClipNames[EnemyType.Boss] = "enemy";
             enemyLists[EnemyType.Boss] = new List<Enemy>(20);
 
             for (int i = 0; i < 10; ++i)
@@ -61,12 +61,12 @@ namespace Spineless
         {
             SpinelessEntitySettings es = new SpinelessEntitySettings();
             es.EntityClass = "Spineless.Entities.Enemy,Spineless";
-            es.DefaultAnimName = "run-left";
-            es.Scale = new Vector2(0.5f, 0.5f);
+            es.DefaultAnimName = "walk";
             es.ClipFile = enemyClipNames[et];
             es.Physics = new SpinelessPhysicsSettings();
-            es.Physics.Width = 2f;
-            es.Physics.Height = 2.75f;
+            es.Physics.Width = 0.6f;
+            es.Physics.Height = 1f;
+            es.Physics.Offset = new Vector2(0.0f, -0.5f);
             es.ActivateByDefault = false;
             var e = (Enemy)es.CreateEntity();
             e.EnemyType = et;

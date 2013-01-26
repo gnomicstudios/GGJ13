@@ -1,0 +1,279 @@
+<XnaContent>
+  <Asset Type="Gnomic.Anim.Clip">
+    <Joint>
+      <ParentId>-1</ParentId>
+      <Name>enemy.Root0</Name>
+    </Joint>
+    <Joint>
+      <ParentId>0</ParentId>
+      <Name>enemy.body0</Name>
+    </Joint>
+    <Joint>
+      <ParentId>0</ParentId>
+      <Name>enemy.head0</Name>
+    </Joint>
+    <DrawOrder>1 2</DrawOrder>
+    <AnimSet>
+      <Anim>
+        <Name>rig</Name>
+        <Duration>1</Duration>
+        <Framerate>12</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>enemy.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>0.25 -43.65</Pos>
+              <Scale>1 1</Scale>
+              <Origin>17.5 15.951</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>enemy.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>enemy.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>enemySheet</Tex>
+            <TexRect>45 46 36 33</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>enemy.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>1.5 -21.2</Pos>
+              <Scale>1 1</Scale>
+              <Origin>21.65 21.851</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>enemy.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>enemy.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>enemySheet</Tex>
+            <TexRect>0 46 44 45</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>enemy.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+      </Anim>
+      <Anim>
+        <Name>idol</Name>
+        <Duration>1</Duration>
+        <Framerate>12</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>enemy.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>0.25 -43.65</Pos>
+              <Scale>1 1</Scale>
+              <Origin>17.5 15.951</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>enemy.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>enemy.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>enemySheet</Tex>
+            <TexRect>45 46 36 33</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>enemy.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>1.5 -21.2</Pos>
+              <Scale>1 1</Scale>
+              <Origin>21.65 21.851</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>enemy.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>enemy.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>enemySheet</Tex>
+            <TexRect>0 46 44 45</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>enemy.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+      </Anim>
+      <Anim>
+        <Name>walk</Name>
+        <Duration>6</Duration>
+        <Framerate>12</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>enemy.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>0.25 -43.65</Pos>
+              <Scale>1 1</Scale>
+              <Origin>17.5 15.951</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>enemy.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>enemy.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>enemySheet</Tex>
+            <TexRect>45 46 36 33</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>enemy.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>3.85 -21.15</Pos>
+              <Scale>1 1</Scale>
+              <Origin>25.5 21.901</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Transform>
+              <Pos>1.6 -20.3</Pos>
+              <Scale>1 1</Scale>
+              <Origin>21.85 21.651</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>enemy.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>enemy.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>enemySheet</Tex>
+            <TexRect>0 0 47 45</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex>enemySheet</Tex>
+            <TexRect>48 0 45 44</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>enemy.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+      </Anim>
+    </AnimSet>
+  </Asset>
+</XnaContent>
