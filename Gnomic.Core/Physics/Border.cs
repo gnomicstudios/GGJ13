@@ -16,6 +16,7 @@ using FarseerPhysics.Factories;
 using Gnomic.Core;
 using Gnomic.Anim;
 
+
 namespace Gnomic.Physics
 {
     public class Border
@@ -43,6 +44,8 @@ namespace Gnomic.Physics
 
             _anchor = BodyFactory.CreateLoopShape(world, Corners);
             _anchor.Friction = friction;
+
+            _anchor.CollisionCategories = Category.Cat8;
         }
     }
 }

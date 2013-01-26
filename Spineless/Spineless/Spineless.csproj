@@ -86,6 +86,7 @@
     <Compile Include="Entities\Projectile.cs" />
     <Compile Include="Entities\SpinelessEntity.cs" />
     <Compile Include="Entities\Unit.cs" />
+    <Compile Include="Enums.cs" />
     <Compile Include="HudScreen.cs" />
     <Compile Include="LevelScreen.cs" />
     <Compile Include="Entities\Princess.cs" />
