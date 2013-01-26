@@ -51,9 +51,9 @@ namespace Spineless
             // base.AddEntity(settings.CreateEntity());
 
             SpinelessEntitySettings princessClipSettings = new SpinelessEntitySettings();
-            princessClipSettings.ClipFile           = "player_player.clipxml";
-            princessClipSettings.Position           = new Vector2(120, 156);
-            princessClipSettings.DefaultAnimName    = "idle-right";
+            princessClipSettings.ClipFile           = "princess.clipxml";
+            princessClipSettings.Position           = new Vector2(120, 220);
+            princessClipSettings.DefaultAnimName    = "idle";
             princessClipSettings.EntityClass        = "Spineless.Entities.Princess, Spineless";
             Princess lilMissBadAss                  = (Princess)princessClipSettings.CreateEntity();
             base.AddEntity(lilMissBadAss); // sets ParentScreen
@@ -71,7 +71,7 @@ namespace Spineless
 
         void AddUnit(UnitType et, Vector2 offsets)
         {
-            units.AddUnitToScene(et, Camera2D.Position + new Vector2(ParentGame.ScreenWidth * offsets.X, ParentGame.ScreenHeight * offsets.Y));
+            units.AddUnitToScene(et, Camera2D.Position + new Vector2(ParentGame.ScreenWidth * 0.9f, ParentGame.ScreenHeight * 0.7f));
         }
 
         public void FireProjectile(Vector2 impulse)
