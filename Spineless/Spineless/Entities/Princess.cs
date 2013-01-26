@@ -7,16 +7,16 @@ namespace Spineless.Entities
 {
     public class Princess : SpinelessEntity
     {
-        const float MAX_DRAG_DISTANCE   = 100;
-        const float MIN_DRAG_DISTANCE   = 20;       // distance at which to register was indeed a "drag"
-        const int DRAG_RADIUS           = 100;
-        const float POWER               = 0.05f;
-        const float MAX_RATE_OF_FIRE    = 1.0f;
+        const float     MAX_DRAG_DISTANCE   = 100;
+        const float     MIN_DRAG_DISTANCE   = 20;       // distance at which to register was indeed a "drag"
+        const int       DRAG_RADIUS         = 100;
+        const float     POWER               = 0.05f;
+        const float     MAX_RATE_OF_FIRE    = 1.0f;
         
         internal Texture2D AimTexture;
 
         Vector2 dragStart, dragEnd, dragVector, fireOffset;
-        float dragDistance, angle, lastFired;
+        float dragDistance, angle, timeSinceLastFired;
         bool isDragging;
         
         public Princess()
@@ -52,18 +52,18 @@ namespace Spineless.Entities
             dragVector = dragStart - dragEnd;
             dragVector *= POWER;
             this.LevelScreen.FireProjectile(this.Position + fireOffset, dragVector);
-            lastFired = 0;
+            timeSinceLastFired = 0;
         }
 
         public override void Update(float dt)
         {
-            lastFired += dt;
+            timeSinceLastFired += dt;
 
             if (Input.MouseDown(MouseButton.Left))
             {
-                if (!isDragging && lastFired > MAX_RATE_OF_FIRE)
+                if (!isDragging && timeSinceLastFired > MAX_RATE_OF_FIRE)
                 {
-                    if (Vector2.Distance(this.Origin, new Vector2(Input.MouseX, Input.MouseY)) < DRAG_RADIUS)
+                    if (Vector2.Distance(this.Position - LevelScreen.Camera2D.Position, new Vector2(Input.MouseX, Input.MouseY)) < DRAG_RADIUS)
                     {
                         isDragging = true;
                         dragStart = new Vector2(Input.MouseX, Input.MouseY); 
@@ -101,7 +101,7 @@ namespace Spineless.Entities
             base.Draw2D(spriteBatch);
 
             if(isDragging)
-                spriteBatch.Draw(this.AimTexture, dragStart, null, Color.Red, angle, Vector2.Zero, new Vector2(dragDistance, 2), SpriteEffects.None, 0);
+                spriteBatch.Draw(this.AimTexture, dragStart + LevelScreen.Camera2D.Position, null, Color.Red, angle, Vector2.Zero, new Vector2(dragDistance, 2), SpriteEffects.None, 0);
         }
 
     }
