@@ -47,6 +47,7 @@ namespace Spineless
             {
                 if (!p.IsActive)
                 {
+                    p.Physics.Enabled = true;
                     p.Physics.Bodies[0].ApplyLinearImpulse(impulse);
                     p.IsActive = true;
                     lvl.AddEntity(p);

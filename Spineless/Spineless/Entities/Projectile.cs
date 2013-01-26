@@ -12,6 +12,11 @@ namespace Spineless.Entities
         {
             IsActive = false;
         }
+
+        public override void Draw2D(SpriteBatch spriteBatch)
+        {
+            base.Draw2D(spriteBatch);
+        }
         
     }
 }
