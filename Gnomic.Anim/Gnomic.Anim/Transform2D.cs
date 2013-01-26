@@ -37,7 +37,8 @@ namespace Gnomic.Anim
         {
             result.Pos = Vector2.Lerp(key1.Pos, key2.Pos, amount);
             result.Scale = Vector2.Lerp(key1.Scale, key2.Scale, amount);
-            result.Rot = MathHelper.Lerp(key1.Rot, key2.Rot, amount);
+            result.Rot = Math.Abs(key2.Rot - key1.Rot) < MathHelper.Pi ? 
+                        MathHelper.Lerp(key1.Rot, key2.Rot, amount) : MathHelper.Lerp(key2.Rot, key1.Rot, amount);
 			result.Origin = Vector2.Lerp(key1.Origin, key2.Origin, amount);
         }
 

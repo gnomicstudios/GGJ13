@@ -1,0 +1,488 @@
+<XnaContent>
+  <Asset Type="Gnomic.Anim.Clip">
+    <Joint>
+      <ParentId>-1</ParentId>
+      <Name>siegeTower.Root0</Name>
+    </Joint>
+    <Joint>
+      <ParentId>0</ParentId>
+      <Name>siegeTower.shadow0</Name>
+    </Joint>
+    <Joint>
+      <ParentId>0</ParentId>
+      <Name>siegeTower.base0</Name>
+    </Joint>
+    <Joint>
+      <ParentId>0</ParentId>
+      <Name>siegeTower.wheelBack0</Name>
+    </Joint>
+    <Joint>
+      <ParentId>0</ParentId>
+      <Name>siegeTower.wheelFront0</Name>
+    </Joint>
+    <DrawOrder>1 2 3 4</DrawOrder>
+    <AnimSet>
+      <Anim>
+        <Name>rig</Name>
+        <Duration>1</Duration>
+        <Framerate>12</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>siegeTower.wheelFront0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>69.25 -36.1</Pos>
+              <Scale>1 1</Scale>
+              <Origin>49.25 52.451</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>siegeTower.wheelFront0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>siegeTower.wheelFront0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>202 56 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>siegeTower.wheelBack0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-69.7 -36.1</Pos>
+              <Scale>1 1</Scale>
+              <Origin>49.201 52.351</Origin>
+              <Rot>-0.6849466565568585</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>siegeTower.wheelBack0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>siegeTower.wheelBack0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>202 56 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>siegeTower.base0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>4.15 -158.7</Pos>
+              <Scale>1 1</Scale>
+              <Origin>100.1 141.051</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>siegeTower.base0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>siegeTower.base0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>0 56 201 284</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>siegeTower.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>3.25 -6.75</Pos>
+              <Scale>1 1</Scale>
+              <Origin>130.5 26.451</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>siegeTower.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>89</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>siegeTower.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>0 0 262 55</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>siegeTower.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+      </Anim>
+      <Anim>
+        <Name>moving</Name>
+        <Duration>30</Duration>
+        <Framerate>12</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>siegeTower.wheelFront0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>69.25 -36.1</Pos>
+              <Scale>1 1</Scale>
+              <Origin>49.25 52.401</Origin>
+              <Rot>0</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>14</FrameNumber>
+            <Transform>
+              <Pos>69.25 -36.1</Pos>
+              <Scale>1 1</Scale>
+              <Origin>49.25 53.1</Origin>
+              <Rot>3.0719270226344104</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>29</FrameNumber>
+            <Transform>
+              <Pos>69.25 -36.1</Pos>
+              <Scale>0.9999847412109375 0.9999847412109375</Scale>
+              <Origin>49.4 52.451</Origin>
+              <Rot>-0.35336845345599793</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>siegeTower.wheelFront0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>14</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>29</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>siegeTower.wheelFront0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>202 56 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>14</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>202 56 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>29</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>202 56 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>siegeTower.wheelBack0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-69.7 -36.1</Pos>
+              <Scale>1 1</Scale>
+              <Origin>49.201 52.251</Origin>
+              <Rot>-0.6849466565568585</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>14</FrameNumber>
+            <Transform>
+              <Pos>-69.7 -36.1</Pos>
+              <Scale>0.9999847412109375 0.9999847412109375</Scale>
+              <Origin>49.151 53.25</Origin>
+              <Rot>2.1250502170688796</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>29</FrameNumber>
+            <Transform>
+              <Pos>-69.7 -36.1</Pos>
+              <Scale>1 1</Scale>
+              <Origin>49.4 52.301</Origin>
+              <Rot>-1.0994152159542174</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>siegeTower.wheelBack0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>14</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>29</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>siegeTower.wheelBack0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>202 56 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>14</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>202 56 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>29</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>202 56 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>siegeTower.base0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>2.15 -32.7</Pos>
+              <Scale>1 1</Scale>
+              <Origin>98.101 267</Origin>
+              <Rot>0</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Transform>
+              <Pos>2.15 -30.7</Pos>
+              <Scale>1.0000152587890625 1.0000152587890625</Scale>
+              <Origin>98.101 266.95</Origin>
+              <Rot>-0.025308818787350026</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>20</FrameNumber>
+            <Transform>
+              <Pos>-0.85 -33.7</Pos>
+              <Scale>1.000030517578125 1.000030517578125</Scale>
+              <Origin>98.00099999999999 267.05</Origin>
+              <Rot>0.06968081097359624</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>29</FrameNumber>
+            <Transform>
+              <Pos>2.15 -32.7</Pos>
+              <Scale>1.0000152587890625 1.0000152587890625</Scale>
+              <Origin>98.101 267</Origin>
+              <Rot>0.00904808980354421</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>siegeTower.base0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>20</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>29</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>siegeTower.base0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>0 56 201 284</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>0 56 201 284</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>20</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>0 56 201 284</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>29</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>0 56 201 284</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>siegeTower.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>3.25 -6.75</Pos>
+              <Scale>1 1</Scale>
+              <Origin>130.5 26.401</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>siegeTower.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>89</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>siegeTower.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>0 0 262 55</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>siegeTower.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+      </Anim>
+    </AnimSet>
+  </Asset>
+</XnaContent>

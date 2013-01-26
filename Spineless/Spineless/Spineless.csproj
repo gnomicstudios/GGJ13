@@ -82,9 +82,11 @@
     <Compile Include="AI\IMoveable.cs" />
     <Compile Include="AI\IPerceptive.cs" />
     <Compile Include="Entities\AIControlledEntity.cs" />
+    <Compile Include="Entities\PrincessVehicle.cs" />
     <Compile Include="Entities\Projectile.cs" />
     <Compile Include="Entities\SpinelessEntity.cs" />
     <Compile Include="Entities\Unit.cs" />
+    <Compile Include="HudScreen.cs" />
     <Compile Include="LevelScreen.cs" />
     <Compile Include="Entities\Princess.cs" />
     <Compile Include="ProjectileManager.cs" />
