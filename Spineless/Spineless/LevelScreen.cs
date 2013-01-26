@@ -20,6 +20,7 @@ namespace Spineless
     {
         Camera2D camera;
         UnitManager units;
+        ProjectileManager projectiles;
 
         public LevelScreen()
         {
@@ -61,12 +62,19 @@ namespace Spineless
             units = new UnitManager(this);
             AddUnit(UnitType.Grunt);
 
+            projectiles = new ProjectileManager(this);
+
             base.Initialize(game);
         }
 
         void AddUnit(UnitType et)
         {
             units.AddUnitToScene(et, Camera2D.Position + new Vector2(ParentGame.ScreenWidth * 0.9f, ParentGame.ScreenHeight * 0.7f));
+        }
+
+        public void FireProjectile(Vector2 impulse)
+        {
+            projectiles.Launch(impulse);
         }
 
         private void CreateBackground()
