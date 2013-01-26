@@ -5,16 +5,19 @@ using System.Text;
 using Spineless.Entities;
 using Microsoft.Xna.Framework;
 
+using Spineless.AI;
+
 namespace Spineless
 {
-    class UnitManager
+    public class UnitManager
     {
         LevelScreen screen;
+        BehaviourManager behaviours;
 
         Dictionary<UnitType, string> enemyClipNames =
             new Dictionary<UnitType, string>(new UnitTypeComparer());
 
-        Dictionary<UnitType, List<Unit>> enemyLists =
+        Dictionary<UnitType, List<Unit>> unitLists =
             new Dictionary<UnitType, List<Unit>>(new UnitTypeComparer());
 
         public List<Unit> ActiveEnemies = new List<Unit>();
@@ -22,27 +25,32 @@ namespace Spineless
         public UnitManager(LevelScreen screen)
         {
             this.screen = screen;
+            behaviours  = new BehaviourManager();
 
-            enemyClipNames[UnitType.Grunt] = "player_player";
-            enemyLists[UnitType.Grunt] = new List<Unit>(20);
+            enemyClipNames[UnitType.Grunt] = "enemy";
+            unitLists[UnitType.Grunt] = new List<Unit>(20);
 
-            enemyClipNames[UnitType.Captain] = "player_player";
-            enemyLists[UnitType.Captain] = new List<Unit>(20);
+            enemyClipNames[UnitType.Captain] = "enemy";
+            unitLists[UnitType.Captain] = new List<Unit>(20);
 
-            enemyClipNames[UnitType.Boss] = "player_player";
-            enemyLists[UnitType.Boss] = new List<Unit>(20);
+            enemyClipNames[UnitType.Boss] = "enemy";
+            unitLists[UnitType.Boss] = new List<Unit>(20);
+
+            enemyClipNames[UnitType.Knight] = "knight";
+            unitLists[UnitType.Knight] = new List<Unit>(20);
 
             for (int i = 0; i < 10; ++i)
             {
                 Create(UnitType.Grunt);
                 Create(UnitType.Captain);
                 Create(UnitType.Boss);
+                Create(UnitType.Knight);
             }
         }
 
         public Unit AddUnitToScene(UnitType et, Vector2 pos)
         {
-            List<Unit> enemies = enemyLists[et];
+            List<Unit> enemies = unitLists[et];
             foreach (Unit e in enemies)
             {
                 if (!e.IsAdded)
@@ -61,20 +69,23 @@ namespace Spineless
         {
             SpinelessEntitySettings es = new SpinelessEntitySettings();
             es.EntityClass = "Spineless.Entities.Unit,Spineless";
-            es.DefaultAnimName = "run-left";
-            es.Scale = new Vector2(0.5f, 0.5f);
+            es.DefaultAnimName = "walk";
             es.ClipFile = enemyClipNames[et];
             es.Physics = new SpinelessPhysicsSettings();
-            es.Physics.Width = 2f;
-            es.Physics.Height = 2.75f;
+            es.Physics.Width = 0.6f;
+            es.Physics.Height = 1f;
+            es.Physics.Offset = new Vector2(0.0f, -0.5f);
             es.ActivateByDefault = false;
             var e = (Unit)es.CreateEntity();
             e.UnitType = et;
             e.Activated += UnitActivated;
             e.Deactivated += UnitDeactivated;
             e.Initialize(screen);
+
+            e.UnitManager = this;
+            e.Behaviour   = behaviours.Create<IBaseUnit>(et);
             
-            enemyLists[et].Add(e);
+            unitLists[et].Add(e);
             return e;
         }
 
@@ -83,12 +94,33 @@ namespace Spineless
             ActiveEnemies.Add((Unit)ent);
         }
 
-
         void UnitDeactivated(Gnomic.Entities.Entity ent)
         {
             var e =(Unit)ent;
             ActiveEnemies.Remove(e);
             e.IsAdded = false;
+        }
+
+        public Unit FindNearestTypeTo(UnitType type, Unit start)
+        {
+            Unit nearestUnit = null;
+            float nearestDist = Single.MaxValue;
+
+            foreach (Unit unit in unitLists[type])
+            {
+                if (start == unit)
+                    continue;
+
+                float dist = (unit.Position - start.Position).Length();
+
+                if (dist < nearestDist || nearestUnit == null)
+                {
+                    nearestUnit = unit;
+                    nearestDist = dist;
+                }
+            }
+
+            return nearestUnit;
         }
     }
 

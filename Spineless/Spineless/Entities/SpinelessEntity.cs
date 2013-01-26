@@ -21,6 +21,7 @@ namespace Spineless.Entities
         public float Density = 1f;
         public float Width = 5f;
         public float Height = 5f;
+        public Vector2 Offset = Vector2.Zero;
     }
 
     public class SpinelessEntitySettings : ClipEntitySettings
@@ -79,7 +80,8 @@ namespace Spineless.Entities
                     Settings.Physics.Width * Settings.Scale.X,
                     Settings.Physics.Height * Settings.Scale.Y,
                     Settings.Physics.Density,
-                    ConvertUnits.ToSimUnits(Settings.Position));
+                    ConvertUnits.ToSimUnits(Settings.Position),
+                    Settings.Physics.Offset);
                 body.BodyType = BodyType.Dynamic;
 
                 physics = new PhysicsStructure
