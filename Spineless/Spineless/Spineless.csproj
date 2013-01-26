@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectGuid>{55209810-911E-4AB6-9244-BC6D585F98A7}</ProjectGuid>
@@ -75,8 +75,10 @@
   <ItemGroup>
     <Compile Include="AI\BehaviourManager.cs" />
     <Compile Include="AI\BehaviourTree.cs" />
+    <Compile Include="AI\IAggressive.cs" />
     <Compile Include="AI\IAnimated.cs" />
     <Compile Include="AI\IBaseUnit.cs" />
+    <Compile Include="AI\IHealthy.cs" />
     <Compile Include="AI\IMoveable.cs" />
     <Compile Include="AI\IPerceptive.cs" />
     <Compile Include="Entities\AIControlledEntity.cs" />

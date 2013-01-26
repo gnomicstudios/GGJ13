@@ -57,7 +57,7 @@ namespace Gnomic.Entities
             this.Settings = CastSettings<ClipEntitySettings>(settings);
         }
 
-        public ClipInstance ClipInstance;
+        public ClipInstance ClipInstance { get; set; }
         public Body DynamicBody;
 
         public virtual Vector2 Position

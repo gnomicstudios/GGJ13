@@ -22,7 +22,7 @@ namespace Spineless.AI
             _type = type;
         }
 
-        public override bool Evaluate(T entity)
+        public override bool Evaluate(T entity, float dt)
         {
             entity.SelectNearestType(_type);
             return true;
