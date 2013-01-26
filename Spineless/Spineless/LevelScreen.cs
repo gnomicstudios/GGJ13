@@ -8,9 +8,11 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using FarseerPhysics.Dynamics.Joints;
 using Gnomic;
 using Gnomic.Graphics;
 using Gnomic.Entities;
+using Gnomic.Physics;
 
 using Spineless.Entities;
 
@@ -23,6 +25,9 @@ namespace Spineless
         ProjectileManager projectiles;
         public HudScreen Hud;
         public PrincessVehicle Vehicle;
+        public Princess lilMissBadAss;
+        RevoluteJoint standingJoint;
+
 
         public LevelScreen()
         {
@@ -44,39 +49,18 @@ namespace Spineless
 
             CreateBackground();
 
-            SpinelessEntitySettings settings = new SpinelessEntitySettings();
-            settings.EntityClass = "Spineless.Entities.PrincessVehicle,Spineless";
-            settings.ClipFile = "siegeTower";
-            settings.Position = new Vector2(ParentGame.ScreenWidth / 5, ParentGame.ScreenHeight - floorHeight);
-            settings.DefaultAnimName = "rig";
-            settings.Physics = new SpinelessPhysicsSettings();
-            settings.Physics.Width = 2.5f;
-            settings.Physics.Height = 4f;
-            settings.Physics.Offset = new Vector2(0.0f, -settings.Physics.Height / 2.0f);
-            Vehicle = (PrincessVehicle)settings.CreateEntity();
+            Vector2 vehiclePos = new Vector2(ParentGame.ScreenWidth / 5, ParentGame.ScreenHeight - floorHeight);
+            Vector2 vehicleSizePhysicsCoords = new Vector2(2.7f, 4.5f);
+            Vector2 vehicleOffsetPhysicsCoords = new Vector2(0.0f, -vehicleSizePhysicsCoords.Y / 2.0f);
+   
+            Vector2 princessPos = vehiclePos - ConvertUnits.ToDisplayUnits(new Vector2(0.0f, vehicleSizePhysicsCoords.Y));
+            lilMissBadAss = Princess.CreatePrincess(princessPos, new Vector2(0.6f, 1.2f), new Vector2(0.0f, -0.6f));
+            base.AddEntity(lilMissBadAss); // sets ParentScreen
+
+            Vehicle = PrincessVehicle.CreateDefaultEntity(vehiclePos, vehicleSizePhysicsCoords, vehicleOffsetPhysicsCoords);
             base.AddEntity(Vehicle);
 
-            // SpinelessEntitySettings settings = new SpinelessEntitySettings();
-            // settings.ClipFile = "knight";
-            // settings.Position = new Vector2(ParentGame.ScreenWidth / 2,
-            //                                 ParentGame.ScreenHeight / 2);
-            // settings.DefaultAnimName = "walk";
-            // settings.Physics = new SpinelessPhysicsSettings();
-            // settings.Physics.Width = 0.8f;
-            // settings.Physics.Height = 1.2f;
-            // settings.Physics.Offset = new Vector2(0.0f, -settings.Physics.Height / 2.0f);
-            // base.AddEntity(settings.CreateEntity());
-
-            SpinelessEntitySettings princessClipSettings = new SpinelessEntitySettings();
-            princessClipSettings.ClipFile           = "princess.clipxml";
-            princessClipSettings.Position           = new Vector2(120, 220);
-            princessClipSettings.DefaultAnimName    = "idle";
-            princessClipSettings.EntityClass        = "Spineless.Entities.Princess, Spineless";
-            Princess lilMissBadAss                  = (Princess)princessClipSettings.CreateEntity();
-            base.AddEntity(lilMissBadAss); // sets ParentScreen
-            lilMissBadAss.AimTexture                = new Texture2D(lilMissBadAss.ParentScreen.ParentGame.GraphicsDevice, 1, 1);
-            lilMissBadAss.AimTexture.SetData<Color>(new Color[] { Color.White });
-
+            
             units = new UnitManager(this);
 
             float startX = 0.7f;
@@ -91,6 +75,9 @@ namespace Spineless
             projectiles = new ProjectileManager(this);
 
             base.Initialize(game);
+
+            standingJoint = new RevoluteJoint(lilMissBadAss.Physics.Bodies[0], Vehicle.Physics.Bodies[0], Vector2.Zero, new Vector2(0.0f, -vehicleSizePhysicsCoords.Y));
+            Physics.World.AddJoint(standingJoint);
         }
 
         void AddUnit(UnitType et, Vector2 offsets)
@@ -111,8 +98,8 @@ namespace Spineless
         private void CreateBackground()
         {
             base.Layers.Add(new Layer2D(new Vector2(1.0f, 1.0f)));
-            base.Layers.Add(new Layer2D(new Vector2(0.7f, 1.0f)));
-            base.Layers.Add(new Layer2D(new Vector2(0.3f, 1.0f)));
+            base.Layers.Add(new Layer2D(new Vector2(0.4f, 1.0f)));
+            base.Layers.Add(new Layer2D(new Vector2(0.2f, 1.0f)));
             base.Layers.Add(new Layer2D(new Vector2(0.0f, 1.0f)));
 
             for (int i = 0; i < 20; ++i)
@@ -153,9 +140,10 @@ namespace Spineless
 
         public override void Update(float dt)
         {
-            // TODO: remove hacky scroll
-            //Camera2D.Position = new Vector2(100.0f * (float)TotalTime, 0.0f);
-
+            if (Gnomic.Input.KeyJustDown(Microsoft.Xna.Framework.Input.Keys.F1))
+            {
+                base.EnablePhysicsDebug = !base.EnablePhysicsDebug;
+            }
             base.Update(dt);
         }
 

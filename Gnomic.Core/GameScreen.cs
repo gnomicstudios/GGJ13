@@ -53,6 +53,13 @@ namespace Gnomic
             protected set { physics = value; }
         }
 
+        bool enablePhysicsDebug;
+        public bool EnablePhysicsDebug
+        {
+            get { return enablePhysicsDebug; }
+            set { enablePhysicsDebug = value; }
+        }
+
         public GameScreen PreviousScreen;
         internal GnomicGame parentGame;
         public GnomicGame ParentGame { get { return parentGame; } }
@@ -413,9 +420,11 @@ namespace Gnomic
                 }
             }
 
-            if (Physics != null && Physics.DebugView != null)
+            if (Physics != null && Physics.DebugView != null && EnablePhysicsDebug)
             {
-                Physics.RenderDebugView();
+                float worldScale = ConvertUnits.ToSimUnits(1f);
+                Matrix view = Camera2D.GetViewMatrix(new Vector2(worldScale));
+                Physics.RenderDebugView(ref view);
             }
         }
 
