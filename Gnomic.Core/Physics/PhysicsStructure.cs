@@ -102,21 +102,42 @@ namespace Gnomic.Physics
                 j.Enabled = enabled;
         }
 
-        public void SetVelocityLimit(World world, float maxLinearVelocity, float maxAngularVelocity)
-        {
-            if (velocityLimiter == null)
+        //public void SetVelocityLimit(World world, float maxLinearVelocity, float maxAngularVelocity)
+        //{
+        //    if (velocityLimiter == null)
+        //    {
+        //        velocityLimiter = new VelocityLimitController(maxLinearVelocity, maxAngularVelocity);
+        //        world.AddController(velocityLimiter);
+        //        foreach (Body b in Bodies)
+        //        {
+        //            velocityLimiter.AddBody(b);
+        //        }
+        //    }
+        //    else
+        //    {
+        //        velocityLimiter.MaxLinearVelocity = maxLinearVelocity;
+        //        velocityLimiter.MaxAngularVelocity = maxAngularVelocity;
+        //    }
+        //}
+
+        private bool enabled = true;
+        public bool Enabled 
+        { 
+            get
             {
-                velocityLimiter = new VelocityLimitController(maxLinearVelocity, maxAngularVelocity);
-                world.AddController(velocityLimiter);
+                return enabled;
+            } 
+            set
+            {
+                enabled = value;
                 foreach (Body b in Bodies)
                 {
-                    velocityLimiter.AddBody(b);
+                    b.Enabled = value;
                 }
-            }
-            else
-            {
-                velocityLimiter.MaxLinearVelocity = maxLinearVelocity;
-                velocityLimiter.MaxAngularVelocity = maxAngularVelocity;
+                foreach (Joint j in Joints)
+                {
+                    j.Enabled = value;
+                }
             }
         }
 

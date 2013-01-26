@@ -60,6 +60,9 @@ namespace Gnomic.Entities
             get { return isActivated; }
         }
 
+        public event Action<Entity> Activated;
+        public event Action<Entity> Deactivated;
+
         public Entity() { }
         
         public virtual void ApplySettings(EntitySettings settings)
@@ -82,6 +85,9 @@ namespace Gnomic.Entities
 
             countingDownToDeactivate = false;
             isActivated = true;
+
+            if (Activated != null)
+                Activated(this);
         }
 
         public void Deactivate()
@@ -94,6 +100,9 @@ namespace Gnomic.Entities
             isActivated = false;
             Debug.Assert(ParentScreen.ContainsEntity(this));
             ParentScreen.RemoveEntity(this);
+
+            if (Deactivated != null)
+                Deactivated(this);
         }
 
         protected bool countingDownToDeactivate = false;
