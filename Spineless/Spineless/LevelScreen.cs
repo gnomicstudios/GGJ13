@@ -31,7 +31,8 @@ namespace Spineless
             Physics = new Gnomic.Physics.PhysicsSystem(this);
             Physics.CreateBorder(ParentGame.ScreenWidth,
                                  ParentGame.ScreenHeight,
-                                 new Vector2(0.0f, -60f));
+                                 new Vector2(0.0f, -60f),
+                                 /*friction*/ 0.0f);
 
             // Create a 3D camera
             base.Camera2D = camera = new Camera2D(ParentGame.GraphicsDevice.Viewport);
@@ -70,7 +71,7 @@ namespace Spineless
 
         void AddUnit(UnitType et, Vector2 offsets)
         {
-            units.AddUnitToScene(et, Camera2D.Position + new Vector2(ParentGame.ScreenWidth * 0.9f, ParentGame.ScreenHeight * 0.7f));
+            units.AddUnitToScene(et, Camera2D.Position + new Vector2(ParentGame.ScreenWidth * offsets.X, ParentGame.ScreenHeight * offsets.Y));
         }
 
         public void FireProjectile(Vector2 impulse)

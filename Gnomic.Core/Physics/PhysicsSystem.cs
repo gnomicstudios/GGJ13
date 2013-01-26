@@ -34,9 +34,10 @@ namespace Gnomic.Physics
             DebugView.RenderDebugData(ref projection);
         }
 
-        public void CreateBorder(float width, float height, Vector2 offset)
+        public void CreateBorder(
+            float width, float height, Vector2 offset, float friction)
         {
-            var border = new Border(world, width, height, offset);
+            var border = new Border(world, width, height, offset, friction);
         }
 
         public PhysicsSystem(GameScreen screen)
