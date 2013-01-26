@@ -5,16 +5,16 @@ using System.Text;
 
 namespace Spineless.Entities
 {
-    public enum EnemyType
+    public enum UnitType
     {
         Grunt,
         Captain,
         Boss
     }
 
-    public class Enemy : SpinelessEntity
+    public class Unit : SpinelessEntity
     {
-        public EnemyType EnemyType;
+        public UnitType UnitType;
         public bool IsAdded;
 
     }
