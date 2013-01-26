@@ -45,7 +45,9 @@ namespace Spineless
             Projectile p    = (Projectile)ses.CreateEntity();
             p.Initialize(lvl);
             p.Deactivated   += new Action<Entity>(OnProjectileDeactivated);
-            p.Physics.Bodies[0].FixtureList[0].CollidesWith = (Category)SpinelessCollisionCategories.All;
+            p.Physics.Bodies[0].FixtureList[0].CollidesWith = (Category)(SpinelessCollisionCategories.Terrain 
+                | SpinelessCollisionCategories.Border
+                | SpinelessCollisionCategories.Enemy);
             p.Physics.Bodies[0].FixtureList[0].CollisionCategories = (Category)SpinelessCollisionCategories.SplashProjectile;
             p.Physics.Bodies[0].FixtureList[0].OnCollision = OnSplashProjectileCollision;
             p.Physics.Bodies[0].FixtureList[0].UserData = p;
@@ -53,12 +55,13 @@ namespace Spineless
             return p;
         }
 
-        public void Launch(Vector2 impulse)
+        public void Launch(Vector2 startPos, Vector2 impulse)
         {
             foreach(Projectile p in this.projectiles)
             {
                 if (!p.IsActive)
                 {
+                    p.Physics.Position = startPos;
                     p.IsActive = true;
                     p.Physics.Enabled = true;
                     p.Physics.Bodies[0].ApplyLinearImpulse(impulse);
@@ -74,7 +77,8 @@ namespace Spineless
             p.ClipInstance.Play("death", false);
             p.Deactivate(p.ClipInstance.CurrentAnim.DurationInSeconds);
             p.Physics.Enabled = false;
-            
+            p.Physics.Bodies[0].ResetDynamics();
+
             return true;
         }
 
@@ -82,7 +86,6 @@ namespace Spineless
         {
             Projectile p = (Projectile)obj;
             p.IsActive = false;
-            p.Position = PROJECTILE_START_POS;
             p.Physics.Position = PROJECTILE_START_POS;
             // p.Physics is already deactivated
         }
