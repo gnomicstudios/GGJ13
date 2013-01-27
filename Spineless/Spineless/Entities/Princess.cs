@@ -155,7 +155,20 @@ namespace Spineless.Entities
 
             if (Input.MouseDW != lastScrollPos && updatesSinceWeaponChange > 30)
             {
-                currentProjectileType = currentProjectileType == ProjectileType.Arrow ? ProjectileType.Bomb : ProjectileType.Arrow;
+                // change current project type, state and clip
+                if (currentProjectileType == ProjectileType.Bomb)
+                {
+                    currentProjectileType = ProjectileType.Arrow;
+                    state = PrincessState.IdleBow;
+                    ClipInstance.Play(BOW_IDLE_CLIP_NAME);
+                }
+                else
+                {
+                    currentProjectileType = ProjectileType.Bomb;
+                    state = PrincessState.IdleBomb;
+                    ClipInstance.Play(BOMB_IDLE_CLIP_NAME);
+                }
+
                 lastScrollPos = Input.MouseDW;
                 updatesSinceWeaponChange = 0;
             }
@@ -165,7 +178,7 @@ namespace Spineless.Entities
                 lastScrollPos = Input.MouseDW;
             }
 
-            // Update state and the current clip, if need be. NOTE: The only other state/clip transition is performed in Fire().
+            // Update state and the current clip, if need be. NOTE: The only other state/clip transitions are when changing gun and in Fire().
             switch (state)
             {
                 case PrincessState.IdleBomb:
