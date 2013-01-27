@@ -23,6 +23,9 @@ namespace Spineless.Entities
         const float POWER               = 0.05f;
         const float FEAR_STRENGTH       = 2.0f;
         const float FEAR_RATE_OF_CHANGE = 0.1f;
+        const float MIN_ANGLE = -MathHelper.PiOver4;
+        const float MAX_ANGLE = MathHelper.PiOver4;
+        const float MAX_POWER = 200;
 
         const string BOMB_IDLE_CLIP_NAME    = "idleBall";
         const string BOW_IDLE_CLIP_NAME     = "idleShoot";
@@ -45,6 +48,7 @@ namespace Spineless.Entities
 
         public Princess()
         { 
+            fireOffset = new Vector2(0, -30);
         }
 
         public static Princess CreatePrincess(
@@ -86,9 +90,8 @@ namespace Spineless.Entities
         {
             dragVector = dragStart - dragEnd;
             dragVector *= POWER;
-                       
 
-            this.LevelScreen.FireProjectile(this.Position + fireOffset, dragVector, angle, currentProjectileType);
+            this.LevelScreen.FireProjectile(this.Position + fireOffset, dragVector, 0, currentProjectileType);
             timeSinceLastFired = 0;
 
             if (currentProjectileType == ProjectileType.Arrow)
@@ -120,7 +123,7 @@ namespace Spineless.Entities
 
                 dragEnd = new Vector2(Input.MouseX, Input.MouseY);
                 dragDistance = MathHelper.Clamp(Vector2.Distance(dragStart, dragEnd), 0, MAX_DRAG_DISTANCE);
-
+                
                 // TODO update drag distance sound
                 // TODO update drag distance animation
 
@@ -245,8 +248,8 @@ namespace Spineless.Entities
         {
             base.Draw2D(spriteBatch);
 
-            if(isDragging)
-                spriteBatch.Draw(this.AimTexture, dragStart + LevelScreen.Camera2D.Position, null, Color.Red, angle, Vector2.Zero, new Vector2(dragDistance, 5), SpriteEffects.None, 0);
+            //if(isDragging)
+            //    spriteBatch.Draw(this.AimTexture, dragStart + LevelScreen.Camera2D.Position, null, Color.Red, angle, Vector2.Zero, new Vector2(dragDistance, 5), SpriteEffects.None, 0);
         }
 
     }

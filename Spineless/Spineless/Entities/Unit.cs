@@ -114,7 +114,7 @@ namespace Spineless.Entities
             }
         }
 
-        private void Hit(float dmg)
+        public void Hit(float dmg)
         {
             if (IsAlive)
             {
