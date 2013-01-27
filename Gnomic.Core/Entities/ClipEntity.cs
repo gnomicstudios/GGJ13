@@ -109,7 +109,7 @@ namespace Gnomic.Entities
             {
                 if (ClipInstance != null)
                 {
-                    return ClipInstance.Position.Y;
+                    return ClipInstance.Position.Y - ClipInstance.Origin.Y;
                 }
                 return 0.0f; 
             } 
