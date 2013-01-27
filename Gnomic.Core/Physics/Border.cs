@@ -43,8 +43,8 @@ namespace Gnomic.Physics
             edgeTop.CollisionCategories     = Category.Cat8; //} i.e. Border
             edgeRight.CollisionCategories   = Category.Cat8; //}
             edgeBottom.CollisionCategories  = Category.Cat4; // i.e. Terrain
-
-            edgeBottom.LinearDamping = 0.5f;
+            edgeBottom.Friction = friction;
+            //edgeBottom.LinearDamping = 0.0f;
         }
     }
 }
