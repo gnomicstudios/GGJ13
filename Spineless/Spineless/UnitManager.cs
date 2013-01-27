@@ -46,7 +46,7 @@ namespace Spineless
         Random random = new Random();
         
         const float KNIGHT_SPAWN_ACCELERATION = 0.02f;
-        const float KNIGHT_SPAWN_RATE_DEFAULT = 0.2f;
+        const float KNIGHT_SPAWN_RATE_DEFAULT = 0.1f;
         
         const float ENEMY_SPAWN_ACCELERATION = 0.05f;
         const float ENEMY_SPAWN_RATE_DEFAULT = 0.8f;
@@ -121,7 +121,7 @@ namespace Spineless
 
             {
                 unitSettings = new Settings {
-                    Health=200, Damage=40, AttackInterval=0.1f, Speed=4000
+                    Health=100, Damage=40, AttackInterval=0.1f, Speed=4000
                 };
 
                 enemyClipNames[UnitType.Knight] = "knight";

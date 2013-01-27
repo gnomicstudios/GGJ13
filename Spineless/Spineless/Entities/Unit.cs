@@ -102,10 +102,12 @@ namespace Spineless.Entities
                     }
                     break;
                 case UnitState.Hit:
+                    //LevelScreen.ParentGame.Audio.Play("enemyhit01");
                     ClipInstance.Play("hit", false);
                     TransitionToState(UnitState.Idle, ClipInstance.CurrentAnim.DurationInSeconds);
                     break;
                 case UnitState.Die:
+                    LevelScreen.ParentGame.Audio.Play("enemydeath01");
                     ClipInstance.Play("death", false);
                     Deactivate(ClipInstance.CurrentAnim.DurationInSeconds + 3.0f);
                     IsAlive = false;
@@ -119,7 +121,7 @@ namespace Spineless.Entities
             if (IsAlive)
             {
                 Health -= dmg;
-                if (Health < 0.0f)
+                if (Health <= 0.0f)
                 {
                     SwitchToState(UnitState.Die);
                 }

@@ -205,7 +205,7 @@ namespace Spineless
             List<IDrawable2D> layer0 = base.Layers[0].Sprites;
             for (int i = 0; i < layer0.Count - 1; ++i)
             {
-                if (layer0[i].DrawOrder > layer0[i + 1].DrawOrder)
+                if (layer0[i].DrawOrder > (layer0[i + 1].DrawOrder + 0.1f))
                 {
                     IDrawable2D tmp = layer0[i];
                     layer0[i] = layer0[i + 1];

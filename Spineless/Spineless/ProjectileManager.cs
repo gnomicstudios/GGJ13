@@ -86,6 +86,7 @@ namespace Spineless
                     p.IsActive = true;
                     p.IsFlying = true;
                     p.Physics.Enabled = true;
+                    p.Physics.Bodies[0].ResetDynamics();
                     p.Physics.Bodies[0].Rotation = angle;
                     p.Physics.Bodies[0].ApplyLinearImpulse(impulse);
                     p.Activate();
@@ -104,7 +105,8 @@ namespace Spineless
                 p.ClipInstance.Play("explode", false);
                 lvl.Splash(p.Physics.Position, 100, 120);
                 p.Deactivate(p.ClipInstance.CurrentAnim.DurationInSeconds);
-                p.Physics.Enabled = false;    
+                p.Physics.Enabled = false;
+                p.Physics.Bodies[0].ResetDynamics();   
             }
             else
             {
@@ -125,7 +127,6 @@ namespace Spineless
                 p.Physics.Enabled = false;
             }
 
-            p.Physics.Bodies[0].ResetDynamics();
 
             return true;
         }

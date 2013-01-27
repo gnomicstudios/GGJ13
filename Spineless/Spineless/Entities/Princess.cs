@@ -20,7 +20,7 @@ namespace Spineless.Entities
         const float MAX_DRAG_DISTANCE   = 100;
         const float MIN_DRAG_DISTANCE   = 20;       // distance at which to register was indeed a "drag"
         const int DRAG_RADIUS           = 100;
-        const float POWER               = 0.05f;
+        const float POWER               = 0.015f;
         const float FEAR_STRENGTH       = 2.0f;
         const float FEAR_RATE_OF_CHANGE = 0.1f;
         const float MIN_ANGLE = -MathHelper.PiOver4;
@@ -89,6 +89,11 @@ namespace Spineless.Entities
         private void Fire()
         {
             dragVector = dragStart - dragEnd;
+            if (dragVector.Length() > 250f)
+            {
+                dragVector.Normalize();
+                dragVector *= 250f;
+            }
             dragVector *= POWER;
 
             this.LevelScreen.FireProjectile(this.Position + fireOffset, dragVector, 0, currentProjectileType);
