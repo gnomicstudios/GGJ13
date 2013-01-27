@@ -45,7 +45,7 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>projectilesSheet</Tex>
-            <TexRect>62 177 41 41</TexRect>
+            <TexRect>458 0 41 41</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -102,7 +102,7 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>projectilesSheet</Tex>
-            <TexRect>0 164 75 12</TexRect>
+            <TexRect>155 270 75 12</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -159,7 +159,7 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>projectilesSheet</Tex>
-            <TexRect>0 177 61 12</TexRect>
+            <TexRect>0 446 61 12</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -196,7 +196,7 @@
             <Transform>
               <Pos>-0.15 -21.2</Pos>
               <Scale>1 1</Scale>
-              <Origin>26.351 28.651</Origin>
+              <Origin>26.351 28.551000000000002</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -205,7 +205,7 @@
             <Transform>
               <Pos>-3.5 -34.7</Pos>
               <Scale>1 1</Scale>
-              <Origin>33.101 51.851</Origin>
+              <Origin>33.001 51.751</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -214,7 +214,7 @@
             <Transform>
               <Pos>-2.95 -61.25</Pos>
               <Scale>1 1</Scale>
-              <Origin>41.051 90.351</Origin>
+              <Origin>40.951 90.251</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -223,7 +223,7 @@
             <Transform>
               <Pos>-4 -71.9</Pos>
               <Scale>1 1</Scale>
-              <Origin>48.601 99.45100000000001</Origin>
+              <Origin>76.351 99.351</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -232,16 +232,16 @@
             <Transform>
               <Pos>-5.2 -69.35</Pos>
               <Scale>1 1</Scale>
-              <Origin>55.801 103.651</Origin>
+              <Origin>91.65100000000001 103.55099999999999</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
           <Frame>
             <FrameNumber>5</FrameNumber>
             <Transform>
-              <Pos>-8.95 -152.5</Pos>
+              <Pos>-8.95 -149.5</Pos>
               <Scale>1 1</Scale>
-              <Origin>51.301 25.851</Origin>
+              <Origin>61.101 30.751</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -250,7 +250,7 @@
             <Transform>
               <Pos>0.9 -145.85</Pos>
               <Scale>1 1</Scale>
-              <Origin>67.05 30.500999999999998</Origin>
+              <Origin>85.05 38.651</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -259,7 +259,7 @@
             <Transform>
               <Pos>0.9 -148.35</Pos>
               <Scale>1 1</Scale>
-              <Origin>67.05 30.500999999999998</Origin>
+              <Origin>85.05 38.651</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -268,7 +268,7 @@
             <Transform>
               <Pos>0.9 -151.85</Pos>
               <Scale>1 1</Scale>
-              <Origin>67.05 30.500999999999998</Origin>
+              <Origin>85.05 38.651</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -277,7 +277,7 @@
             <Transform>
               <Pos>4.95 -160.45</Pos>
               <Scale>1 1</Scale>
-              <Origin>69.6 22.151</Origin>
+              <Origin>133.55 49.201</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -286,7 +286,7 @@
             <Transform>
               <Pos>4.95 -162.45</Pos>
               <Scale>1 1</Scale>
-              <Origin>69.6 22.151</Origin>
+              <Origin>133.55 49.201</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -295,7 +295,7 @@
             <Transform>
               <Pos>4.95 -165.45</Pos>
               <Scale>1 1</Scale>
-              <Origin>69.6 22.151</Origin>
+              <Origin>133.55 49.201</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -304,7 +304,7 @@
             <Transform>
               <Pos>4.95 -167.45</Pos>
               <Scale>1 1</Scale>
-              <Origin>69.6 22.151</Origin>
+              <Origin>133.55 49.201</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -408,91 +408,91 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>projectilesSheet</Tex>
-            <TexRect>0 190 54 59</TexRect>
+            <TexRect>256 226 54 59</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>1</FrameNumber>
             <Tex>projectilesSheet</Tex>
-            <TexRect>439 0 68 105</TexRect>
+            <TexRect>155 283 68 105</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>2</FrameNumber>
             <Tex>projectilesSheet</Tex>
-            <TexRect>355 0 83 182</TexRect>
+            <TexRect>172 87 83 182</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>3</FrameNumber>
             <Tex>projectilesSheet</Tex>
-            <TexRect>255 0 99 200</TexRect>
+            <TexRect>0 167 154 214</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>4</FrameNumber>
             <Tex>projectilesSheet</Tex>
-            <TexRect>141 0 113 206</TexRect>
+            <TexRect>269 0 188 225</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>5</FrameNumber>
             <Tex>projectilesSheet</Tex>
-            <TexRect>0 110 104 53</TexRect>
+            <TexRect>0 382 124 63</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>6</FrameNumber>
             <Tex>projectilesSheet</Tex>
-            <TexRect>0 47 135 62</TexRect>
+            <TexRect>0 87 171 79</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>7</FrameNumber>
             <Tex>projectilesSheet</Tex>
-            <TexRect>0 47 135 62</TexRect>
+            <TexRect>0 87 171 79</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>8</FrameNumber>
             <Tex>projectilesSheet</Tex>
-            <TexRect>0 47 135 62</TexRect>
+            <TexRect>0 87 171 79</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>9</FrameNumber>
             <Tex>projectilesSheet</Tex>
-            <TexRect>0 0 140 46</TexRect>
+            <TexRect>0 0 268 86</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>10</FrameNumber>
             <Tex>projectilesSheet</Tex>
-            <TexRect>0 0 140 46</TexRect>
+            <TexRect>0 0 268 86</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>11</FrameNumber>
             <Tex>projectilesSheet</Tex>
-            <TexRect>0 0 140 46</TexRect>
+            <TexRect>0 0 268 86</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>12</FrameNumber>
             <Tex>projectilesSheet</Tex>
-            <TexRect>0 0 140 46</TexRect>
+            <TexRect>0 0 268 86</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>

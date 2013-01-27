@@ -22,10 +22,11 @@ namespace Spineless.Entities
         public float Width = 5f;
         public float Height = 5f;
         public Vector2 Offset = Vector2.Zero;
+        public float RotationalInertia = float.PositiveInfinity;
         public SpinelessCollisionCategories Category = SpinelessCollisionCategories.Default;
         public SpinelessCollisionCategories CollidesWith = SpinelessCollisionCategories.All;
         public short CollisionGroup = 0;
-        public float RotationalInertia = float.MaxValue;
+
     }
 
     public class SpinelessEntitySettings : ClipEntitySettings
