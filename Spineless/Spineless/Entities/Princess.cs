@@ -86,7 +86,8 @@ namespace Spineless.Entities
         {
             dragVector = dragStart - dragEnd;
             dragVector *= POWER;
-            
+                       
+
             this.LevelScreen.FireProjectile(this.Position + fireOffset, dragVector, angle, currentProjectileType);
             timeSinceLastFired = 0;
 

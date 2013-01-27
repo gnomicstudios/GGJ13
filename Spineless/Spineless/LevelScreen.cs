@@ -39,7 +39,7 @@ namespace Spineless
             Physics.CreateBorder(ParentGame.ScreenWidth * PLAY_AREA_WIDTH_IN_SCREENS,
                                  ParentGame.ScreenHeight, // * PLAY_AREA_HEIGHT_IN_SCREENS,
                                  new Vector2(0.0f, -floorHeight),
-                                 /*friction*/ 0.001f);
+                                 /*friction*/ 0.005f);
 
             // Create a 2D camera
             base.Camera2D = camera = new Camera2D(ParentGame.GraphicsDevice.Viewport);
@@ -156,7 +156,7 @@ namespace Spineless
                         if (distance <= radius)
                         {
                             // push
-                            Vector2 blastVector = (u.Position - pos) * 0.5f;
+                            Vector2 blastVector = (u.Position - pos) * 0.3f;
 
                             if(blastVector.Y > 0)
                                 blastVector.Y *= -1; // make things always fly

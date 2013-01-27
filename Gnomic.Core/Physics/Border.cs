@@ -44,7 +44,6 @@ namespace Gnomic.Physics
             edgeRight.CollisionCategories   = Category.Cat8; //}
             edgeBottom.CollisionCategories  = Category.Cat4; // i.e. Terrain
             edgeBottom.Friction = friction;
-            //edgeBottom.LinearDamping = 0.0f;
         }
     }
 }
