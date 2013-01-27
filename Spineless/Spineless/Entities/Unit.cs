@@ -23,16 +23,34 @@ namespace Spineless.Entities
         public bool IsAdded;
         public UnitManager UnitManager;
         public Behaviour<IBaseUnit> Behaviour;
+        public int LaneId = 0;
+
+        bool isAlive;
 
         public Unit()
         {
             AttackTimer = 0.0f;
         }
 
+        protected override void OnActivate()
+        {
+            isAlive = true;
+            base.OnActivate();
+        }
+
         public override void Update(float dt)
         {
             base.Update(dt);
             Behaviour.Evaluate((IBaseUnit)this, dt);
+
+            if (isAlive)
+            {
+                if (Health <= 0.0f)
+                {
+                    isAlive = false;
+                    Deactivate(2.0f);
+                }
+            }
         }
 
         #region IMoveable
@@ -42,9 +60,12 @@ namespace Spineless.Entities
         public void MoveTowards(Vector2 target)
         {
             Vector2 direction = target - Position;
-            direction.Normalize();
+            if (direction.Length() > 0.01f)
+            {
+                direction.Normalize();
 
-            physics.ApplyForceToBody(0, Speed, direction);
+                physics.ApplyForceToBody(0, Speed, direction);
+            }
         }
 
         public void Stop()

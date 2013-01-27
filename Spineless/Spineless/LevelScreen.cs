@@ -67,7 +67,12 @@ namespace Spineless
                 AddUnit(UnitType.Grunt, new Vector2(startX+(i*0.05f), 0.7f));
             }
 
-            AddUnit(UnitType.Knight, new Vector2(0.5f, 0.7f));
+            startX = 0.4f;
+
+            for (int i = 0; i < 5; ++i)
+            {
+                AddUnit(UnitType.Knight, new Vector2(startX + (i * 0.05f), 0.7f));
+            }
 
             projectiles = new ProjectileManager(this);
                         
@@ -87,8 +92,8 @@ namespace Spineless
         private void CreateBackground()
         {
             base.Layers.Add(new Layer2D(new Vector2(1.0f, 1.0f)));
-            base.Layers.Add(new Layer2D(new Vector2(0.05f, 1.0f)));
-            base.Layers.Add(new Layer2D(new Vector2(0.2f, 0.2f)));
+            base.Layers.Add(new Layer2D(new Vector2(0.35f, 0.2f)));
+            base.Layers.Add(new Layer2D(new Vector2(0.0f, 1.0f)));
             base.Layers.Add(new Layer2D(new Vector2(0.0f, 0.1f)));
 
             for (int i = 0; i < PLAY_AREA_WIDTH_IN_SCREENS; ++i)
@@ -103,7 +108,7 @@ namespace Spineless
 
                 background = new SpriteEntity();
                 background.SpriteState =
-                    new Gnomic.Anim.SpriteState(Content.Load<Texture2D>("Background_Clouds"));
+                    new Gnomic.Anim.SpriteState(Content.Load<Texture2D>("Background_Mountains"));
                 background.SpriteState.Transform.Origin = Vector2.Zero;
                 background.LayerID = 1;
                 background.Position = new Vector2(ParentGame.ScreenWidth * (i - 1), 0.0f);
@@ -111,10 +116,10 @@ namespace Spineless
 
                 background = new SpriteEntity();
                 background.SpriteState =
-                    new Gnomic.Anim.SpriteState(Content.Load<Texture2D>("Background_Mountains"));
+                    new Gnomic.Anim.SpriteState(Content.Load<Texture2D>("Background_Clouds"));
                 background.SpriteState.Transform.Origin = Vector2.Zero;
                 background.LayerID = 2;
-                background.Position = new Vector2(ParentGame.ScreenWidth * (i - 1), 0.0f);
+                background.Position = new Vector2(ParentGame.ScreenWidth * (i - PLAY_AREA_WIDTH_IN_SCREENS / 2), 0.0f);
                 base.AddEntity(background);
             }
 
@@ -163,6 +168,19 @@ namespace Spineless
             {
                 base.EnablePhysicsDebug = !base.EnablePhysicsDebug;
             }
+            units.Update(dt);
+
+            foreach (IDrawable2D d in base.Layers[2].Sprites)
+            {
+                SpriteEntity cloud = d as SpriteEntity;
+                if (cloud != null)
+                {
+                    Vector2 cloudPos = cloud.Position;
+                    cloudPos.X += dt * 10.0f;
+                    cloud.Position = cloudPos;
+                }
+            }
+
             base.Update(dt);
         }
 
