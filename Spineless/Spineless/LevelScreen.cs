@@ -72,8 +72,6 @@ namespace Spineless
             projectiles = new ProjectileManager(this);
                         
             this.Audio = this.ParentGame.Audio;
-            Audio.AddMediaPlayerSong("heartbeat", "Audio/heartbeat");
-            Cue music = Audio.PlaySong("heartbeat");
 
             base.Initialize(game);
 

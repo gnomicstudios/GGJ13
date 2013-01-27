@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Gnomic;
 using Gnomic.UI;
+using Gnomic.Audio;
 using Gnomic.Entities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -20,6 +21,8 @@ namespace Spineless
         public ClipEntity HeartBG;
         string[] heartAnims = new string[] { "beatA", "beatB", "beatC" };
         public int heartAnimId = 0;
+        
+        Cue[] heartbeatCues = new Cue[3];
 
         public override void Initialize(GnomicGame game)
         {
@@ -49,8 +52,17 @@ namespace Spineless
             settings.Position = new Vector2(90, 90);
             Heart = (ClipEntity)settings.CreateEntity();
             base.AddEntity(Heart);
-            
+
             base.Initialize(game);
+        }
+
+        protected override void OnActivate()
+        {
+            base.OnActivate();
+
+            heartbeatCues[0] = ParentGame.Audio.Play("heartbeat1", true);
+            heartbeatCues[1] = ParentGame.Audio.Play("heartbeat2", true); heartbeatCues[1].Sound.Volume = 0.0f;
+            heartbeatCues[2] = ParentGame.Audio.Play("heartbeat3", true); heartbeatCues[2].Sound.Volume = 0.0f;
         }
 
         public override void Update(float dt)
@@ -68,6 +80,17 @@ namespace Spineless
             {
                 Heart.ClipInstance.Play(heartAnims[animId]);
                 heartAnimId = animId;
+                for (int i = 0; i < 3; i++)
+                {
+                    if (heartAnimId == i)
+                    {
+                        heartbeatCues[i].Sound.Volume = heartbeatCues[i].Settings.Volume;
+                    }
+                    else
+                    {
+                        heartbeatCues[i].Sound.Volume = 0.0f;
+                    }
+                }
             }
 
             Heart.Scale = Vector2.One * (0.5f + fear * 0.8f);

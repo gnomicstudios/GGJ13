@@ -33,7 +33,62 @@
     <Compile Include="Audio\heartbeat.mp3">
       <Name>heartbeat</Name>
       <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
+      <Processor>SoundEffectProcessor</Processor>
+      <ProcessorParameters_Quality>Medium</ProcessorParameters_Quality>
+    </Compile>
+    <Compile Include="Audio\arrow03.wav">
+      <Name>arrow03</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <ProcessorParameters_Quality>Medium</ProcessorParameters_Quality>
+    </Compile>
+    <Compile Include="Audio\enemydeath01.wav">
+      <Name>enemydeath01</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <ProcessorParameters_Quality>Medium</ProcessorParameters_Quality>
+    </Compile>
+    <Compile Include="Audio\enemydeath02.wav">
+      <Name>enemydeath02</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <ProcessorParameters_Quality>Medium</ProcessorParameters_Quality>
+    </Compile>
+    <Compile Include="Audio\enemyhit01.wav">
+      <Name>enemyhit01</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <ProcessorParameters_Quality>Medium</ProcessorParameters_Quality>
+    </Compile>
+    <Compile Include="Audio\enemyhit02.wav">
+      <Name>enemyhit02</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <ProcessorParameters_Quality>Medium</ProcessorParameters_Quality>
+    </Compile>
+    <Compile Include="Audio\enemyhit03.wav">
+      <Name>enemyhit03</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <ProcessorParameters_Quality>Medium</ProcessorParameters_Quality>
+    </Compile>
+    <Compile Include="Audio\rockImpact01.wav">
+      <Name>rockImpact01</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <ProcessorParameters_Quality>Medium</ProcessorParameters_Quality>
+    </Compile>
+    <Compile Include="Audio\rockImpact02.wav">
+      <Name>rockImpact02</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <ProcessorParameters_Quality>Medium</ProcessorParameters_Quality>
+    </Compile>
+    <Compile Include="Audio\seige.wav">
+      <Name>seige</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <ProcessorParameters_Quality>Medium</ProcessorParameters_Quality>
     </Compile>
     <Content Include="Background_Clouds.png">
       <Name>Background_Clouds</Name>
