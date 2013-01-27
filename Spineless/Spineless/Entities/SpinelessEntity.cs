@@ -22,7 +22,7 @@ namespace Spineless.Entities
         public float Width = 5f;
         public float Height = 5f;
         public Vector2 Offset = Vector2.Zero;
-        public float RotationalInertia = float.MaxValue;
+        public float RotationalInertia = float.PositiveInfinity;
     }
 
     public class SpinelessEntitySettings : ClipEntitySettings

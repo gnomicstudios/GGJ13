@@ -56,17 +56,15 @@ namespace Spineless
             ses.Physics.Density         = density;
             ses.Physics.Offset          = new Vector2(0, -(ses.Physics.Height / 2));
             ses.Position                = PROJECTILE_START_POS;
-            //ses.Physics.RotationalInertia = 10;
+            // ses.Physics.RotationalInertia = 10;
             
             Projectile p    = (Projectile)ses.CreateEntity();
             p.Initialize(lvl);
 
             p.Deactivated   += new Action<Entity>(OnProjectileDeactivated);
-            p.Physics.Bodies[0].FixtureList[0].CollidesWith = (Category)(SpinelessCollisionCategories.Terrain 
-                //| SpinelessCollisionCategories.Border
-                | SpinelessCollisionCategories.Enemy);
+            p.Physics.Bodies[0].FixtureList[0].CollidesWith = (Category)(SpinelessCollisionCategories.Terrain | SpinelessCollisionCategories.Enemy);
             p.Physics.Bodies[0].FixtureList[0].CollisionCategories = (Category)SpinelessCollisionCategories.SplashProjectile;
-            p.Physics.Bodies[0].FixtureList[0].OnCollision = OnSplashProjectileCollision;
+            p.Physics.Bodies[0].FixtureList[0].OnCollision = OnProjectileCollision;
             p.Physics.Bodies[0].FixtureList[0].UserData = p;
 
             return p;
@@ -93,7 +91,7 @@ namespace Spineless
             }
         }
 
-        private bool OnSplashProjectileCollision(Fixture fixtureA, Fixture fixtureB, Contact contact)
+        private bool OnProjectileCollision(Fixture fixtureA, Fixture fixtureB, Contact contact)
         {
             Projectile p = (Projectile)fixtureA.UserData;
 
@@ -106,6 +104,7 @@ namespace Spineless
             }
             else
             {
+                p.ClipInstance.Play("arrowHit");
                 p.Deactivate(10);
             }
 

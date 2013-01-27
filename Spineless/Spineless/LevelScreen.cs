@@ -145,8 +145,11 @@ namespace Spineless
                         if (distance <= radius)
                         {
                             // push
-                            Vector2 blastVector = u.Position - pos;
-                            //blastVector.Y *= -1; // make things always fly
+                            Vector2 blastVector = (u.Position - pos) * 0.5f;
+
+                            if(blastVector.Y > 0)
+                                blastVector.Y *= -1; // make things always fly
+
                             u.Physics.Bodies[0].ApplyLinearImpulse(blastVector);
 
                             // remove health

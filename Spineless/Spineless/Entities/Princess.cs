@@ -25,11 +25,11 @@ namespace Spineless.Entities
         const float FEAR_RATE_OF_CHANGE = 0.1f;
 
         const string BOMB_IDLE_CLIP_NAME    = "idleBall";
-        const string BOW_IDLE_CLIP_NAME     = "idleBall";
+        const string BOW_IDLE_CLIP_NAME     = "idleShoot";
         const string BOMB_AIM_CLIP_NAME     = "readyThrow";
-        const string BOW_AIM_CLIP_NAME      = "readyThrow";
+        const string BOW_AIM_CLIP_NAME      = "readyShoot";
         const string BOMB_FIRE_CLIP_NAME    = "throw";
-        const string BOW_FIRE_CLIP_NAME     = "throw";
+        const string BOW_FIRE_CLIP_NAME     = "shoot";
 
         internal Texture2D AimTexture;
 
