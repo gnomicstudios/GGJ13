@@ -101,7 +101,7 @@ namespace Spineless.Entities
             float fear = 0.0f;
             foreach (Unit u in LevelScreen.Units.ActiveUnits)
             {
-                if (u.UnitType != UnitType.Knight)
+                if (u.UnitType != UnitType.Knight && u.Health > 0.0f)
                 {
                     float distToPrincess = Math.Abs(u.Physics.Bodies[0].Position.X - Physics.Bodies[0].Position.X);
                     fear += FEAR_STRENGTH / (distToPrincess * distToPrincess);
