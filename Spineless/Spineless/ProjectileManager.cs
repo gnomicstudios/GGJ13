@@ -56,8 +56,9 @@ namespace Spineless
             ses.Physics.Density         = density;
             ses.Physics.Offset          = new Vector2(0, -(ses.Physics.Height / 2));
             ses.Position                = PROJECTILE_START_POS;
-            // ses.Physics.RotationalInertia = 10;
-            
+            ses.Physics.Category = SpinelessCollisionCategories.SplashProjectile;
+            ses.Physics.CollidesWith = SpinelessCollisionCategories.Terrain | SpinelessCollisionCategories.Enemy;
+
             Projectile p    = (Projectile)ses.CreateEntity();
             p.Initialize(lvl);
 
