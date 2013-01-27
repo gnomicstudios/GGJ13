@@ -18,7 +18,7 @@ namespace Spineless.Entities
         public bool IsActive;
         public ProjectileType Type;
         public string DefaultAnimName;
-        public RevoluteJoint HitJoint;
+        public Joint HitJoint;
         public bool IsFlying = false;
 
         public Projectile()
