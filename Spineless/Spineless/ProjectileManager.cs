@@ -29,7 +29,7 @@ namespace Spineless
             for (int i = 0; i < 10; i++)
             {
                 Projectile p = Create("ball", 32, 32, 1);
-                p.Type = ProjectileType.Splash;
+                p.Type = ProjectileType.Bomb;
                 p.DefaultAnimName = "ball";
                 this.splashProjectiles.Add(p);
             }
@@ -37,7 +37,7 @@ namespace Spineless
             for (int i = 0; i < 50; i++)
             {
                 Projectile p = Create("arrow", 15, 15, 3);
-                p.Type = ProjectileType.DirectHit;
+                p.Type = ProjectileType.Arrow;
                 p.DefaultAnimName = "arrow";
                 this.directProjectiles.Add(p);
             }
@@ -75,7 +75,7 @@ namespace Spineless
         public void Launch(Vector2 startPos, Vector2 impulse, float angle, ProjectileType type)
         {
             List<Projectile> projectiles = splashProjectiles;
-            if(type == ProjectileType.DirectHit)
+            if(type == ProjectileType.Arrow)
                 projectiles = directProjectiles;
 
             foreach(Projectile p in projectiles)
@@ -97,7 +97,7 @@ namespace Spineless
         {
             Projectile p = (Projectile)fixtureA.UserData;
 
-            if (p.Type == ProjectileType.Splash)
+            if (p.Type == ProjectileType.Bomb)
             {
                 // KABOOM!
                 p.ClipInstance.Play("explode", false);

@@ -21,18 +21,23 @@ namespace Spineless.Entities
         const float MIN_DRAG_DISTANCE   = 20;       // distance at which to register was indeed a "drag"
         const int DRAG_RADIUS           = 100;
         const float POWER               = 0.05f;
-        const float THROW_RELOAD_TIME   = 1.0f;
-        const float FIRE_RELOAD_TIME    = 1.0f;
         const float FEAR_STRENGTH       = 2.0f;
         const float FEAR_RATE_OF_CHANGE = 0.1f;
+
+        const string BOMB_IDLE_CLIP_NAME    = "idleBall";
+        const string BOW_IDLE_CLIP_NAME     = "idleBall";
+        const string BOMB_AIM_CLIP_NAME     = "readyThrow";
+        const string BOW_AIM_CLIP_NAME      = "readyThrow";
+        const string BOMB_FIRE_CLIP_NAME    = "throw";
+        const string BOW_FIRE_CLIP_NAME     = "throw";
 
         internal Texture2D AimTexture;
 
         Vector2 dragStart, dragEnd, dragVector, fireOffset;
-        float dragDistance, angle, timeSinceLastFired;
+        float dragDistance, angle, timeSinceLastFired, bombReloadTime, bowReloadTime;
         bool isDragging;
-        ProjectileType currentProjectileType = ProjectileType.DirectHit;
-        int lastScrollPos, updatesSinceWeaponChange, throwBombTime, shootArrowTime;
+        ProjectileType currentProjectileType = ProjectileType.Arrow;
+        int lastScrollPos, updatesSinceWeaponChange;
         PrincessState state;
         
         public float FearFactor { get; private set; }
@@ -65,6 +70,16 @@ namespace Spineless.Entities
 
             AimTexture = new Texture2D(ParentScreen.ParentGame.GraphicsDevice, 1, 1);
             AimTexture.SetData<Color>(new Color[] { Color.White });
+
+            // find fire durations
+            ClipInstance.Play(BOMB_FIRE_CLIP_NAME);
+            bombReloadTime = ClipInstance.CurrentAnim.DurationInSeconds;
+            ClipInstance.Play(BOW_FIRE_CLIP_NAME);
+            bowReloadTime = ClipInstance.CurrentAnim.DurationInSeconds;
+
+            // set state and current clip
+            state = PrincessState.IdleBow;
+            ClipInstance.Play(BOW_IDLE_CLIP_NAME);
         }
 
         private void Fire()
@@ -75,13 +90,15 @@ namespace Spineless.Entities
             this.LevelScreen.FireProjectile(this.Position + fireOffset, dragVector, angle, currentProjectileType);
             timeSinceLastFired = 0;
 
-            if (currentProjectileType == ProjectileType.DirectHit)
+            if (currentProjectileType == ProjectileType.Arrow)
             {
                 state = PrincessState.FiringBow;
+                ClipInstance.Play(BOW_FIRE_CLIP_NAME);
             }
             else
             {
                 state = PrincessState.ThrowingBomb;
+                ClipInstance.Play(BOMB_FIRE_CLIP_NAME);
             }
         }
 
@@ -91,7 +108,7 @@ namespace Spineless.Entities
 
             if (Input.MouseDown(MouseButton.Left))
             {
-                if (!isDragging && timeSinceLastFired > MAX_RATE_OF_FIRE)
+                if (!isDragging && timeSinceLastFired > (currentProjectileType == ProjectileType.Arrow ? bowReloadTime : bombReloadTime))
                 {
                     if (Vector2.Distance(this.Position - LevelScreen.Camera2D.Position, new Vector2(Input.MouseX, Input.MouseY)) < DRAG_RADIUS)
                     {
@@ -138,7 +155,7 @@ namespace Spineless.Entities
 
             if (Input.MouseDW != lastScrollPos && updatesSinceWeaponChange > 30)
             {
-                currentProjectileType = currentProjectileType == ProjectileType.DirectHit ? ProjectileType.Splash : ProjectileType.DirectHit;
+                currentProjectileType = currentProjectileType == ProjectileType.Arrow ? ProjectileType.Bomb : ProjectileType.Arrow;
                 lastScrollPos = Input.MouseDW;
                 updatesSinceWeaponChange = 0;
             }
@@ -148,20 +165,63 @@ namespace Spineless.Entities
                 lastScrollPos = Input.MouseDW;
             }
 
-            // update state
-            if (state == PrincessState.ThrowingBomb)
+            // Update state and the current clip, if need be. NOTE: The only other state/clip transition is performed in Fire().
+            switch (state)
             {
-                if (timeSinceLastFired > THROW_RELOAD_TIME)
-                {
-                    state = PrincessState.IdleBomb;
-                }
-            }
-            else if (state == PrincessState.FiringBow)
-            {
-                if (timeSinceLastFired > THROW_RELOAD_TIME)
-                {
-                    state = PrincessState.IdleBow;
-                }
+                case PrincessState.IdleBomb:
+                    {
+                        if (isDragging)
+                        {
+                            state = PrincessState.AimingBomb;
+                            ClipInstance.Play(BOMB_AIM_CLIP_NAME);
+                        }
+                    }
+                    break;
+                case PrincessState.IdleBow:
+                    {
+                        if (isDragging)
+                        {
+                            state = PrincessState.PullingBackBow;
+                            ClipInstance.Play(BOW_AIM_CLIP_NAME);
+                        }
+                    }
+                    break;
+                case PrincessState.AimingBomb:
+                    {
+                        if (!isDragging)
+                        {
+                            state = PrincessState.IdleBomb;
+                            ClipInstance.Play(BOMB_IDLE_CLIP_NAME);
+                        } 
+                    }
+                    break;
+                case PrincessState.PullingBackBow:
+                    {
+                        if (!isDragging)
+                        {
+                            state = PrincessState.IdleBow;
+                            ClipInstance.Play(BOW_IDLE_CLIP_NAME);
+                        }
+                    }
+                    break;
+                case PrincessState.ThrowingBomb:
+                    {
+                        if (timeSinceLastFired > bombReloadTime)
+                        {
+                            state = PrincessState.IdleBomb;
+                            ClipInstance.Play(BOMB_IDLE_CLIP_NAME);
+                        }
+                    }
+                    break;
+                case PrincessState.FiringBow:
+                    {
+                        if (timeSinceLastFired > bowReloadTime)
+                        {
+                            state = PrincessState.IdleBow;
+                            ClipInstance.Play(BOW_IDLE_CLIP_NAME);
+                        }
+                    }
+                    break;
             }
 
             base.Update(dt);
@@ -169,43 +229,6 @@ namespace Spineless.Entities
 
         public override void Draw2D(SpriteBatch spriteBatch)
         {
-            // set current clip
-            switch (currentProjectileType)
-            {
-                case ProjectileType.DirectHit:
-                    {
-                        switch(state)
-                        {
-                            case PrincessState.FiringBow:
-                            {
-                                if (this.ClipInstance.CurrentAnimationName != "firing-bow") // TODO name?
-                                {
-                                    this.ClipInstance.Play("firing-bow"); 
-                                }
-                            }
-                            break;
-                        }
-                    }
-                    break;
-                case ProjectileType.Splash:
-                    {
-                        if(isDragging)
-                            this.ClipInstance.Play("readyThrow");
-                        else
-                            this.ClipInstance.Play("idleBall");
-
-                        case PrincessState.ThrowingBomb:
-                            {
-                                if (this.ClipInstance.CurrentAnimationName != "throwing-bomb") // TODO name?
-                                {
-                                    this.ClipInstance.Play("throwing-bomb");
-                                }
-                            }
-                            break;
-                    }
-                    break;
-            }
-
             base.Draw2D(spriteBatch);
 
             if(isDragging)

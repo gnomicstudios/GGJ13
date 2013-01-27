@@ -8,8 +8,8 @@ namespace Spineless.Entities
 {
     public enum ProjectileType 
     {
-        Splash,
-        DirectHit
+        Bomb,
+        Arrow
     }
 
     class Projectile : SpinelessEntity
@@ -27,7 +27,7 @@ namespace Spineless.Entities
         {
             base.Update(dt);
 
-            if (this.Type == ProjectileType.DirectHit)
+            if (this.Type == ProjectileType.Arrow)
             {
                 Vector2 v = this.Physics.Bodies[0].LinearVelocity;
                 if (v.Length() > 0.01f)
