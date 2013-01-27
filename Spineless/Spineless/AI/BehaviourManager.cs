@@ -78,7 +78,7 @@ namespace Spineless.AI
                         {
                             new CloseToSelectedCheck<IBaseUnit>(60.0f),
                             new StopAction<IBaseUnit>(),
-                            new PlayAnimationAction<IBaseUnit>("attackA", true, false, 1.0f),
+                            new PlayAnimationAction<IBaseUnit>("attackB", true, false, 1.0f),
                             new AttackAction<IBaseUnit>()
                         }
                     },

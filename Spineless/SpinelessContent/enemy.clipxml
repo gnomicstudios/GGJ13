@@ -29,7 +29,7 @@
             <Transform>
               <Pos>0.25 -48.65</Pos>
               <Scale>1 1</Scale>
-              <Origin>19.8 18.801</Origin>
+              <Origin>19.8 18.750999999999998</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -49,7 +49,7 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>119 49 42 38</TexRect>
+            <TexRect>178 0 42 38</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -61,7 +61,7 @@
             <Transform>
               <Pos>1.5 -26.2</Pos>
               <Scale>1 1</Scale>
-              <Origin>26.05 26.051</Origin>
+              <Origin>26.05 26.000999999999998</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -81,7 +81,7 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>61 68 53 54</TexRect>
+            <TexRect>124 0 53 54</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -93,7 +93,7 @@
             <Transform>
               <Pos>2 -2.4</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.2 6.4510000000000005</Origin>
+              <Origin>27.2 6.401000000000001</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -113,7 +113,7 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>63 0 56 14</TexRect>
+            <TexRect>61 55 56 14</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -140,7 +140,7 @@
             <Transform>
               <Pos>0.25 -48.65</Pos>
               <Scale>1 1</Scale>
-              <Origin>19.8 18.801</Origin>
+              <Origin>19.8 18.750999999999998</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -160,7 +160,7 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>119 49 42 38</TexRect>
+            <TexRect>178 0 42 38</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -172,7 +172,7 @@
             <Transform>
               <Pos>1.5 -26.2</Pos>
               <Scale>1 1</Scale>
-              <Origin>26.05 26.051</Origin>
+              <Origin>26.05 26.000999999999998</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -192,7 +192,7 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>61 68 53 54</TexRect>
+            <TexRect>124 0 53 54</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -204,7 +204,7 @@
             <Transform>
               <Pos>2 -2.4</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.2 6.4510000000000005</Origin>
+              <Origin>27.2 6.401000000000001</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -224,7 +224,7 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>63 0 56 14</TexRect>
+            <TexRect>61 55 56 14</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -251,7 +251,7 @@
             <Transform>
               <Pos>0.25 -47.9</Pos>
               <Scale>1 1</Scale>
-              <Origin>19.8 18.801</Origin>
+              <Origin>19.8 18.750999999999998</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -260,7 +260,7 @@
             <Transform>
               <Pos>0.25 -49</Pos>
               <Scale>1 1</Scale>
-              <Origin>19.8 18.801</Origin>
+              <Origin>19.8 18.750999999999998</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -287,14 +287,14 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>119 49 42 38</TexRect>
+            <TexRect>178 0 42 38</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>3</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>119 49 42 38</TexRect>
+            <TexRect>178 0 42 38</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -306,7 +306,7 @@
             <Transform>
               <Pos>4.65 -23.2</Pos>
               <Scale>1 1</Scale>
-              <Origin>30.45 26.401</Origin>
+              <Origin>30.45 26.351</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -315,7 +315,7 @@
             <Transform>
               <Pos>1.6 -20.3</Pos>
               <Scale>1 1</Scale>
-              <Origin>25.1 25.401</Origin>
+              <Origin>25.1 25.351</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -342,14 +342,14 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>63 15 55 52</TexRect>
+            <TexRect>61 70 55 52</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>3</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>120 0 49 48</TexRect>
+            <TexRect>118 55 49 48</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -361,7 +361,7 @@
             <Transform>
               <Pos>2 -2.4</Pos>
               <Scale>0.881500244140625 1</Scale>
-              <Origin>27.2 6.4510000000000005</Origin>
+              <Origin>27.2 6.401000000000001</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -370,7 +370,7 @@
             <Transform>
               <Pos>2 -2.4</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.2 6.4510000000000005</Origin>
+              <Origin>27.2 6.401000000000001</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -397,14 +397,14 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>63 0 56 14</TexRect>
+            <TexRect>61 55 56 14</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>3</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>63 0 56 14</TexRect>
+            <TexRect>61 55 56 14</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -431,7 +431,7 @@
             <Transform>
               <Pos>0.5 -39.15</Pos>
               <Scale>1 1</Scale>
-              <Origin>20.05 28.349999999999998</Origin>
+              <Origin>20.05 28.299999999999997</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -440,7 +440,7 @@
             <Transform>
               <Pos>0.5 -37.65</Pos>
               <Scale>1.024932861328125 0.921051025390625</Scale>
-              <Origin>20.05 28.299999999999997</Origin>
+              <Origin>20.05 28.25</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -449,7 +449,7 @@
             <Transform>
               <Pos>0.55 -40</Pos>
               <Scale>0.90277099609375 0.9648590087890625</Scale>
-              <Origin>20.05 28.25</Origin>
+              <Origin>20.05 28.2</Origin>
               <Rot>0.03905792054710211</Rot>
             </Transform>
           </Frame>
@@ -458,7 +458,7 @@
             <Transform>
               <Pos>4.7 -41.25</Pos>
               <Scale>0.8083038330078125 1.041168212890625</Scale>
-              <Origin>20.05 28.299999999999997</Origin>
+              <Origin>20 28.25</Origin>
               <Rot>0.22623819776332135</Rot>
             </Transform>
           </Frame>
@@ -467,7 +467,7 @@
             <Transform>
               <Pos>1.9 -36.95</Pos>
               <Scale>0.86285400390625 0.940704345703125</Scale>
-              <Origin>19.95 28.349999999999998</Origin>
+              <Origin>19.95 28.299999999999997</Origin>
               <Rot>0.22622381669343494</Rot>
             </Transform>
           </Frame>
@@ -515,35 +515,35 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>119 49 42 38</TexRect>
+            <TexRect>178 0 42 38</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>1</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>119 49 42 38</TexRect>
+            <TexRect>178 0 42 38</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>2</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>119 49 42 38</TexRect>
+            <TexRect>178 0 42 38</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>3</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>119 49 42 38</TexRect>
+            <TexRect>178 0 42 38</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>4</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>119 49 42 38</TexRect>
+            <TexRect>178 0 42 38</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -562,7 +562,7 @@
             <Transform>
               <Pos>1.5 -26.2</Pos>
               <Scale>1 1</Scale>
-              <Origin>26.05 26.101</Origin>
+              <Origin>26.05 26.051</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -571,7 +571,7 @@
             <Transform>
               <Pos>1.5 -0.15</Pos>
               <Scale>1.03839111328125 0.90460205078125</Scale>
-              <Origin>26.05 52.15</Origin>
+              <Origin>26.05 52.099999999999994</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -589,7 +589,7 @@
             <Transform>
               <Pos>13.75 -2.2</Pos>
               <Scale>0.918975830078125 1.1171722412109375</Scale>
-              <Origin>34.5 66</Origin>
+              <Origin>34.5 65.94999999999999</Origin>
               <Rot>0.04314028018208457</Rot>
             </Transform>
           </Frame>
@@ -598,7 +598,7 @@
             <Transform>
               <Pos>13.75 -2.2</Pos>
               <Scale>1 1</Scale>
-              <Origin>34.5 66</Origin>
+              <Origin>34.5 65.94999999999999</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -607,7 +607,7 @@
             <Transform>
               <Pos>-1.75 -1.7</Pos>
               <Scale>1.108978271484375 0.855712890625</Scale>
-              <Origin>38.851 44.9</Origin>
+              <Origin>38.801 44.8</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -616,7 +616,7 @@
             <Transform>
               <Pos>1.5 -26.2</Pos>
               <Scale>1 1</Scale>
-              <Origin>39.5 20.401</Origin>
+              <Origin>39.5 20.351</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -678,21 +678,21 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>61 68 53 54</TexRect>
+            <TexRect>124 0 53 54</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>1</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>61 68 53 54</TexRect>
+            <TexRect>124 0 53 54</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>2</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>61 68 53 54</TexRect>
+            <TexRect>124 0 53 54</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -732,7 +732,7 @@
             <Transform>
               <Pos>2 -2.4</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.2 6.501</Origin>
+              <Origin>27.2 6.4510000000000005</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -752,7 +752,7 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>63 0 56 14</TexRect>
+            <TexRect>61 55 56 14</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -779,7 +779,7 @@
             <Transform>
               <Pos>0.25 -48.65</Pos>
               <Scale>1 1</Scale>
-              <Origin>19.8 18.801</Origin>
+              <Origin>19.8 18.750999999999998</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -788,16 +788,16 @@
             <Transform>
               <Pos>28.15 -59.95</Pos>
               <Scale>1.1299285888671875 0.9868316650390625</Scale>
-              <Origin>19.8 18.851</Origin>
+              <Origin>19.751 18.801</Origin>
               <Rot>0.6182619018096014</Rot>
             </Transform>
           </Frame>
           <Frame>
             <FrameNumber>2</FrameNumber>
             <Transform>
-              <Pos>58.7 -39.95</Pos>
-              <Scale>1.12994384765625 0.9868621826171875</Scale>
-              <Origin>19.8 18.901</Origin>
+              <Pos>58.7 -40</Pos>
+              <Scale>1.1299285888671875 0.9868621826171875</Scale>
+              <Origin>19.701 18.901</Origin>
               <Rot>1.468327475428572</Rot>
             </Transform>
           </Frame>
@@ -806,7 +806,7 @@
             <Transform>
               <Pos>78 -11.95</Pos>
               <Scale>0.683258056640625 1.2405242919921875</Scale>
-              <Origin>19.8 18.950999999999997</Origin>
+              <Origin>19.751 18.950999999999997</Origin>
               <Rot>1.52295077359886</Rot>
             </Transform>
           </Frame>
@@ -814,8 +814,8 @@
             <FrameNumber>4</FrameNumber>
             <Transform>
               <Pos>74.75 -11.8</Pos>
-              <Scale>0.8872833251953125 1.038116455078125</Scale>
-              <Origin>19.8 18.901</Origin>
+              <Scale>0.8872833251953125 1.0381011962890625</Scale>
+              <Origin>19.751 18.901</Origin>
               <Rot>1.4948925073021122</Rot>
             </Transform>
           </Frame>
@@ -863,35 +863,35 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>119 49 42 38</TexRect>
+            <TexRect>178 0 42 38</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>1</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>119 49 42 38</TexRect>
+            <TexRect>178 0 42 38</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>2</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>119 49 42 38</TexRect>
+            <TexRect>178 0 42 38</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>3</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>119 49 42 38</TexRect>
+            <TexRect>178 0 42 38</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>4</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>170 0 42 38</TexRect>
+            <TexRect>178 39 42 38</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -903,7 +903,7 @@
             <Transform>
               <Pos>20.25 -2.7</Pos>
               <Scale>1 1</Scale>
-              <Origin>44.8 49.55</Origin>
+              <Origin>44.8 49.5</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -912,7 +912,7 @@
             <Transform>
               <Pos>20.65 -10.3</Pos>
               <Scale>1.1299285888671875 0.9868316650390625</Scale>
-              <Origin>44.8 49.599999999999994</Origin>
+              <Origin>44.75 49.55</Origin>
               <Rot>0.6182619018096014</Rot>
             </Transform>
           </Frame>
@@ -920,8 +920,8 @@
             <FrameNumber>2</FrameNumber>
             <Transform>
               <Pos>16.45 -12.85</Pos>
-              <Scale>1.12994384765625 0.9868621826171875</Scale>
-              <Origin>44.85 49.599999999999994</Origin>
+              <Scale>1.1299285888671875 0.9868621826171875</Scale>
+              <Origin>44.8 49.599999999999994</Origin>
               <Rot>1.468327475428572</Rot>
             </Transform>
           </Frame>
@@ -930,16 +930,16 @@
             <Transform>
               <Pos>24.7 3.95</Pos>
               <Scale>0.683258056640625 1.2405242919921875</Scale>
-              <Origin>44.7 49.599999999999994</Origin>
+              <Origin>44.650000000000006 49.55</Origin>
               <Rot>1.52295077359886</Rot>
             </Transform>
           </Frame>
           <Frame>
             <FrameNumber>4</FrameNumber>
             <Transform>
-              <Pos>30.25 9.35</Pos>
-              <Scale>0.8872833251953125 1.038116455078125</Scale>
-              <Origin>44.85 49.55</Origin>
+              <Pos>30.3 9.35</Pos>
+              <Scale>0.8872833251953125 1.0381011962890625</Scale>
+              <Origin>44.8 49.5</Origin>
               <Rot>1.4948925073021122</Rot>
             </Transform>
           </Frame>
@@ -987,35 +987,35 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>61 68 53 54</TexRect>
+            <TexRect>124 0 53 54</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>1</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>61 68 53 54</TexRect>
+            <TexRect>124 0 53 54</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>2</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>61 68 53 54</TexRect>
+            <TexRect>124 0 53 54</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>3</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>61 68 53 54</TexRect>
+            <TexRect>124 0 53 54</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>4</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>61 68 53 54</TexRect>
+            <TexRect>124 0 53 54</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -1027,7 +1027,7 @@
             <Transform>
               <Pos>2 -2.4</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.2 6.4510000000000005</Origin>
+              <Origin>27.2 6.401000000000001</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -1035,8 +1035,8 @@
             <FrameNumber>1</FrameNumber>
             <Transform>
               <Pos>8.25 -2.4</Pos>
-              <Scale>1.1363677978515625 1</Scale>
-              <Origin>27.2 6.4510000000000005</Origin>
+              <Scale>1.1363525390625 1</Scale>
+              <Origin>27.2 6.401000000000001</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -1044,8 +1044,8 @@
             <FrameNumber>2</FrameNumber>
             <Transform>
               <Pos>39.5 -2.4</Pos>
-              <Scale>1.2355499267578125 1</Scale>
-              <Origin>27.2 6.4510000000000005</Origin>
+              <Scale>1.23553466796875 1</Scale>
+              <Origin>27.2 6.401000000000001</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -1054,16 +1054,16 @@
             <Transform>
               <Pos>57.75 -2.45</Pos>
               <Scale>1.572509765625 1.625</Scale>
-              <Origin>27.2 6.4510000000000005</Origin>
+              <Origin>27.2 6.401000000000001</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
           <Frame>
             <FrameNumber>4</FrameNumber>
             <Transform>
-              <Pos>57.75 -2.45</Pos>
-              <Scale>1.4611968994140625 2.4333343505859375</Scale>
-              <Origin>27.2 6.4510000000000005</Origin>
+              <Pos>57.75 -2.5</Pos>
+              <Scale>1.461181640625 2.4333343505859375</Scale>
+              <Origin>27.2 6.351</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -1111,35 +1111,284 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>63 0 56 14</TexRect>
+            <TexRect>61 55 56 14</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>1</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>63 0 56 14</TexRect>
+            <TexRect>61 55 56 14</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>2</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>63 0 56 14</TexRect>
+            <TexRect>61 55 56 14</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>3</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>63 0 56 14</TexRect>
+            <TexRect>61 55 56 14</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>4</FrameNumber>
             <Tex>enemySheet</Tex>
-            <TexRect>63 0 56 14</TexRect>
+            <TexRect>61 55 56 14</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>enemy.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+      </Anim>
+      <Anim>
+        <Name>hit</Name>
+        <Duration>3</Duration>
+        <Framerate>12</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>enemy.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>8.5 -53.65</Pos>
+              <Scale>1.0000152587890625 1.0000152587890625</Scale>
+              <Origin>19.8 18.750999999999998</Origin>
+              <Rot>0.3400068416348524</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Transform>
+              <Pos>16.8 -44.1</Pos>
+              <Scale>1 1</Scale>
+              <Origin>27.1 26.25</Origin>
+              <Rot>0.5272736715864992</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>12.75 -53.65</Pos>
+              <Scale>1.0000152587890625 1.0000152587890625</Scale>
+              <Origin>19.751 18.750999999999998</Origin>
+              <Rot>0.3400068416348524</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>enemy.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>enemy.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>enemySheet</Tex>
+            <TexRect>168 78 42 38</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Tex>enemySheet</Tex>
+            <TexRect>168 78 42 38</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>enemySheet</Tex>
+            <TexRect>168 78 42 38</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>enemy.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>13.5 -0.45</Pos>
+              <Scale>1.0000152587890625 1.0000152587890625</Scale>
+              <Origin>49.45 51.7</Origin>
+              <Rot>0.18845646401058522</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Transform>
+              <Pos>16 -0.45</Pos>
+              <Scale>1.000030517578125 1.000030517578125</Scale>
+              <Origin>49.5 51.75</Origin>
+              <Rot>0.21919893037002391</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>17.75 -0.45</Pos>
+              <Scale>1.0000152587890625 1.0000152587890625</Scale>
+              <Origin>49.5 51.7</Origin>
+              <Rot>0.18845646401058522</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>enemy.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>enemy.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>enemySheet</Tex>
+            <TexRect>63 0 60 54</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Tex>enemySheet</Tex>
+            <TexRect>63 0 60 54</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>enemySheet</Tex>
+            <TexRect>63 0 60 54</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>enemy.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>2 -2.4</Pos>
+              <Scale>1 1</Scale>
+              <Origin>27.2 6.401000000000001</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Transform>
+              <Pos>3 -2.4</Pos>
+              <Scale>1 1</Scale>
+              <Origin>27.2 6.401000000000001</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>3.25 -2.4</Pos>
+              <Scale>1 1</Scale>
+              <Origin>27.2 6.401000000000001</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>enemy.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>89</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>89</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>89</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>enemy.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>enemySheet</Tex>
+            <TexRect>61 55 56 14</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Tex>enemySheet</Tex>
+            <TexRect>61 55 56 14</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>enemySheet</Tex>
+            <TexRect>61 55 56 14</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
