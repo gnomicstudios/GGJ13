@@ -25,6 +25,7 @@ namespace Spineless.Entities
         public SpinelessCollisionCategories Category = SpinelessCollisionCategories.Default;
         public SpinelessCollisionCategories CollidesWith = SpinelessCollisionCategories.All;
         public short CollisionGroup = 0;
+        public float RotationalInertia = float.MaxValue;
     }
 
     public class SpinelessEntitySettings : ClipEntitySettings
@@ -35,7 +36,6 @@ namespace Spineless.Entities
         [ContentSerializer(Optional = true)]
         public float MaxSpeed = 0.1f;
         [ContentSerializer(Optional = true)]
-
         public SpinelessPhysicsSettings Physics;
         public SpinelessPhysicsSettings PhysicsFixture2;
 
@@ -108,7 +108,8 @@ namespace Spineless.Entities
                 }
 
                 body.BodyType = BodyType.Dynamic;
-                body.Inertia = float.MaxValue;
+                body.Inertia = Settings.Physics.RotationalInertia;
+
                 physics = new PhysicsStructure
                 {
                     Bodies = { body }
@@ -127,8 +128,13 @@ namespace Spineless.Entities
             if (physics != null && physics.Enabled)
             {
                 this.Position = physics.Position;
-            }
-            
+                //this.Rotation = physics.Bodies[0].Rotation;
+            }   
+        }
+
+        public override void Draw2D(Microsoft.Xna.Framework.Graphics.SpriteBatch spriteBatch)
+        {
+            base.Draw2D(spriteBatch);
         }
     }
 }
