@@ -7,6 +7,7 @@ using Gnomic.Entities;
 using FarseerPhysics.Dynamics;
 using FarseerPhysics.Dynamics.Contacts;
 using Gnomic.Physics;
+using FarseerPhysics.Dynamics.Joints;
 
 namespace Spineless
 {
@@ -56,8 +57,8 @@ namespace Spineless
             ses.Physics.Density         = density;
             ses.Physics.Offset          = new Vector2(0, -(ses.Physics.Height / 2));
             ses.Position                = PROJECTILE_START_POS;
-            ses.Physics.Category = SpinelessCollisionCategories.SplashProjectile;
-            ses.Physics.CollidesWith = SpinelessCollisionCategories.Terrain | SpinelessCollisionCategories.Enemy;
+            ses.Physics.Category        = SpinelessCollisionCategories.AllProjectiles;
+            ses.Physics.CollidesWith    = SpinelessCollisionCategories.Terrain | SpinelessCollisionCategories.Enemy;
 
             Projectile p    = (Projectile)ses.CreateEntity();
             p.Initialize(lvl);
@@ -102,16 +103,25 @@ namespace Spineless
                 p.ClipInstance.Play("explode", false);
                 lvl.Splash(p.Physics.Position, 100, 120);
                 p.Deactivate(p.ClipInstance.CurrentAnim.DurationInSeconds);
+                p.Physics.Enabled = false;    
             }
             else
             {
+                if(fixtureB.UserData is Unit)
+                {
+                    Unit u = (Unit)fixtureB.UserData;
+                    p.HitJoint = new RevoluteJoint(p.Physics.Bodies[0], 
+                        u.Physics.Bodies[0], 
+                        Vector2.Zero, 
+                        u.Physics.Bodies[0].GetLocalPoint(p.Physics.Bodies[0].Position));
+                    lvl.Physics.World.AddJoint(p.HitJoint);
+                }
                 p.ClipInstance.Play("arrowHit");
                 p.Deactivate(10);
             }
 
-            p.Physics.Enabled = false;
             p.Physics.Bodies[0].ResetDynamics();
-            
+
             return true;
         }
 
@@ -119,9 +129,14 @@ namespace Spineless
         {
             Projectile p = (Projectile)obj;
             p.IsActive = false;
+            if (p.HitJoint != null)
+            {
+                lvl.Physics.World.RemoveJoint(p.HitJoint);
+                p.HitJoint = null;
+            }
             p.Physics.Position = PROJECTILE_START_POS;
             p.ClipInstance.Play(p.DefaultAnimName, true);
-            // p.Physics is already deactivated on collision
+            p.Physics.Enabled = false;
         }
     }
 }
