@@ -58,7 +58,7 @@ namespace Spineless
 
             {
                 unitSettings = new Settings {
-                    Health=100, Damage=20, AttackInterval=0.1f, Speed=3000
+                    Health=100, Damage=30, AttackInterval=0.1f, Speed=2000
                 };
 
                 enemyClipNames[UnitType.Grunt] = "enemy";
@@ -68,7 +68,7 @@ namespace Spineless
 
             {
                 unitSettings = new Settings {
-                    Health=100, Damage=20, AttackInterval=0.1f, Speed=3000
+                    Health=100, Damage=30, AttackInterval=0.1f, Speed=2000
                 };
 
                 enemyClipNames[UnitType.Captain] = "enemy";
@@ -78,7 +78,7 @@ namespace Spineless
 
             {
                 unitSettings = new Settings {
-                    Health=100, Damage=20, AttackInterval=0.1f, Speed=3000
+                    Health=200, Damage=30, AttackInterval=0.1f, Speed=2000
                 };
 
                 enemyClipNames[UnitType.Boss] = "enemy";
@@ -88,7 +88,7 @@ namespace Spineless
 
             {
                 unitSettings = new Settings {
-                    Health=100, Damage=20, AttackInterval=0.1f, Speed=3000
+                    Health=100, Damage=30, AttackInterval=0.1f, Speed=2000
                 };
 
                 enemyClipNames[UnitType.Knight] = "knight";
@@ -125,9 +125,10 @@ namespace Spineless
                     e.Health = settings[et].Health;
                     e.IsAdded = true;
                     Category cat = (Category)(et == UnitType.Knight ? SpinelessCollisionCategories.Knight : SpinelessCollisionCategories.Enemy);
+                    Category otherCat = (Category)(et == UnitType.Knight ? SpinelessCollisionCategories.Enemy : SpinelessCollisionCategories.Knight);
                     Category collidesWithCat = (Category)(SpinelessCollisionCategories.Terrain);
                     e.Physics.Bodies[0].CollisionCategories = laneCategories[e.LaneId] & cat;
-                    e.Physics.Bodies[0].CollidesWith = laneCategories[e.LaneId] | collidesWithCat;
+                    e.Physics.Bodies[0].CollidesWith = laneCategories[e.LaneId] | collidesWithCat | otherCat;
 
                     e.Physics.Position = pos;
                     e.Physics.Enabled = true;
@@ -158,7 +159,7 @@ namespace Spineless
             e.Initialize(screen);
 
             e.UnitManager = this;
-            e.Behaviour   = behaviours.Create<IBaseUnit>(et);
+            //e.Behaviour   = behaviours.Create<IBaseUnit>(et);
 
             var unitSettings = settings[et];
 
@@ -186,6 +187,36 @@ namespace Spineless
             var e =(Unit)ent;
             ActiveUnits.Remove(e);
             e.IsAdded = false;
+        }
+
+        public Unit NearestEnemy(Unit testUnit, out float distance)
+        {
+            Unit nearestUnit = null;
+            float nearestDist = Single.MaxValue;
+
+            foreach (var kvp in unitLists)
+            {
+                // ignore units on same team
+                bool isEnemyList = kvp.Key != UnitType.Knight;
+                if (testUnit.IsEnemy == isEnemyList)
+                    continue;
+
+                foreach (Unit unit in kvp.Value)
+                {
+                    if (!unit.IsAlive)
+                        continue;
+
+                    float dist = (unit.Position - testUnit.Position).Length();
+
+                    if (dist < nearestDist || nearestUnit == null)
+                    {
+                        nearestUnit = unit;
+                        nearestDist = dist;
+                    }
+                }
+            }
+            distance = nearestDist;
+            return nearestUnit;
         }
 
         public Unit FindNearestTypeTo(UnitType type, Unit start)
