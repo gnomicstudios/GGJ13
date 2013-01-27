@@ -127,9 +127,9 @@ namespace Spineless
             base.AddEntity(sky);
         }
 
-        public void FireProjectile(Vector2 startPos, Vector2 impulse)
+        public void FireProjectile(Vector2 startPos, Vector2 impulse, float angle, ProjectileType type)
         {
-            projectiles.Launch(startPos, impulse);
+            projectiles.Launch(startPos, impulse, angle, type);
         }
 
         public void Splash(Vector2 pos, float radius, float maxDamage)

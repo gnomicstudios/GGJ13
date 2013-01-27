@@ -1,0 +1,523 @@
+<XnaContent>
+  <Asset Type="Gnomic.Anim.Clip">
+    <Joint>
+      <ParentId>-1</ParentId>
+      <Name>projectiles.Root0</Name>
+    </Joint>
+    <Joint>
+      <ParentId>0</ParentId>
+      <Name>projectiles.Graphic0</Name>
+    </Joint>
+    <Joint>
+      <ParentId>0</ParentId>
+      <Name>projectiles.egg0</Name>
+    </Joint>
+    <DrawOrder>1 2</DrawOrder>
+    <AnimSet>
+      <Anim>
+        <Name>ball</Name>
+        <Duration>1</Duration>
+        <Framerate>12</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>projectiles.Graphic0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>0 0</Pos>
+              <Scale>1 1</Scale>
+              <Origin>19.75 19.75</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>projectiles.Graphic0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>projectiles.Graphic0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>projectilesSheet</Tex>
+            <TexRect>62 177 41 41</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>projectiles.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>projectiles.egg0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+      </Anim>
+      <Anim>
+        <Name>arrow</Name>
+        <Duration>1</Duration>
+        <Framerate>12</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>projectiles.Graphic0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>0 0</Pos>
+              <Scale>1 1</Scale>
+              <Origin>37.2 5.7</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>projectiles.Graphic0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>projectiles.Graphic0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>projectilesSheet</Tex>
+            <TexRect>0 164 75 12</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>projectiles.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>projectiles.egg0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+      </Anim>
+      <Anim>
+        <Name>arrowHit</Name>
+        <Duration>1</Duration>
+        <Framerate>12</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>projectiles.Graphic0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>0 0</Pos>
+              <Scale>1 1</Scale>
+              <Origin>37.2 5.7</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>projectiles.Graphic0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>projectiles.Graphic0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>projectilesSheet</Tex>
+            <TexRect>0 177 61 12</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>projectiles.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>projectiles.egg0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+      </Anim>
+      <Anim>
+        <Name>explode</Name>
+        <Duration>13</Duration>
+        <Framerate>12</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>projectiles.egg0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-0.15 -21.2</Pos>
+              <Scale>1 1</Scale>
+              <Origin>26.351 28.651</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Transform>
+              <Pos>-3.5 -34.7</Pos>
+              <Scale>1 1</Scale>
+              <Origin>33.101 51.851</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>-2.95 -61.25</Pos>
+              <Scale>1 1</Scale>
+              <Origin>41.051 90.351</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Transform>
+              <Pos>-4 -71.9</Pos>
+              <Scale>1 1</Scale>
+              <Origin>48.601 99.45100000000001</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Transform>
+              <Pos>-5.2 -69.35</Pos>
+              <Scale>1 1</Scale>
+              <Origin>55.801 103.651</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Transform>
+              <Pos>-8.95 -152.5</Pos>
+              <Scale>1 1</Scale>
+              <Origin>51.301 25.851</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <Transform>
+              <Pos>0.9 -145.85</Pos>
+              <Scale>1 1</Scale>
+              <Origin>67.05 30.500999999999998</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <Transform>
+              <Pos>0.9 -148.35</Pos>
+              <Scale>1 1</Scale>
+              <Origin>67.05 30.500999999999998</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Transform>
+              <Pos>0.9 -151.85</Pos>
+              <Scale>1 1</Scale>
+              <Origin>67.05 30.500999999999998</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <Transform>
+              <Pos>4.95 -160.45</Pos>
+              <Scale>1 1</Scale>
+              <Origin>69.6 22.151</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <Transform>
+              <Pos>4.95 -162.45</Pos>
+              <Scale>1 1</Scale>
+              <Origin>69.6 22.151</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Transform>
+              <Pos>4.95 -165.45</Pos>
+              <Scale>1 1</Scale>
+              <Origin>69.6 22.151</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+          <Frame>
+            <FrameNumber>12</FrameNumber>
+            <Transform>
+              <Pos>4.95 -167.45</Pos>
+              <Scale>1 1</Scale>
+              <Origin>69.6 22.151</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>projectiles.egg0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>204</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>153</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>102</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>12</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>26</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>projectiles.egg0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>projectilesSheet</Tex>
+            <TexRect>0 190 54 59</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Tex>projectilesSheet</Tex>
+            <TexRect>439 0 68 105</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>projectilesSheet</Tex>
+            <TexRect>355 0 83 182</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex>projectilesSheet</Tex>
+            <TexRect>255 0 99 200</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Tex>projectilesSheet</Tex>
+            <TexRect>141 0 113 206</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Tex>projectilesSheet</Tex>
+            <TexRect>0 110 104 53</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <Tex>projectilesSheet</Tex>
+            <TexRect>0 47 135 62</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <Tex>projectilesSheet</Tex>
+            <TexRect>0 47 135 62</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Tex>projectilesSheet</Tex>
+            <TexRect>0 47 135 62</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <Tex>projectilesSheet</Tex>
+            <TexRect>0 0 140 46</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <Tex>projectilesSheet</Tex>
+            <TexRect>0 0 140 46</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Tex>projectilesSheet</Tex>
+            <TexRect>0 0 140 46</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>12</FrameNumber>
+            <Tex>projectilesSheet</Tex>
+            <TexRect>0 0 140 46</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>projectiles.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>projectiles.Graphic0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+      </Anim>
+    </AnimSet>
+  </Asset>
+</XnaContent>
