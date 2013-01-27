@@ -103,20 +103,22 @@ namespace Spineless
                 p.ClipInstance.Play("explode", false);
                 lvl.Splash(p.Physics.Position, 100, 120);
                 p.Deactivate(p.ClipInstance.CurrentAnim.DurationInSeconds);
-                p.Physics.Enabled = false;
+                p.Physics.Enabled = false;    
             }
             else
             {
                 if(fixtureB.UserData is Unit)
                 {
                     Unit u = (Unit)fixtureB.UserData;
-                    p.HitJoint = new RevoluteJoint(p.Physics.Bodies[0], u.Physics.Bodies[0], Vector2.Zero, u.Physics.Bodies[0].GetLocalPoint(p.Physics.Bodies[0].Position));
+                    p.HitJoint = new RevoluteJoint(p.Physics.Bodies[0], 
+                        u.Physics.Bodies[0], 
+                        Vector2.Zero, 
+                        u.Physics.Bodies[0].GetLocalPoint(p.Physics.Bodies[0].Position));
                     lvl.Physics.World.AddJoint(p.HitJoint);
                 }
                 p.ClipInstance.Play("arrowHit");
                 p.Deactivate(10);
             }
-
 
             p.Physics.Bodies[0].ResetDynamics();
 
@@ -127,7 +129,11 @@ namespace Spineless
         {
             Projectile p = (Projectile)obj;
             p.IsActive = false;
-            p.HitJoint = null;
+            if (p.HitJoint != null)
+            {
+                lvl.Physics.World.RemoveJoint(p.HitJoint);
+                p.HitJoint = null;
+            }
             p.Physics.Position = PROJECTILE_START_POS;
             p.ClipInstance.Play(p.DefaultAnimName, true);
             p.Physics.Enabled = false;

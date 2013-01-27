@@ -45,5 +45,7 @@ namespace Gnomic.Entities
             get { return layerID; } 
             set { layerID = value; }
         }
+
+        public virtual float DrawOrder { get { return SpriteState.Transform.Pos.Y; } }
 	}
 }

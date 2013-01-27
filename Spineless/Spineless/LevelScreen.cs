@@ -39,7 +39,7 @@ namespace Spineless
             Physics.CreateBorder(ParentGame.ScreenWidth * PLAY_AREA_WIDTH_IN_SCREENS,
                                  ParentGame.ScreenHeight, // * PLAY_AREA_HEIGHT_IN_SCREENS,
                                  new Vector2(0.0f, -floorHeight),
-                                 /*friction*/ 0.0f);
+                                 /*friction*/ 0.005f);
 
             // Create a 2D camera
             base.Camera2D = camera = new Camera2D(ParentGame.GraphicsDevice.Viewport);
@@ -89,8 +89,14 @@ namespace Spineless
             units.AddUnitToScene(et, Camera2D.Position + new Vector2(ParentGame.ScreenWidth * offsets.X, ParentGame.ScreenHeight * offsets.Y));
         }
 
+
+        const int CLOUD_LAYER = 3;
         private void CreateBackground()
         {
+            // Layer 0 is the default layer that clips entities will be added to
+            base.Layers.Add(new Layer2D(new Vector2(1.0f, 1.0f)));
+
+            // Other layers are for the background
             base.Layers.Add(new Layer2D(new Vector2(1.0f, 1.0f)));
             base.Layers.Add(new Layer2D(new Vector2(0.35f, 0.2f)));
             base.Layers.Add(new Layer2D(new Vector2(0.0f, 1.0f)));
@@ -102,7 +108,7 @@ namespace Spineless
                 background.SpriteState =
                     new Gnomic.Anim.SpriteState(Content.Load<Texture2D>("Background_Ground"));
                 background.SpriteState.Transform.Origin = Vector2.Zero;
-                background.LayerID = 0;
+                background.LayerID = 1;
                 background.Position = new Vector2(ParentGame.ScreenWidth * (i - 1), 0.0f);
                 base.AddEntity(background);
 
@@ -110,7 +116,7 @@ namespace Spineless
                 background.SpriteState =
                     new Gnomic.Anim.SpriteState(Content.Load<Texture2D>("Background_Mountains"));
                 background.SpriteState.Transform.Origin = Vector2.Zero;
-                background.LayerID = 1;
+                background.LayerID = 2;
                 background.Position = new Vector2(ParentGame.ScreenWidth * (i - 1), 0.0f);
                 base.AddEntity(background);
 
@@ -118,7 +124,7 @@ namespace Spineless
                 background.SpriteState =
                     new Gnomic.Anim.SpriteState(Content.Load<Texture2D>("Background_Clouds"));
                 background.SpriteState.Transform.Origin = Vector2.Zero;
-                background.LayerID = 2;
+                background.LayerID = CLOUD_LAYER;
                 background.Position = new Vector2(ParentGame.ScreenWidth * (i - PLAY_AREA_WIDTH_IN_SCREENS / 2), 0.0f);
                 base.AddEntity(background);
             }
@@ -127,7 +133,7 @@ namespace Spineless
             sky.SpriteState =
                 new Gnomic.Anim.SpriteState(Content.Load<Texture2D>("Background_Sky"));
             sky.SpriteState.Transform.Origin = Vector2.Zero;
-            sky.LayerID = 3;
+            sky.LayerID = 4;
             sky.Position = new Vector2(0.0f, 0.0f);
             base.AddEntity(sky);
         }
@@ -173,7 +179,7 @@ namespace Spineless
             }
             units.Update(dt);
 
-            foreach (IDrawable2D d in base.Layers[2].Sprites)
+            foreach (IDrawable2D d in base.Layers[CLOUD_LAYER].Sprites)
             {
                 SpriteEntity cloud = d as SpriteEntity;
                 if (cloud != null)
@@ -181,6 +187,17 @@ namespace Spineless
                     Vector2 cloudPos = cloud.Position;
                     cloudPos.X += dt * 10.0f;
                     cloud.Position = cloudPos;
+                }
+            }
+
+            List<IDrawable2D> layer0 = base.Layers[0].Sprites;
+            for (int i = 0; i < layer0.Count - 1; ++i)
+            {
+                if (layer0[i].DrawOrder > layer0[i + 1].DrawOrder)
+                {
+                    IDrawable2D tmp = layer0[i];
+                    layer0[i] = layer0[i + 1];
+                    layer0[i + 1] = tmp;
                 }
             }
 

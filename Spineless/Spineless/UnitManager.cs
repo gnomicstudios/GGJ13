@@ -58,7 +58,7 @@ namespace Spineless
 
             {
                 unitSettings = new Settings {
-                    Health=100, Damage=10, AttackInterval=0.1f, Speed=1000
+                    Health=100, Damage=20, AttackInterval=0.1f, Speed=3000
                 };
 
                 enemyClipNames[UnitType.Grunt] = "enemy";
@@ -68,7 +68,7 @@ namespace Spineless
 
             {
                 unitSettings = new Settings {
-                    Health=100, Damage=10, AttackInterval=0.1f, Speed=1000
+                    Health=100, Damage=20, AttackInterval=0.1f, Speed=3000
                 };
 
                 enemyClipNames[UnitType.Captain] = "enemy";
@@ -78,7 +78,7 @@ namespace Spineless
 
             {
                 unitSettings = new Settings {
-                    Health=100, Damage=10, AttackInterval=0.1f, Speed=1000
+                    Health=100, Damage=20, AttackInterval=0.1f, Speed=3000
                 };
 
                 enemyClipNames[UnitType.Boss] = "enemy";
@@ -88,7 +88,7 @@ namespace Spineless
 
             {
                 unitSettings = new Settings {
-                    Health=100000000, Damage=10, AttackInterval=0.1f, Speed=1000
+                    Health=100, Damage=20, AttackInterval=0.1f, Speed=3000
                 };
 
                 enemyClipNames[UnitType.Knight] = "knight";
@@ -148,7 +148,7 @@ namespace Spineless
             es.Physics = new SpinelessPhysicsSettings();
             es.Physics.Width = 0.6f;
             es.Physics.Height = 1f;
-            es.Physics.Offset = new Vector2(0.0f, RandomLaneOffset());
+            es.Physics.Offset = new Vector2(0.0f, -0.5f);
             es.Physics.Density = 2.0f;
             es.ActivateByDefault = false;
             var e = (Unit)es.CreateEntity();
