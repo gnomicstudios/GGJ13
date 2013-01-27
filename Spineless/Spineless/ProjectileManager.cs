@@ -84,6 +84,7 @@ namespace Spineless
                 {
                     p.Physics.Position = startPos;
                     p.IsActive = true;
+                    p.IsFlying = true;
                     p.Physics.Enabled = true;
                     p.Physics.Bodies[0].Rotation = angle;
                     p.Physics.Bodies[0].ApplyLinearImpulse(impulse);
@@ -111,13 +112,17 @@ namespace Spineless
                 {
                     Unit u = (Unit)fixtureB.UserData;
                     p.HitJoint = new RevoluteJoint(p.Physics.Bodies[0], 
-                        u.Physics.Bodies[0], 
+                        u.Physics.Bodies[0],
                         Vector2.Zero, 
                         u.Physics.Bodies[0].GetLocalPoint(p.Physics.Bodies[0].Position));
+                    u.Hit(100);
                     lvl.Physics.World.AddJoint(p.HitJoint);
+                    
                 }
+                p.IsFlying = false;
                 p.ClipInstance.Play("arrowHit");
                 p.Deactivate(10);
+                p.Physics.Enabled = false;
             }
 
             p.Physics.Bodies[0].ResetDynamics();
