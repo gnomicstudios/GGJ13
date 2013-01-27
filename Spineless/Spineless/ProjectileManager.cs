@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Gnomic.Entities;
 using FarseerPhysics.Dynamics;
 using FarseerPhysics.Dynamics.Contacts;
+using Gnomic.Physics;
 
 namespace Spineless
 {
@@ -27,7 +28,7 @@ namespace Spineless
 
             for (int i = 0; i < 10; i++)
             {
-                Projectile p = Create("ball");
+                Projectile p = Create("ball", 32, 32, 1);
                 p.Type = ProjectileType.Splash;
                 p.DefaultAnimName = "ball";
                 this.splashProjectiles.Add(p);
@@ -35,29 +36,31 @@ namespace Spineless
 
             for (int i = 0; i < 50; i++)
             {
-                Projectile p = Create("arrow");
+                Projectile p = Create("arrow", 15, 15, 3);
                 p.Type = ProjectileType.DirectHit;
                 p.DefaultAnimName = "arrow";
                 this.directProjectiles.Add(p);
             }
         }
 
-        private Projectile Create(string animName)
+        private Projectile Create(string animName, int width, int height, float density)
         {
             SpinelessEntitySettings ses = new SpinelessEntitySettings();
-            ses.ActivateByDefault = false;
-            ses.ClipFile        = "projectiles.clipxml";
-            ses.EntityClass     = "Spineless.Entities.Projectile, Spineless";
-            ses.DefaultAnimName = animName;
-            ses.Physics = new SpinelessPhysicsSettings();
-            ses.Physics.Width = 0.5f;
-            ses.Physics.Height = 0.5f;
-            ses.Physics.Density = 1;
-            ses.Physics.Offset = new Vector2(0, -(ses.Physics.Height / 2));
-            ses.Position = PROJECTILE_START_POS;
+            ses.ActivateByDefault       = false;
+            ses.ClipFile                = "projectiles.clipxml";
+            ses.EntityClass             = "Spineless.Entities.Projectile, Spineless";
+            ses.DefaultAnimName         = animName;
+            ses.Physics                 = new SpinelessPhysicsSettings();
+            ses.Physics.Width           = ConvertUnits.ToSimUnits(width);
+            ses.Physics.Height          = ConvertUnits.ToSimUnits(height);
+            ses.Physics.Density         = density;
+            ses.Physics.Offset          = new Vector2(0, -(ses.Physics.Height / 2));
+            ses.Position                = PROJECTILE_START_POS;
+            //ses.Physics.RotationalInertia = 10;
             
             Projectile p    = (Projectile)ses.CreateEntity();
             p.Initialize(lvl);
+
             p.Deactivated   += new Action<Entity>(OnProjectileDeactivated);
             p.Physics.Bodies[0].FixtureList[0].CollidesWith = (Category)(SpinelessCollisionCategories.Terrain 
                 //| SpinelessCollisionCategories.Border
@@ -72,7 +75,6 @@ namespace Spineless
         public void Launch(Vector2 startPos, Vector2 impulse, float angle, ProjectileType type)
         {
             List<Projectile> projectiles = splashProjectiles;
-
             if(type == ProjectileType.DirectHit)
                 projectiles = directProjectiles;
 

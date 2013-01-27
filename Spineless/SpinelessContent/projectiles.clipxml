@@ -45,7 +45,7 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>projectilesSheet</Tex>
-            <TexRect>55 177 41 41</TexRect>
+            <TexRect>62 177 41 41</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -103,6 +103,63 @@
             <FrameNumber>0</FrameNumber>
             <Tex>projectilesSheet</Tex>
             <TexRect>0 164 75 12</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>projectiles.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>projectiles.egg0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+      </Anim>
+      <Anim>
+        <Name>arrowHit</Name>
+        <Duration>1</Duration>
+        <Framerate>12</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>projectiles.Graphic0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>0 0</Pos>
+              <Scale>1 1</Scale>
+              <Origin>37.2 5.7</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>projectiles.Graphic0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>projectiles.Graphic0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>projectilesSheet</Tex>
+            <TexRect>0 177 61 12</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -351,7 +408,7 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>projectilesSheet</Tex>
-            <TexRect>0 177 54 59</TexRect>
+            <TexRect>0 190 54 59</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>

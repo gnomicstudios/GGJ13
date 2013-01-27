@@ -160,6 +160,7 @@
     <Content Include="projectiles.clipxml">
       <Name>projectiles</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="heart.clipxml">
       <Name>heart</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
