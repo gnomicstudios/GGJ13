@@ -18,7 +18,8 @@ namespace Spineless.Entities
         public bool IsActive;
         public ProjectileType Type;
         public string DefaultAnimName;
-        public RevoluteJoint HitJoint;
+        public Joint HitJoint;
+        public bool IsFlying = false;
 
         public Projectile()
         {
@@ -29,11 +30,14 @@ namespace Spineless.Entities
         {
             base.Update(dt);
 
-            if (this.Type == ProjectileType.Arrow)
+            if (this.IsFlying)
             {
-                Vector2 v = this.Physics.Bodies[0].LinearVelocity;
-                if (v.Length() > 0.01f)
-                    ClipInstance.Rotation = (float)Math.Atan2(v.Y, v.X);
+                if (this.Type == ProjectileType.Arrow)
+                {
+                    Vector2 v = this.Physics.Bodies[0].LinearVelocity;
+                    if (v.Length() > 0.1f)
+                        ClipInstance.Rotation = (float)Math.Atan2(v.Y, v.X);
+                }
             }
         }
 

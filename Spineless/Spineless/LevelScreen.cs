@@ -164,7 +164,7 @@ namespace Spineless
                             u.Physics.Bodies[0].ApplyLinearImpulse(blastVector);
 
                             // remove health
-                            u.Health -= (1.0f - distance / radius) * maxDamage; 
+                            u.Hit((1.0f - distance / radius) * maxDamage); 
                         }
                     }
                 }
