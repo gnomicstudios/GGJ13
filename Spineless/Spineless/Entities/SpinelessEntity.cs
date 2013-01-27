@@ -26,7 +26,6 @@ namespace Spineless.Entities
         public SpinelessCollisionCategories Category = SpinelessCollisionCategories.Default;
         public SpinelessCollisionCategories CollidesWith = SpinelessCollisionCategories.All;
         public short CollisionGroup = 0;
-
     }
 
     public class SpinelessEntitySettings : ClipEntitySettings

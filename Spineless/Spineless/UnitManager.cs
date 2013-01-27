@@ -126,7 +126,8 @@ namespace Spineless
                     e.IsAdded = true;
                     Category cat = (Category)(et == UnitType.Knight ? SpinelessCollisionCategories.Knight : SpinelessCollisionCategories.Enemy);
                     Category otherCat = (Category)(et == UnitType.Knight ? SpinelessCollisionCategories.Enemy : SpinelessCollisionCategories.Knight);
-                    Category collidesWithCat = (Category)(SpinelessCollisionCategories.Terrain);
+                    Category collidesWithCat = (Category)(SpinelessCollisionCategories.Terrain | SpinelessCollisionCategories.AllProjectiles);
+
                     e.Physics.Bodies[0].CollisionCategories = laneCategories[e.LaneId] & cat;
                     e.Physics.Bodies[0].CollidesWith = laneCategories[e.LaneId] | collidesWithCat | otherCat;
 
@@ -157,6 +158,10 @@ namespace Spineless
             e.Activated += UnitActivated;
             e.Deactivated += UnitDeactivated;
             e.Initialize(screen);
+            
+
+            e.Physics.Bodies[0].Friction = 0.1f;
+            e.Physics.Bodies[0].FixtureList[0].UserData = e;
 
             e.UnitManager = this;
             //e.Behaviour   = behaviours.Create<IBaseUnit>(et);
