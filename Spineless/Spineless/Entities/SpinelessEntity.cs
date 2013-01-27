@@ -22,6 +22,9 @@ namespace Spineless.Entities
         public float Width = 5f;
         public float Height = 5f;
         public Vector2 Offset = Vector2.Zero;
+        public SpinelessCollisionCategories Category = SpinelessCollisionCategories.Default;
+        public SpinelessCollisionCategories CollidesWith = SpinelessCollisionCategories.All;
+        public short CollisionGroup = 0;
     }
 
     public class SpinelessEntitySettings : ClipEntitySettings
@@ -34,7 +37,8 @@ namespace Spineless.Entities
         [ContentSerializer(Optional = true)]
 
         public SpinelessPhysicsSettings Physics;
-        
+        public SpinelessPhysicsSettings PhysicsFixture2;
+
         public SpinelessEntitySettings()
         {
             this.EntityClass = "Spineless.Entities.SpinelessEntity,Spineless";
@@ -82,6 +86,27 @@ namespace Spineless.Entities
                     Settings.Physics.Density,
                     ConvertUnits.ToSimUnits(Settings.Position),
                     Settings.Physics.Offset);
+
+                body.Enabled = false;
+
+                body.FixtureList[0].CollidesWith = (Category)Settings.Physics.CollidesWith;
+                body.FixtureList[0].CollisionCategories = (Category)Settings.Physics.Category;
+                body.FixtureList[0].CollisionGroup = Settings.Physics.CollisionGroup;
+
+                if (Settings.PhysicsFixture2 != null)
+                {
+                    Fixture fix2 = FixtureFactory.AttachRectangle(
+                        Settings.PhysicsFixture2.Width,
+                        Settings.PhysicsFixture2.Height,
+                        Settings.PhysicsFixture2.Density,
+                        Settings.PhysicsFixture2.Offset,
+                        body);
+
+                    fix2.CollidesWith = (Category)Settings.PhysicsFixture2.CollidesWith;
+                    fix2.CollisionCategories = (Category)Settings.PhysicsFixture2.Category;
+                    fix2.CollisionGroup = Settings.PhysicsFixture2.CollisionGroup;
+                }
+
                 body.BodyType = BodyType.Dynamic;
                 body.Inertia = float.MaxValue;
                 physics = new PhysicsStructure

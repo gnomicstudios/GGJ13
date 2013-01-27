@@ -40,15 +40,15 @@ namespace Spineless
             ses.Physics.Height = 0.5f;
             ses.Physics.Density = 1;
             ses.Physics.Offset = new Vector2(0, -(ses.Physics.Height / 2));
+            ses.Physics.Category = SpinelessCollisionCategories.SplashProjectile;
+            ses.Physics.CollidesWith = SpinelessCollisionCategories.Terrain
+                                    //| SpinelessCollisionCategories.Border
+                                    | SpinelessCollisionCategories.Enemy;
             ses.Position = PROJECTILE_START_POS;
             
             Projectile p    = (Projectile)ses.CreateEntity();
             p.Initialize(lvl);
             p.Deactivated   += new Action<Entity>(OnProjectileDeactivated);
-            p.Physics.Bodies[0].FixtureList[0].CollidesWith = (Category)(SpinelessCollisionCategories.Terrain 
-                //| SpinelessCollisionCategories.Border
-                | SpinelessCollisionCategories.Enemy);
-            p.Physics.Bodies[0].FixtureList[0].CollisionCategories = (Category)SpinelessCollisionCategories.SplashProjectile;
             p.Physics.Bodies[0].FixtureList[0].OnCollision = OnSplashProjectileCollision;
             p.Physics.Bodies[0].FixtureList[0].UserData = p;
 

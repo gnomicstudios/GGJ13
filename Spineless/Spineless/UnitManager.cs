@@ -6,6 +6,7 @@ using Spineless.Entities;
 using Microsoft.Xna.Framework;
 
 using Spineless.AI;
+using FarseerPhysics.Dynamics;
 
 namespace Spineless
 {
@@ -35,12 +36,18 @@ namespace Spineless
         Dictionary<UnitType, Settings> settings =
             new Dictionary<UnitType, Settings>();
 
-        const int NUM_LANES = 5;
-        const float LANE_OFFSET = 0.1f;
-        const float LANE_START  = -0.25f;
+        const int NUM_LANES = 3;
+        const float LANE_OFFSET = 0.15f;
+        const float LANE_START  = -0.15f;
 
         Dictionary<int, float> lanes = new Dictionary<int, float>();
+        Dictionary<int, Category> laneCategories = new Dictionary<int, Category>();
         Random random = new Random();
+
+        public void Update(float dt)
+        {
+            
+        }
 
         public UnitManager(LevelScreen screen)
         {
@@ -93,6 +100,9 @@ namespace Spineless
             {
                 lanes[i] = LANE_START + (i * LANE_OFFSET);
             }
+            laneCategories[0] = (Category)SpinelessCollisionCategories.Lane1;
+            laneCategories[1] = (Category)SpinelessCollisionCategories.Lane2;
+            laneCategories[2] = (Category)SpinelessCollisionCategories.Lane3;
 
             for (int i = 0; i < 10; ++i)
             {
@@ -110,9 +120,18 @@ namespace Spineless
             {
                 if (!e.IsAdded)
                 {
+                    e.LaneId = random.Next(NUM_LANES);
+                    e.ClipInstance.Origin = new Vector2(e.ClipInstance.Origin.X, lanes[e.LaneId] * 50.0f);
+                    e.Health = settings[et].Health;
                     e.IsAdded = true;
+                    Category cat = (Category)(et == UnitType.Knight ? SpinelessCollisionCategories.Knight : SpinelessCollisionCategories.Enemy);
+                    Category collidesWithCat = (Category)(SpinelessCollisionCategories.Terrain);
+                    e.Physics.Bodies[0].CollisionCategories = laneCategories[e.LaneId] | cat;
+                    e.Physics.Bodies[0].CollidesWith = laneCategories[e.LaneId] | collidesWithCat;
+
                     e.Physics.Position = pos;
                     e.Physics.Enabled = true;
+                    
                     e.Activate();
                     return e;
                 }
@@ -129,7 +148,7 @@ namespace Spineless
             es.Physics = new SpinelessPhysicsSettings();
             es.Physics.Width = 0.6f;
             es.Physics.Height = 1f;
-            es.Physics.Offset = new Vector2(0.0f, RandomLaneOffset());
+            es.Physics.Offset = new Vector2(0.0f, -0.5f); //RandomLaneOffset());
             es.Physics.Density = 10.0f;
             es.ActivateByDefault = false;
             var e = (Unit)es.CreateEntity();
