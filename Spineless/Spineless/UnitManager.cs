@@ -126,7 +126,7 @@ namespace Spineless
                     e.IsAdded = true;
                     Category cat = (Category)(et == UnitType.Knight ? SpinelessCollisionCategories.Knight : SpinelessCollisionCategories.Enemy);
                     Category collidesWithCat = (Category)(SpinelessCollisionCategories.Terrain);
-                    e.Physics.Bodies[0].CollisionCategories = laneCategories[e.LaneId] | cat;
+                    e.Physics.Bodies[0].CollisionCategories = laneCategories[e.LaneId] & cat;
                     e.Physics.Bodies[0].CollidesWith = laneCategories[e.LaneId] | collidesWithCat;
 
                     e.Physics.Position = pos;
