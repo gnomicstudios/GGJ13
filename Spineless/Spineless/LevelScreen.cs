@@ -60,19 +60,19 @@ namespace Spineless
             
             units = new UnitManager(this);
 
-            float startX = 0.7f;
+            //float startX = 0.7f;
 
-            for (int i = 0; i < 20; ++i)
-            {
-                AddUnit(UnitType.Grunt, new Vector2(startX+(i*0.05f), 0.7f));
-            }
+            //for (int i = 0; i < 20; ++i)
+            //{
+            //    AddUnit(UnitType.Grunt, new Vector2(startX+(i*0.05f), 0.7f));
+            //}
 
-            startX = 0.4f;
+            //startX = 0.4f;
 
-            for (int i = 0; i < 5; ++i)
-            {
-                AddUnit(UnitType.Knight, new Vector2(startX + (i * 0.05f), 0.7f));
-            }
+            //for (int i = 0; i < 5; ++i)
+            //{
+            //    AddUnit(UnitType.Knight, new Vector2(startX + (i * 0.05f), 0.7f));
+            //}
 
             projectiles = new ProjectileManager(this);
                         
@@ -84,10 +84,10 @@ namespace Spineless
             Physics.World.AddJoint(standingJoint);
         }
 
-        private void AddUnit(UnitType et, Vector2 offsets)
-        {
-            units.AddUnitToScene(et, Camera2D.Position + new Vector2(ParentGame.ScreenWidth * offsets.X, ParentGame.ScreenHeight * offsets.Y));
-        }
+        //private void AddUnit(UnitType et, Vector2 offsets)
+        //{
+        //    units.AddUnitToScene(et, Camera2D.Position + new Vector2(ParentGame.ScreenWidth * offsets.X, ParentGame.ScreenHeight * offsets.Y));
+        //}
 
 
         const int CLOUD_LAYER = 3;
