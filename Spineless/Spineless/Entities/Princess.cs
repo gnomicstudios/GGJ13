@@ -54,7 +54,7 @@ namespace Spineless.Entities
         {
             SpinelessEntitySettings princessClipSettings = new SpinelessEntitySettings();
             princessClipSettings.EntityClass = "Spineless.Entities.Princess, Spineless";
-            princessClipSettings.ClipFile = "princess.clipxml";
+            princessClipSettings.ClipFile = "princess";
             princessClipSettings.DefaultAnimName = "idle";
             princessClipSettings.Position = position;
             princessClipSettings.Physics = new SpinelessPhysicsSettings();

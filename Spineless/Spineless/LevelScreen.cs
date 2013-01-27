@@ -11,8 +11,14 @@ using Spineless.Entities;
 
 namespace Spineless
 {
+    public enum GameState
+    {
+        Playing,
+        GameOver
+    }
     public class LevelScreen : Gnomic.GameScreen
     {
+        public GameState gameState = GameState.Playing;
         Camera2D camera;
         UnitManager units;
         public UnitManager Units { get { return units; } }
@@ -173,6 +179,12 @@ namespace Spineless
 
         public override void Update(float dt)
         {
+            if (gameState == GameState.GameOver)
+            {
+                //base.Update(dt);
+                return;
+            }
+
             if (Gnomic.Input.KeyJustDown(Microsoft.Xna.Framework.Input.Keys.F1))
             {
                 base.EnablePhysicsDebug = !base.EnablePhysicsDebug;

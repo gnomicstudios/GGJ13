@@ -48,7 +48,7 @@ namespace Spineless
         {
             SpinelessEntitySettings ses = new SpinelessEntitySettings();
             ses.ActivateByDefault       = false;
-            ses.ClipFile                = "projectiles.clipxml";
+            ses.ClipFile                = "projectiles";
             ses.EntityClass             = "Spineless.Entities.Projectile, Spineless";
             ses.DefaultAnimName         = animName;
             ses.Physics                 = new SpinelessPhysicsSettings();

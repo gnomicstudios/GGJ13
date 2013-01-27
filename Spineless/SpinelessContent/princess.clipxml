@@ -375,7 +375,7 @@
             <FrameNumber>1</FrameNumber>
             <Transform>
               <Pos>2.25 2.3</Pos>
-              <Scale>1 1</Scale>
+              <Scale>0.9999847412109375 0.9999847412109375</Scale>
               <Origin>34.35 73.4</Origin>
               <Rot>-0.05361369380103919</Rot>
             </Transform>
@@ -725,9 +725,9 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Transform>
-              <Pos>-15.85 -55.8</Pos>
+              <Pos>-15.85 -55.85</Pos>
               <Scale>1 1</Scale>
-              <Origin>22.951 26.951</Origin>
+              <Origin>22.951 26.901</Origin>
               <Rot>-0.21726441015419035</Rot>
             </Transform>
           </Frame>

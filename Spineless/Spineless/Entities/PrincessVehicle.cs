@@ -127,6 +127,7 @@ namespace Spineless.Entities
             settings.Physics.Width = sizePhysicsCoords.X;
             settings.Physics.Height = sizePhysicsCoords.Y;
             settings.Physics.Offset = offsetPhysicsCoords;
+            settings.Physics.Category = SpinelessCollisionCategories.Siege;
             return (PrincessVehicle)settings.CreateEntity();
         }
     }

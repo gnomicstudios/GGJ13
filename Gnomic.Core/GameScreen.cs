@@ -276,11 +276,11 @@ namespace Gnomic
 
         public Text AddText(string fontName, string text, Color tint, Vector2 fontHeight, Vector2 pos, bool visible)
         {
-            return AddText(fontName, text, tint, fontHeight, pos, Vector2.Zero, HorizontalAlignment.Middle, true, "Gnomic.Entities.TextEntity");
+            return AddText(fontName, text, tint, fontHeight, pos, Vector2.Zero, HorizontalAlignment.Middle, true, "Gnomic.UI.Text");
         }
         public Text AddText(string fontName, string text, Color tint, Vector2 fontHeight, Vector2 pos, Vector2 screenSize, HorizontalAlignment alignH, bool visible)
         {
-            return AddText(fontName, text, tint, fontHeight, pos, screenSize, HorizontalAlignment.Middle, visible, "Gnomic.Entities.TextEntity");
+            return AddText(fontName, text, tint, fontHeight, pos, screenSize, HorizontalAlignment.Middle, visible, "Gnomic.UI.Text");
         }
         public Text AddText(string fontName, string text, Color tint, Vector2 fontHeight, Vector2 pos, Vector2 screenSize, HorizontalAlignment alignH, bool visible, string className)
         {
@@ -295,6 +295,7 @@ namespace Gnomic
             txt.Text = text;
             txt.Tint = tint;
             Text textObj = (Text)txt.CreateEntity();
+            textObj.ParentScreen = this;
             this.AddEntity(textObj);
             return textObj;
         }

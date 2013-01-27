@@ -24,6 +24,10 @@ namespace Spineless
         
         Cue[] heartbeatCues = new Cue[3];
 
+        public string fearText = "00%";
+        SpriteFont font;
+        float deathTime = 0.0f;
+
         public override void Initialize(GnomicGame game)
         {
             levelScreen = ParentGame.GetScreen<LevelScreen>();
@@ -34,7 +38,7 @@ namespace Spineless
             IconMoveRight = base.AddSprite("IconMove", imageSize, topRight, new Vector2(0.5f), true);
             IconMoveLeft = base.AddSprite("IconMove", imageSize, topRight - new Vector2(imageSize.X, 0.0f), new Vector2(0.5f), true);
             IconMoveLeft.Settings.SpriteEffects = SpriteEffects.FlipHorizontally;
-            
+
             ClipEntitySettings settings;
 
             settings = new ClipEntitySettings();
@@ -52,8 +56,13 @@ namespace Spineless
             settings.Position = new Vector2(90, 90);
             Heart = (ClipEntity)settings.CreateEntity();
             base.AddEntity(Heart);
+            
+            font = Content.Load<SpriteFont>("UIFont");
 
             base.Initialize(game);
+
+            IconMoveRight.Visible = false;
+            IconMoveLeft.Visible = false;
         }
 
         protected override void OnActivate()
@@ -67,8 +76,23 @@ namespace Spineless
 
         public override void Update(float dt)
         {
+
+            if (levelScreen.gameState == GameState.GameOver)
+            {
+                if (deathTime > 3.0f)
+                {
+                    return;
+                }
+                else
+                {
+                    deathTime += dt;
+                    base.Update(dt);
+                }
+                return;
+            }
+
             base.Update(dt);
-            
+
             float fear = levelScreen.lilMissBadAss.FearFactor;
             int animId = 0;
             
@@ -95,6 +119,28 @@ namespace Spineless
 
             Heart.Scale = Vector2.One * (0.5f + fear * 0.8f);
             Heart.ClipInstance.CurrentAnim.SpeedModifier = 0.5f + 2.0f * fear;
+
+            if (fear >= 1.0f)
+            {
+                Heart.ClipInstance.Play("death", false);
+                levelScreen.gameState = GameState.GameOver;
+                deathTime = 0.0f;
+            }
+        }
+
+
+        public override void Draw(SpriteBatch spriteBatch)
+        {
+            base.Draw(spriteBatch);
+
+            if (levelScreen.gameState == GameState.Playing)
+                fearText = string.Format("{0}%", (int)(100.0f * levelScreen.lilMissBadAss.FearFactor));
+            else
+                fearText = "GAME OVER!";
+
+            spriteBatch.Begin();
+            spriteBatch.DrawString(font, fearText, new Vector2(70.0f, 180.0f), Color.Black);
+            spriteBatch.End();
         }
     }
 }

@@ -49,7 +49,7 @@
             <Transform>
               <Pos>-100.75 -30.5</Pos>
               <Scale>1 1</Scale>
-              <Origin>62.851 30.951</Origin>
+              <Origin>62.800999999999995 30.901</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -91,7 +91,7 @@
             <Transform>
               <Pos>13.55 -13</Pos>
               <Scale>1 1</Scale>
-              <Origin>8.950999999999999 31.151</Origin>
+              <Origin>8.950999999999999 31.201</Origin>
               <Rot>1.8222986022392547</Rot>
             </Transform>
           </Frame>
@@ -123,7 +123,7 @@
             <Transform>
               <Pos>0.25 -53.4</Pos>
               <Scale>1 1</Scale>
-              <Origin>20.9 18.451</Origin>
+              <Origin>20.9 18.401</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -155,7 +155,7 @@
             <Transform>
               <Pos>1.5 -27.7</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.15 26.701</Origin>
+              <Origin>27.15 26.651</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -187,7 +187,7 @@
             <Transform>
               <Pos>22.55 -28.5</Pos>
               <Scale>1.0000152587890625 1.0000152587890625</Scale>
-              <Origin>16.351 24.051</Origin>
+              <Origin>16.351 24.000999999999998</Origin>
               <Rot>0.22280112206046507</Rot>
             </Transform>
           </Frame>
@@ -219,7 +219,7 @@
             <Transform>
               <Pos>3.05 -1</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.349999999999998 6.151000000000001</Origin>
+              <Origin>27.349999999999998 6.101</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -276,7 +276,7 @@
             <Transform>
               <Pos>13.55 -13</Pos>
               <Scale>1 1</Scale>
-              <Origin>8.950999999999999 31.151</Origin>
+              <Origin>8.950999999999999 31.201</Origin>
               <Rot>1.8222986022392547</Rot>
             </Transform>
           </Frame>
@@ -308,7 +308,7 @@
             <Transform>
               <Pos>0.25 -53.4</Pos>
               <Scale>1 1</Scale>
-              <Origin>20.9 18.451</Origin>
+              <Origin>20.9 18.401</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -340,7 +340,7 @@
             <Transform>
               <Pos>1.5 -27.7</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.15 26.701</Origin>
+              <Origin>27.15 26.651</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -372,7 +372,7 @@
             <Transform>
               <Pos>22.55 -28.5</Pos>
               <Scale>1.0000152587890625 1.0000152587890625</Scale>
-              <Origin>16.351 24.051</Origin>
+              <Origin>16.351 24.000999999999998</Origin>
               <Rot>0.22280112206046507</Rot>
             </Transform>
           </Frame>
@@ -404,7 +404,7 @@
             <Transform>
               <Pos>3.05 -1</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.349999999999998 6.151000000000001</Origin>
+              <Origin>27.349999999999998 6.101</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -481,7 +481,7 @@
             <Transform>
               <Pos>8.35 -13.95</Pos>
               <Scale>1 1</Scale>
-              <Origin>8.950999999999999 31.051</Origin>
+              <Origin>8.901 31.101</Origin>
               <Rot>1.9038560464101684</Rot>
             </Transform>
           </Frame>
@@ -490,7 +490,7 @@
             <Transform>
               <Pos>26.85 -34.45</Pos>
               <Scale>1 1</Scale>
-              <Origin>8.901 30.501</Origin>
+              <Origin>8.850999999999999 30.451</Origin>
               <Rot>1.1921118640166053</Rot>
             </Transform>
           </Frame>
@@ -536,7 +536,7 @@
             <Transform>
               <Pos>2.5 -57.4</Pos>
               <Scale>1 1</Scale>
-              <Origin>20.9 18.401</Origin>
+              <Origin>20.9 18.351</Origin>
               <Rot>0.11275531107675586</Rot>
             </Transform>
           </Frame>
@@ -545,7 +545,7 @@
             <Transform>
               <Pos>3.5 -56.4</Pos>
               <Scale>1 1</Scale>
-              <Origin>20.9 18.451</Origin>
+              <Origin>20.9 18.401</Origin>
               <Rot>0.0960626173641392</Rot>
             </Transform>
           </Frame>
@@ -591,7 +591,7 @@
             <Transform>
               <Pos>3.85 -28.65</Pos>
               <Scale>1 1</Scale>
-              <Origin>33.1 29.051000000000002</Origin>
+              <Origin>33.1 29.001</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -600,7 +600,7 @@
             <Transform>
               <Pos>1.6 -28.3</Pos>
               <Scale>1 1</Scale>
-              <Origin>28.3 27.501</Origin>
+              <Origin>28.3 27.451</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -646,7 +646,7 @@
             <Transform>
               <Pos>22.3 -28.5</Pos>
               <Scale>1 1</Scale>
-              <Origin>16.451 24.051</Origin>
+              <Origin>16.451 24.000999999999998</Origin>
               <Rot>0.13064509569936314</Rot>
             </Transform>
           </Frame>
@@ -655,7 +655,7 @@
             <Transform>
               <Pos>23.55 -28.75</Pos>
               <Scale>1 1</Scale>
-              <Origin>16.401 24.101</Origin>
+              <Origin>16.351 24.051</Origin>
               <Rot>0.09347668794567225</Rot>
             </Transform>
           </Frame>
@@ -701,7 +701,7 @@
             <Transform>
               <Pos>3.05 -1</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.349999999999998 6.151000000000001</Origin>
+              <Origin>27.349999999999998 6.101</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -795,7 +795,7 @@
             <Transform>
               <Pos>-5.75 -22.1</Pos>
               <Scale>1 1</Scale>
-              <Origin>62.851 30.951</Origin>
+              <Origin>62.800999999999995 30.901</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -841,7 +841,7 @@
             <Transform>
               <Pos>-30.45 -46.1</Pos>
               <Scale>0.999969482421875 0.999969482421875</Scale>
-              <Origin>8.800999999999998 57.751</Origin>
+              <Origin>8.850999999999999 57.651</Origin>
               <Rot>-1.291785461502783</Rot>
             </Transform>
           </Frame>
@@ -850,7 +850,7 @@
             <Transform>
               <Pos>-30.45 -46.1</Pos>
               <Scale>0.9999847412109375 0.9999847412109375</Scale>
-              <Origin>8.700999999999999 57.701</Origin>
+              <Origin>8.751 57.651</Origin>
               <Rot>-1.2090993696618937</Rot>
             </Transform>
           </Frame>
@@ -859,7 +859,7 @@
             <Transform>
               <Pos>12.9 -22.5</Pos>
               <Scale>1 1</Scale>
-              <Origin>8.401 58.101</Origin>
+              <Origin>8.350999999999999 58.101</Origin>
               <Rot>1.8540466782263072</Rot>
             </Transform>
           </Frame>
@@ -868,7 +868,7 @@
             <Transform>
               <Pos>12.9 -22.5</Pos>
               <Scale>1 1</Scale>
-              <Origin>8.401 58.101</Origin>
+              <Origin>8.350999999999999 58.101</Origin>
               <Rot>1.8540466782263072</Rot>
             </Transform>
           </Frame>
@@ -942,7 +942,7 @@
             <Transform>
               <Pos>-5.7 -55.35</Pos>
               <Scale>1.000030517578125 1.02825927734375</Scale>
-              <Origin>20.700999999999997 18.451</Origin>
+              <Origin>20.700999999999997 18.351</Origin>
               <Rot>-0.25216060886582564</Rot>
             </Transform>
           </Frame>
@@ -951,7 +951,7 @@
             <Transform>
               <Pos>0.25 -53.4</Pos>
               <Scale>1.059814453125 1</Scale>
-              <Origin>20.9 18.501</Origin>
+              <Origin>20.9 18.451</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -960,7 +960,7 @@
             <Transform>
               <Pos>10.6 -50.7</Pos>
               <Scale>1 1</Scale>
-              <Origin>20.801 18.551</Origin>
+              <Origin>20.801 18.501</Origin>
               <Rot>0.27043042657598726</Rot>
             </Transform>
           </Frame>
@@ -969,7 +969,7 @@
             <Transform>
               <Pos>2.75 -52.9</Pos>
               <Scale>1 1</Scale>
-              <Origin>20.9 18.501</Origin>
+              <Origin>20.9 18.451</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -1043,7 +1043,7 @@
             <Transform>
               <Pos>-0.6 -28.3</Pos>
               <Scale>1 1.028228759765625</Scale>
-              <Origin>33.701 27.001</Origin>
+              <Origin>33.650999999999996 26.901</Origin>
               <Rot>-0.07831557817596016</Rot>
             </Transform>
           </Frame>
@@ -1052,7 +1052,7 @@
             <Transform>
               <Pos>1.5 -27.7</Pos>
               <Scale>1 1</Scale>
-              <Origin>33.9 27.001</Origin>
+              <Origin>33.9 26.951</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -1061,7 +1061,7 @@
             <Transform>
               <Pos>2.75 -27.65</Pos>
               <Scale>1 1</Scale>
-              <Origin>22.5 27.051</Origin>
+              <Origin>22.5 27.001</Origin>
               <Rot>0.04420634356644329</Rot>
             </Transform>
           </Frame>
@@ -1070,7 +1070,7 @@
             <Transform>
               <Pos>1.5 -27.7</Pos>
               <Scale>1 1</Scale>
-              <Origin>22.5 27.001</Origin>
+              <Origin>22.5 26.951</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -1144,7 +1144,7 @@
             <Transform>
               <Pos>22.05 -30.55</Pos>
               <Scale>1.0000152587890625 1.0000152587890625</Scale>
-              <Origin>16.401 24.200999999999997</Origin>
+              <Origin>16.351 24.151</Origin>
               <Rot>0.10095857271214087</Rot>
             </Transform>
           </Frame>
@@ -1153,7 +1153,7 @@
             <Transform>
               <Pos>22.55 -28.5</Pos>
               <Scale>1.0000152587890625 1.0000152587890625</Scale>
-              <Origin>16.401 24.101</Origin>
+              <Origin>16.351 24.051</Origin>
               <Rot>0.22280112206046507</Rot>
             </Transform>
           </Frame>
@@ -1162,7 +1162,7 @@
             <Transform>
               <Pos>22.55 -28.5</Pos>
               <Scale>1 1</Scale>
-              <Origin>16.351 24.151</Origin>
+              <Origin>16.351 24.101</Origin>
               <Rot>0.3317917886202849</Rot>
             </Transform>
           </Frame>
@@ -1171,7 +1171,7 @@
             <Transform>
               <Pos>19.3 -28.5</Pos>
               <Scale>1.0000152587890625 1.0000152587890625</Scale>
-              <Origin>16.401 24.101</Origin>
+              <Origin>16.351 24.051</Origin>
               <Rot>0.22280112206046507</Rot>
             </Transform>
           </Frame>
@@ -1245,7 +1245,7 @@
             <Transform>
               <Pos>3.05 -1</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.349999999999998 6.2010000000000005</Origin>
+              <Origin>27.349999999999998 6.151000000000001</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -1302,7 +1302,7 @@
             <Transform>
               <Pos>-5 -32.45</Pos>
               <Scale>1 1</Scale>
-              <Origin>63.248999999999995 1.7510000000000001</Origin>
+              <Origin>63.349 1.701</Origin>
               <Rot>-2.5913865018566216</Rot>
             </Transform>
           </Frame>
@@ -1372,7 +1372,7 @@
             <Transform>
               <Pos>-30.45 -46.1</Pos>
               <Scale>0.999969482421875 0.999969482421875</Scale>
-              <Origin>8.800999999999998 57.751</Origin>
+              <Origin>8.850999999999999 57.651</Origin>
               <Rot>-1.291785461502783</Rot>
             </Transform>
           </Frame>
@@ -1381,7 +1381,7 @@
             <Transform>
               <Pos>-30.45 -46.1</Pos>
               <Scale>0.9999847412109375 0.9999847412109375</Scale>
-              <Origin>8.700999999999999 57.701</Origin>
+              <Origin>8.751 57.651</Origin>
               <Rot>-1.2090993696618937</Rot>
             </Transform>
           </Frame>
@@ -1390,7 +1390,7 @@
             <Transform>
               <Pos>12.9 -22.5</Pos>
               <Scale>1 1</Scale>
-              <Origin>8.401 58.101</Origin>
+              <Origin>8.350999999999999 58.101</Origin>
               <Rot>1.8540466782263072</Rot>
             </Transform>
           </Frame>
@@ -1399,7 +1399,7 @@
             <Transform>
               <Pos>12.9 -22.5</Pos>
               <Scale>1 1</Scale>
-              <Origin>8.401 58.101</Origin>
+              <Origin>8.350999999999999 58.101</Origin>
               <Rot>1.8540466782263072</Rot>
             </Transform>
           </Frame>
@@ -1473,7 +1473,7 @@
             <Transform>
               <Pos>-5.7 -55.35</Pos>
               <Scale>1.000030517578125 1.02825927734375</Scale>
-              <Origin>20.700999999999997 18.451</Origin>
+              <Origin>20.700999999999997 18.351</Origin>
               <Rot>-0.25216060886582564</Rot>
             </Transform>
           </Frame>
@@ -1482,7 +1482,7 @@
             <Transform>
               <Pos>0.25 -53.4</Pos>
               <Scale>1.059814453125 1</Scale>
-              <Origin>20.9 18.501</Origin>
+              <Origin>20.9 18.451</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -1491,7 +1491,7 @@
             <Transform>
               <Pos>10.6 -50.7</Pos>
               <Scale>1 1</Scale>
-              <Origin>20.801 18.551</Origin>
+              <Origin>20.801 18.501</Origin>
               <Rot>0.27043042657598726</Rot>
             </Transform>
           </Frame>
@@ -1500,7 +1500,7 @@
             <Transform>
               <Pos>2.75 -52.9</Pos>
               <Scale>1 1</Scale>
-              <Origin>20.9 18.501</Origin>
+              <Origin>20.9 18.451</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -1574,7 +1574,7 @@
             <Transform>
               <Pos>-0.6 -28.3</Pos>
               <Scale>1 1.028228759765625</Scale>
-              <Origin>33.701 27.001</Origin>
+              <Origin>33.650999999999996 26.901</Origin>
               <Rot>-0.07831557817596016</Rot>
             </Transform>
           </Frame>
@@ -1583,7 +1583,7 @@
             <Transform>
               <Pos>1.5 -27.7</Pos>
               <Scale>1 1</Scale>
-              <Origin>33.9 27.001</Origin>
+              <Origin>33.9 26.951</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -1592,7 +1592,7 @@
             <Transform>
               <Pos>2.75 -27.65</Pos>
               <Scale>1 1</Scale>
-              <Origin>22.5 27.051</Origin>
+              <Origin>22.5 27.001</Origin>
               <Rot>0.04420634356644329</Rot>
             </Transform>
           </Frame>
@@ -1601,7 +1601,7 @@
             <Transform>
               <Pos>1.5 -27.7</Pos>
               <Scale>1 1</Scale>
-              <Origin>22.5 27.001</Origin>
+              <Origin>22.5 26.951</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -1675,7 +1675,7 @@
             <Transform>
               <Pos>22.05 -30.55</Pos>
               <Scale>1.0000152587890625 1.0000152587890625</Scale>
-              <Origin>16.401 24.200999999999997</Origin>
+              <Origin>16.351 24.151</Origin>
               <Rot>0.10095857271214087</Rot>
             </Transform>
           </Frame>
@@ -1684,7 +1684,7 @@
             <Transform>
               <Pos>22.55 -28.5</Pos>
               <Scale>1.0000152587890625 1.0000152587890625</Scale>
-              <Origin>16.401 24.101</Origin>
+              <Origin>16.351 24.051</Origin>
               <Rot>0.22280112206046507</Rot>
             </Transform>
           </Frame>
@@ -1693,7 +1693,7 @@
             <Transform>
               <Pos>22.55 -28.5</Pos>
               <Scale>1 1</Scale>
-              <Origin>16.351 24.151</Origin>
+              <Origin>16.351 24.101</Origin>
               <Rot>0.3317917886202849</Rot>
             </Transform>
           </Frame>
@@ -1702,7 +1702,7 @@
             <Transform>
               <Pos>19.3 -28.5</Pos>
               <Scale>1.0000152587890625 1.0000152587890625</Scale>
-              <Origin>16.401 24.101</Origin>
+              <Origin>16.351 24.051</Origin>
               <Rot>0.22280112206046507</Rot>
             </Transform>
           </Frame>
@@ -1776,7 +1776,7 @@
             <Transform>
               <Pos>3.05 -1</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.349999999999998 6.2010000000000005</Origin>
+              <Origin>27.349999999999998 6.151000000000001</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -1833,7 +1833,7 @@
             <Transform>
               <Pos>-74.25 -99.3</Pos>
               <Scale>1 1</Scale>
-              <Origin>62.8 1.8</Origin>
+              <Origin>62.9 1.8</Origin>
               <Rot>-2.466247225394888</Rot>
             </Transform>
           </Frame>
@@ -1842,7 +1842,7 @@
             <Transform>
               <Pos>-124.95 -91</Pos>
               <Scale>0.999969482421875 0.999969482421875</Scale>
-              <Origin>62.951 31.101</Origin>
+              <Origin>62.900999999999996 31.2</Origin>
               <Rot>2.0217299531020565</Rot>
             </Transform>
           </Frame>
@@ -1933,7 +1933,7 @@
             <Transform>
               <Pos>13.55 -13</Pos>
               <Scale>1 1</Scale>
-              <Origin>8.950999999999999 31.151</Origin>
+              <Origin>8.950999999999999 31.201</Origin>
               <Rot>1.8222986022392547</Rot>
             </Transform>
           </Frame>
@@ -1942,7 +1942,7 @@
             <Transform>
               <Pos>-22.25 -93.7</Pos>
               <Scale>1 1</Scale>
-              <Origin>9.151 31.151</Origin>
+              <Origin>9.051 31.151</Origin>
               <Rot>0.5982666220291775</Rot>
             </Transform>
           </Frame>
@@ -1951,7 +1951,7 @@
             <Transform>
               <Pos>-102.9 -128.75</Pos>
               <Scale>0.9999542236328125 0.9999542236328125</Scale>
-              <Origin>9.2 31.051</Origin>
+              <Origin>9.2 31.001</Origin>
               <Rot>-0.568609393813946</Rot>
             </Transform>
           </Frame>
@@ -1960,7 +1960,7 @@
             <Transform>
               <Pos>-146.15 -57.8</Pos>
               <Scale>0.999969482421875 0.999969482421875</Scale>
-              <Origin>9.35 31.051</Origin>
+              <Origin>9.45 31.101</Origin>
               <Rot>-2.3070794081046673</Rot>
             </Transform>
           </Frame>
@@ -1969,7 +1969,7 @@
             <Transform>
               <Pos>-212.7 -12.25</Pos>
               <Scale>0.999969482421875 0.999969482421875</Scale>
-              <Origin>9.299999999999999 31.201</Origin>
+              <Origin>9.299999999999999 31.301</Origin>
               <Rot>2.5990502805255424</Rot>
             </Transform>
           </Frame>
@@ -1978,7 +1978,7 @@
             <Transform>
               <Pos>-229.15 9.85</Pos>
               <Scale>0.9999847412109375 0.9999847412109375</Scale>
-              <Origin>9.25 31.151</Origin>
+              <Origin>9.25 31.201</Origin>
               <Rot>1.5781967188320085</Rot>
             </Transform>
           </Frame>
@@ -2080,7 +2080,7 @@
             <Transform>
               <Pos>0.25 -53.4</Pos>
               <Scale>1 1</Scale>
-              <Origin>20.9 18.451</Origin>
+              <Origin>20.9 18.401</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -2089,7 +2089,7 @@
             <Transform>
               <Pos>-9.05 -61.25</Pos>
               <Scale>1.0000152587890625 1.0000152587890625</Scale>
-              <Origin>20.801 18.401</Origin>
+              <Origin>20.750999999999998 18.351</Origin>
               <Rot>-0.1477346004144016</Rot>
             </Transform>
           </Frame>
@@ -2098,7 +2098,7 @@
             <Transform>
               <Pos>-36.5 -75.95</Pos>
               <Scale>1.0000152587890625 1.0000152587890625</Scale>
-              <Origin>20.9 18.501</Origin>
+              <Origin>20.851 18.401</Origin>
               <Rot>-0.416322652148272</Rot>
             </Transform>
           </Frame>
@@ -2107,7 +2107,7 @@
             <Transform>
               <Pos>-82.85 -68.25</Pos>
               <Scale>0.9999847412109375 0.9999847412109375</Scale>
-              <Origin>21 18.551</Origin>
+              <Origin>20.95 18.501</Origin>
               <Rot>-0.31726238066113965</Rot>
             </Transform>
           </Frame>
@@ -2116,7 +2116,7 @@
             <Transform>
               <Pos>-123.6 -31.4</Pos>
               <Scale>1.0757293701171875 0.775146484375</Scale>
-              <Origin>21 18.501</Origin>
+              <Origin>21.049999999999997 18.401</Origin>
               <Rot>-1.0725662911084746</Rot>
             </Transform>
           </Frame>
@@ -2134,7 +2134,7 @@
             <Transform>
               <Pos>-162.15 -4.2</Pos>
               <Scale>0.998382568359375 1.0256195068359375</Scale>
-              <Origin>21 18.651</Origin>
+              <Origin>21.049999999999997 18.701</Origin>
               <Rot>3.065795094224503</Rot>
             </Transform>
           </Frame>
@@ -2250,7 +2250,7 @@
             <Transform>
               <Pos>1.5 -27.7</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.15 26.701</Origin>
+              <Origin>27.15 26.651</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -2259,7 +2259,7 @@
             <Transform>
               <Pos>-4 -35.95</Pos>
               <Scale>1.0000152587890625 1.0000152587890625</Scale>
-              <Origin>38.651 43.501</Origin>
+              <Origin>38.651 43.451</Origin>
               <Rot>-0.1477346004144016</Rot>
             </Transform>
           </Frame>
@@ -2268,7 +2268,7 @@
             <Transform>
               <Pos>-25 -52.85</Pos>
               <Scale>1.0000152587890625 1.0000152587890625</Scale>
-              <Origin>38.701 43.451</Origin>
+              <Origin>38.651 43.400999999999996</Origin>
               <Rot>-0.416322652148272</Rot>
             </Transform>
           </Frame>
@@ -2277,7 +2277,7 @@
             <Transform>
               <Pos>-58.8 -34.15</Pos>
               <Scale>1.0000152587890625 1.0000152587890625</Scale>
-              <Origin>38.75 43.400999999999996</Origin>
+              <Origin>38.75 43.300999999999995</Origin>
               <Rot>-0.9445255006390999</Rot>
             </Transform>
           </Frame>
@@ -2286,7 +2286,7 @@
             <Transform>
               <Pos>-71.5 -5.25</Pos>
               <Scale>0.7152862548828125 1.284820556640625</Scale>
-              <Origin>38.95 43.451</Origin>
+              <Origin>39.05 43.351</Origin>
               <Rot>-1.5036670904617053</Rot>
             </Transform>
           </Frame>
@@ -2295,7 +2295,7 @@
             <Transform>
               <Pos>-71.75 -5.05</Pos>
               <Scale>0.858673095703125 1.097320556640625</Scale>
-              <Origin>38.8 43.451</Origin>
+              <Origin>38.9 43.400999999999996</Origin>
               <Rot>-1.4909797910285678</Rot>
             </Transform>
           </Frame>
@@ -2397,7 +2397,7 @@
             <Transform>
               <Pos>22.55 -28.5</Pos>
               <Scale>1.0000152587890625 1.0000152587890625</Scale>
-              <Origin>16.351 24.051</Origin>
+              <Origin>16.351 24.000999999999998</Origin>
               <Rot>0.22280112206046507</Rot>
             </Transform>
           </Frame>
@@ -2406,7 +2406,7 @@
             <Transform>
               <Pos>16.65 -39.85</Pos>
               <Scale>1.0000152587890625 1.0000152587890625</Scale>
-              <Origin>16.351 24.051</Origin>
+              <Origin>16.351 24.000999999999998</Origin>
               <Rot>0.07505400478894012</Rot>
             </Transform>
           </Frame>
@@ -2415,7 +2415,7 @@
             <Transform>
               <Pos>-6.1 -62.1</Pos>
               <Scale>1.000030517578125 1.000030517578125</Scale>
-              <Origin>16.251 24.101</Origin>
+              <Origin>16.201 24.051</Origin>
               <Rot>-0.19351620376562678</Rot>
             </Transform>
           </Frame>
@@ -2424,7 +2424,7 @@
             <Transform>
               <Pos>-33.45 -66.15</Pos>
               <Scale>0.999969482421875 0.999969482421875</Scale>
-              <Origin>16.251 23.901</Origin>
+              <Origin>16.251 23.851</Origin>
               <Rot>-0.7177906233324788</Rot>
             </Transform>
           </Frame>
@@ -2433,7 +2433,7 @@
             <Transform>
               <Pos>-59.05 -56.7</Pos>
               <Scale>1.1526947021484375 0.885650634765625</Scale>
-              <Origin>11.651 23.450999999999997</Origin>
+              <Origin>11.651 23.351</Origin>
               <Rot>-1.279784724998668</Rot>
             </Transform>
           </Frame>
@@ -2442,7 +2442,7 @@
             <Transform>
               <Pos>-103.2 -11.5</Pos>
               <Scale>1 1</Scale>
-              <Origin>16.5 24.051</Origin>
+              <Origin>16.5 24.000999999999998</Origin>
               <Rot>-1.484675556096132</Rot>
             </Transform>
           </Frame>
@@ -2451,7 +2451,7 @@
             <Transform>
               <Pos>-113.2 -9.5</Pos>
               <Scale>1 1</Scale>
-              <Origin>11.75 23.551</Origin>
+              <Origin>11.8 23.500999999999998</Origin>
               <Rot>-1.484675556096132</Rot>
             </Transform>
           </Frame>
@@ -2460,7 +2460,7 @@
             <Transform>
               <Pos>-124.2 -9.5</Pos>
               <Scale>1 1</Scale>
-              <Origin>11.75 23.551</Origin>
+              <Origin>11.8 23.500999999999998</Origin>
               <Rot>-1.484675556096132</Rot>
             </Transform>
           </Frame>
@@ -2590,7 +2590,7 @@
             <Transform>
               <Pos>3.05 -1</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.349999999999998 6.151000000000001</Origin>
+              <Origin>27.349999999999998 6.101</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -2599,7 +2599,7 @@
             <Transform>
               <Pos>-0.45 -1</Pos>
               <Scale>0.9996185302734375 0.858154296875</Scale>
-              <Origin>27.25 6.151000000000001</Origin>
+              <Origin>27.2 6.101</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -2608,7 +2608,7 @@
             <Transform>
               <Pos>-26.4 -1</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.25 6.151000000000001</Origin>
+              <Origin>27.2 6.101</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -2617,7 +2617,7 @@
             <Transform>
               <Pos>-74.9 -1</Pos>
               <Scale>1.2742156982421875 1</Scale>
-              <Origin>27.25 6.151000000000001</Origin>
+              <Origin>27.2 6.101</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -2626,7 +2626,7 @@
             <Transform>
               <Pos>-83.45 -1</Pos>
               <Scale>2.023773193359375 2.137908935546875</Scale>
-              <Origin>27.25 6.251</Origin>
+              <Origin>27.25 6.2010000000000005</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -2635,7 +2635,7 @@
             <Transform>
               <Pos>-83.45 -1</Pos>
               <Scale>1.8040771484375 2.137908935546875</Scale>
-              <Origin>27.3 6.251</Origin>
+              <Origin>27.25 6.2010000000000005</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -2762,16 +2762,16 @@
             <Transform>
               <Pos>-17.75 -20.25</Pos>
               <Scale>0.999969482421875 0.999969482421875</Scale>
-              <Origin>8.550999999999998 58.851</Origin>
+              <Origin>8.550999999999998 58.951</Origin>
               <Rot>1.9175406996715405</Rot>
             </Transform>
           </Frame>
           <Frame>
             <FrameNumber>1</FrameNumber>
             <Transform>
-              <Pos>-10.5 -20.25</Pos>
+              <Pos>-10.45 -20.25</Pos>
               <Scale>0.9999847412109375 0.9999847412109375</Scale>
-              <Origin>8.501 58.851</Origin>
+              <Origin>8.450999999999999 58.901</Origin>
               <Rot>1.88677719433949</Rot>
             </Transform>
           </Frame>
@@ -2780,7 +2780,7 @@
             <Transform>
               <Pos>-15.75 -20.25</Pos>
               <Scale>0.999969482421875 0.999969482421875</Scale>
-              <Origin>8.550999999999998 58.801</Origin>
+              <Origin>8.501 58.901</Origin>
               <Rot>1.9175406996715405</Rot>
             </Transform>
           </Frame>
@@ -2789,7 +2789,7 @@
             <Transform>
               <Pos>-11.75 -20.25</Pos>
               <Scale>0.999969482421875 0.999969482421875</Scale>
-              <Origin>8.550999999999998 58.851</Origin>
+              <Origin>8.501 58.951</Origin>
               <Rot>1.9175406996715405</Rot>
             </Transform>
           </Frame>
@@ -2798,7 +2798,7 @@
             <Transform>
               <Pos>-13.25 -20.25</Pos>
               <Scale>0.999969482421875 0.999969482421875</Scale>
-              <Origin>8.550999999999998 58.801</Origin>
+              <Origin>8.501 58.901</Origin>
               <Rot>1.9175406996715405</Rot>
             </Transform>
           </Frame>
@@ -2886,7 +2886,7 @@
             <Transform>
               <Pos>19.05 -29.25</Pos>
               <Scale>1.000030517578125 1.000030517578125</Scale>
-              <Origin>11.651 23.551</Origin>
+              <Origin>11.651 23.500999999999998</Origin>
               <Rot>-0.06760008321391733</Rot>
             </Transform>
           </Frame>
@@ -2895,7 +2895,7 @@
             <Transform>
               <Pos>26.3 -29.25</Pos>
               <Scale>1.000030517578125 1.000030517578125</Scale>
-              <Origin>11.651 23.551</Origin>
+              <Origin>11.651 23.500999999999998</Origin>
               <Rot>-0.06760008321391733</Rot>
             </Transform>
           </Frame>
@@ -2904,7 +2904,7 @@
             <Transform>
               <Pos>21.05 -29.25</Pos>
               <Scale>1 1</Scale>
-              <Origin>11.601 23.500999999999998</Origin>
+              <Origin>11.601 23.450999999999997</Origin>
               <Rot>-0.14130945796847644</Rot>
             </Transform>
           </Frame>
@@ -2913,7 +2913,7 @@
             <Transform>
               <Pos>25.05 -29.25</Pos>
               <Scale>1.000030517578125 1.000030517578125</Scale>
-              <Origin>11.651 23.551</Origin>
+              <Origin>11.651 23.500999999999998</Origin>
               <Rot>-0.06760008321391733</Rot>
             </Transform>
           </Frame>
@@ -2922,7 +2922,7 @@
             <Transform>
               <Pos>23.55 -29.25</Pos>
               <Scale>1.000030517578125 1.000030517578125</Scale>
-              <Origin>11.651 23.551</Origin>
+              <Origin>11.651 23.500999999999998</Origin>
               <Rot>-0.06760008321391733</Rot>
             </Transform>
           </Frame>
@@ -3010,7 +3010,7 @@
             <Transform>
               <Pos>-11.5 -46.15</Pos>
               <Scale>1 1</Scale>
-              <Origin>18.351 18.451</Origin>
+              <Origin>18.301 18.401</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -3019,7 +3019,7 @@
             <Transform>
               <Pos>-4.25 -46.15</Pos>
               <Scale>1 1</Scale>
-              <Origin>18.351 18.451</Origin>
+              <Origin>18.301 18.401</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -3028,7 +3028,7 @@
             <Transform>
               <Pos>-9.5 -46.15</Pos>
               <Scale>1 1</Scale>
-              <Origin>18.351 18.451</Origin>
+              <Origin>18.301 18.401</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -3037,7 +3037,7 @@
             <Transform>
               <Pos>-5.5 -46.15</Pos>
               <Scale>1 1</Scale>
-              <Origin>18.351 18.451</Origin>
+              <Origin>18.301 18.401</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -3046,7 +3046,7 @@
             <Transform>
               <Pos>-7 -46.15</Pos>
               <Scale>1 1</Scale>
-              <Origin>18.351 18.451</Origin>
+              <Origin>18.301 18.401</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -3134,7 +3134,7 @@
             <Transform>
               <Pos>-3 -27.7</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.101 26.701</Origin>
+              <Origin>27.051 26.651</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -3143,7 +3143,7 @@
             <Transform>
               <Pos>4.25 -27.7</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.15 26.701</Origin>
+              <Origin>27.15 26.651</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -3152,7 +3152,7 @@
             <Transform>
               <Pos>-1 -27.7</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.101 26.701</Origin>
+              <Origin>27.051 26.651</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -3161,7 +3161,7 @@
             <Transform>
               <Pos>3 -27.7</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.15 26.701</Origin>
+              <Origin>27.15 26.651</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -3170,7 +3170,7 @@
             <Transform>
               <Pos>1.5 -27.7</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.15 26.701</Origin>
+              <Origin>27.15 26.651</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -3258,7 +3258,7 @@
             <Transform>
               <Pos>-1.45 -1</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.3 6.151000000000001</Origin>
+              <Origin>27.25 6.101</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -3267,7 +3267,7 @@
             <Transform>
               <Pos>5.8 -1</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.349999999999998 6.151000000000001</Origin>
+              <Origin>27.349999999999998 6.101</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -3276,7 +3276,7 @@
             <Transform>
               <Pos>0.55 -1</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.349999999999998 6.151000000000001</Origin>
+              <Origin>27.349999999999998 6.101</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -3285,7 +3285,7 @@
             <Transform>
               <Pos>4.55 -1</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.349999999999998 6.151000000000001</Origin>
+              <Origin>27.349999999999998 6.101</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -3294,7 +3294,7 @@
             <Transform>
               <Pos>3.05 -1</Pos>
               <Scale>1 1</Scale>
-              <Origin>27.349999999999998 6.151000000000001</Origin>
+              <Origin>27.349999999999998 6.101</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -3369,6 +3369,211 @@
           </Frame>
           <Frame>
             <FrameNumber>4</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>0 158 56 14</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.Root0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.shield0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.fx0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.fx1</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex/>
+            <TexRect>0 0 0 0</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>false</Visible>
+          </Frame>
+        </JointAnim>
+      </Anim>
+      <Anim>
+        <Name>block</Name>
+        <Duration>1</Duration>
+        <Framerate>12</Framerate>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>knight.sword0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-17.75 -20.3</Pos>
+              <Scale>0.999969482421875 0.999969482421875</Scale>
+              <Origin>8.501 58.951</Origin>
+              <Rot>1.9175406996715405</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>knight.sword0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.sword0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>138 156 19 62</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>knight.shieldFront0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>19.05 -29.25</Pos>
+              <Scale>1.000030517578125 1.000030517578125</Scale>
+              <Origin>11.651 23.500999999999998</Origin>
+              <Rot>-0.06760008321391733</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>knight.shieldFront0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.shieldFront0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>159 115 25 51</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>knight.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-11.5 -46.15</Pos>
+              <Scale>1 1</Scale>
+              <Origin>18.301 18.401</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>knight.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.head0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>115 115 43 40</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>knight.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-3 -27.7</Pos>
+              <Scale>1 1</Scale>
+              <Origin>27.051 26.651</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>knight.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.body0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Tex>knightSheet</Tex>
+            <TexRect>59 99 55 56</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimSpatial">
+          <JointName>knight.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <Transform>
+              <Pos>-1.45 -1</Pos>
+              <Scale>1 1</Scale>
+              <Origin>27.25 6.101</Origin>
+              <Rot>0</Rot>
+            </Transform>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimColour">
+          <JointName>knight.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>89</A>
+          </Frame>
+        </JointAnim>
+        <JointAnim Type="Gnomic.Anim.JointAnimTexture">
+          <JointName>knight.shadow0</JointName>
+          <Frame>
+            <FrameNumber>0</FrameNumber>
             <Tex>knightSheet</Tex>
             <TexRect>0 158 56 14</TexRect>
             <FlipState>0</FlipState>

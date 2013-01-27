@@ -405,7 +405,10 @@ namespace Gnomic.UI
             if (textElem != null)
                 textElem.Text = actualText;
 
-            HandleScreenSizeChange(ParentScreen.ParentGame.ScreenWidth, ParentScreen.ParentGame.ScreenHeight);
+            if (ParentScreen != null)
+            {
+                HandleScreenSizeChange(ParentScreen.ParentGame.ScreenWidth, ParentScreen.ParentGame.ScreenHeight);
+            }
         }
 
         public float GetFontScaleAtScreenHeight(float scrnHeight)

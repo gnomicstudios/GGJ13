@@ -340,7 +340,8 @@ namespace Gnomic.UI
 
 		public void Draw2D(SpriteBatch spriteBatch)
 		{
-            spriteBatch.Draw(texture, offset, SourceRect, colorWithAlpha, rotation, origin, scale, Settings.SpriteEffects, Settings.LayerDepth);
+            if (visible)
+                spriteBatch.Draw(texture, offset, SourceRect, colorWithAlpha, rotation, origin, scale, Settings.SpriteEffects, Settings.LayerDepth);
         }
 
         protected int layerID = 0;

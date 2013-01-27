@@ -158,11 +158,11 @@ namespace Spineless
                     e.Health = settings[et].Health;
                     e.IsAdded = true;
                     Category cat = (Category)(et == UnitType.Knight ? SpinelessCollisionCategories.Knight : SpinelessCollisionCategories.Enemy);
-                    Category otherCat = (Category)(et == UnitType.Knight ? SpinelessCollisionCategories.Enemy : SpinelessCollisionCategories.Knight);
+                    Category extraCat = (Category)(et == UnitType.Knight ? SpinelessCollisionCategories.Enemy : (SpinelessCollisionCategories.Siege | SpinelessCollisionCategories.Knight));
                     Category collidesWithCat = (Category)(SpinelessCollisionCategories.Terrain | SpinelessCollisionCategories.AllProjectiles);
 
                     e.Physics.Bodies[0].CollisionCategories = laneCategories[e.LaneId] & cat;
-                    e.Physics.Bodies[0].CollidesWith = laneCategories[e.LaneId] | collidesWithCat | otherCat;
+                    e.Physics.Bodies[0].CollidesWith = laneCategories[e.LaneId] | collidesWithCat | extraCat;
 
                     if (pos.X < 1.0f)
                         pos.X = 1.0f;

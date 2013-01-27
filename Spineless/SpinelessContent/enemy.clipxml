@@ -1252,9 +1252,9 @@
             <FrameNumber>1</FrameNumber>
             <Transform>
               <Pos>16 -0.45</Pos>
-              <Scale>1.000030517578125 1.000030517578125</Scale>
+              <Scale>1.0000152587890625 1.0000152587890625</Scale>
               <Origin>49.5 51.75</Origin>
-              <Rot>0.21919893037002391</Rot>
+              <Rot>0.21921331143991035</Rot>
             </Transform>
           </Frame>
           <Frame>

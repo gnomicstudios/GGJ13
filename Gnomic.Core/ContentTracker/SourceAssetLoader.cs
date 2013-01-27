@@ -5,7 +5,9 @@ using System.Text;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using System.IO;
+#if USE_SOURCEASSETS
 using Microsoft.Xna.Framework.Content.Pipeline.Serialization.Intermediate;
+#endif
 using System.Xml;
 
 namespace Gnomic.Core
@@ -71,13 +73,15 @@ namespace Gnomic.Core
                 }
                 return (T)texture;
             }
-            else
-            {
-                using (XmlReader inXml = XmlReader.Create(fileName))
-                {
-                    return IntermediateSerializer.Deserialize<T>(inXml, fileName);
-                }
-            }
+#if USE_SOURCEASSETS
+            //else
+            //{
+            //    using (XmlReader inXml = XmlReader.Create(fileName))
+            //    {
+            //        return IntermediateSerializer.Deserialize<T>(inXml, fileName);
+            //    }
+            //}
+#endif
             return default(T);
         }
     }

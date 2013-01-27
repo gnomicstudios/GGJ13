@@ -33,7 +33,7 @@
             <Transform>
               <Pos>69.25 -36.1</Pos>
               <Scale>1 1</Scale>
-              <Origin>49.25 52.451</Origin>
+              <Origin>49.25 52.351</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -53,7 +53,7 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>siegeTowerSheet</Tex>
-            <TexRect>202 56 101 98</TexRect>
+            <TexRect>318 0 101 98</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -65,7 +65,7 @@
             <Transform>
               <Pos>-69.7 -36.1</Pos>
               <Scale>1 1</Scale>
-              <Origin>49.201 52.351</Origin>
+              <Origin>49.151 52.201</Origin>
               <Rot>-0.6849466565568585</Rot>
             </Transform>
           </Frame>
@@ -85,7 +85,7 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>siegeTowerSheet</Tex>
-            <TexRect>202 56 101 98</TexRect>
+            <TexRect>318 0 101 98</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -97,7 +97,7 @@
             <Transform>
               <Pos>4.15 -158.7</Pos>
               <Scale>1 1</Scale>
-              <Origin>100.1 141.051</Origin>
+              <Origin>145.9 145.651</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -117,7 +117,7 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>siegeTowerSheet</Tex>
-            <TexRect>0 56 201 284</TexRect>
+            <TexRect>0 0 317 287</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -127,9 +127,9 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Transform>
-              <Pos>3.25 -6.75</Pos>
+              <Pos>12.25 -15.75</Pos>
               <Scale>1 1</Scale>
-              <Origin>130.5 26.451</Origin>
+              <Origin>130.5 26.401</Origin>
               <Rot>0</Rot>
             </Transform>
           </Frame>
@@ -149,7 +149,7 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>siegeTowerSheet</Tex>
-            <TexRect>0 0 262 55</TexRect>
+            <TexRect>0 288 262 55</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -174,10 +174,153 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Transform>
-              <Pos>69.25 -36.1</Pos>
-              <Scale>1 1</Scale>
-              <Origin>49.25 52.401</Origin>
-              <Rot>0</Rot>
+              <Pos>69.2 -36.45</Pos>
+              <Scale>0.999969482421875 0.999969482421875</Scale>
+              <Origin>49.101 52.351</Origin>
+              <Rot>1.5001133683031036</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Transform>
+              <Pos>69.25 -36.45</Pos>
+              <Scale>0.9994964599609375 0.9994964599609375</Scale>
+              <Origin>49.151 52.301</Origin>
+              <Rot>1.7114328039559101</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>69.25 -36.45</Pos>
+              <Scale>0.9989166259765625 0.9989166259765625</Scale>
+              <Origin>49.101 52.401</Origin>
+              <Rot>1.9256684010023533</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Transform>
+              <Pos>69.25 -36.45</Pos>
+              <Scale>0.9984588623046875 0.9984588623046875</Scale>
+              <Origin>49.051 52.301</Origin>
+              <Rot>2.1433932717090185</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Transform>
+              <Pos>69.25 -36.5</Pos>
+              <Scale>0.998291015625 0.998291015625</Scale>
+              <Origin>49.051 52.401</Origin>
+              <Rot>2.3579974502503283</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Transform>
+              <Pos>69.25 -36.5</Pos>
+              <Scale>0.9984588623046875 0.9984588623046875</Scale>
+              <Origin>49.101 52.501</Origin>
+              <Rot>2.5725718013874297</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <Transform>
+              <Pos>69.2 -36.45</Pos>
+              <Scale>0.9988861083984375 0.9988861083984375</Scale>
+              <Origin>49.201 52.501</Origin>
+              <Rot>2.787029239752677</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <Transform>
+              <Pos>69.2 -36.45</Pos>
+              <Scale>0.999481201171875 0.999481201171875</Scale>
+              <Origin>49.201 52.401</Origin>
+              <Rot>3.001240335717091</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Transform>
+              <Pos>69.3 -36.45</Pos>
+              <Scale>0.999725341796875 0.999725341796875</Scale>
+              <Origin>49.151 52.451</Origin>
+              <Rot>-3.071243921814805</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <Transform>
+              <Pos>69.25 -36.45</Pos>
+              <Scale>0.99908447265625 0.99908447265625</Scale>
+              <Origin>49.25 52.501</Origin>
+              <Rot>-2.857090882762154</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <Transform>
+              <Pos>69.2 -36.45</Pos>
+              <Scale>0.998565673828125 0.998565673828125</Scale>
+              <Origin>49.151 52.401</Origin>
+              <Rot>-2.6427152034423727</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Transform>
+              <Pos>69.2 -36.45</Pos>
+              <Scale>0.998321533203125 0.998321533203125</Scale>
+              <Origin>49.3 52.401</Origin>
+              <Rot>-2.4281301996609113</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>12</FrameNumber>
+            <Transform>
+              <Pos>69.2 -36.45</Pos>
+              <Scale>0.99835205078125 0.99835205078125</Scale>
+              <Origin>49.25 52.451</Origin>
+              <Rot>-2.213553984311047</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>13</FrameNumber>
+            <Transform>
+              <Pos>69.2 -36.4</Pos>
+              <Scale>0.9987030029296875 0.9987030029296875</Scale>
+              <Origin>49.201 52.401</Origin>
+              <Rot>-1.999065386961046</Rot>
             </Transform>
             <Tween>motion</Tween>
             <EaseValue>0</EaseValue>
@@ -185,10 +328,164 @@
           <Frame>
             <FrameNumber>14</FrameNumber>
             <Transform>
-              <Pos>69.25 -36.1</Pos>
-              <Scale>1 1</Scale>
-              <Origin>49.25 53.1</Origin>
-              <Rot>3.0719270226344104</Rot>
+              <Pos>69.2 -36.45</Pos>
+              <Scale>0.99993896484375 0.99993896484375</Scale>
+              <Origin>49.201 52.401</Origin>
+              <Rot>-1.7845954317386759</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>15</FrameNumber>
+            <Transform>
+              <Pos>69.2 -36.45</Pos>
+              <Scale>0.9998779296875 0.9998779296875</Scale>
+              <Origin>49.201 52.301</Origin>
+              <Rot>-1.5937261437804788</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>16</FrameNumber>
+            <Transform>
+              <Pos>69.15 -36.5</Pos>
+              <Scale>0.999420166015625 0.999420166015625</Scale>
+              <Origin>49.25 52.301</Origin>
+              <Rot>-1.4092673508822116</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>17</FrameNumber>
+            <Transform>
+              <Pos>69.2 -36.55</Pos>
+              <Scale>0.9988861083984375 0.9988861083984375</Scale>
+              <Origin>49.25 52.301</Origin>
+              <Rot>-1.2213419211929881</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>18</FrameNumber>
+            <Transform>
+              <Pos>69.2 -36.5</Pos>
+              <Scale>0.99847412109375 0.99847412109375</Scale>
+              <Origin>49.25 52.301</Origin>
+              <Rot>-1.0332377933946204</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>19</FrameNumber>
+            <Transform>
+              <Pos>69.2 -36.55</Pos>
+              <Scale>0.9983062744140625 0.9983062744140625</Scale>
+              <Origin>49.3 52.201</Origin>
+              <Rot>-0.8450266065204315</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>20</FrameNumber>
+            <Transform>
+              <Pos>69.2 -36.5</Pos>
+              <Scale>0.9983673095703125 0.9983673095703125</Scale>
+              <Origin>49.201 52.201</Origin>
+              <Rot>-0.6567927827769768</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>21</FrameNumber>
+            <Transform>
+              <Pos>69.25 -36.55</Pos>
+              <Scale>0.99859619140625 0.99859619140625</Scale>
+              <Origin>49.201 52.201</Origin>
+              <Rot>-0.46860343382372655</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>22</FrameNumber>
+            <Transform>
+              <Pos>69.3 -36.55</Pos>
+              <Scale>0.999053955078125 0.999053955078125</Scale>
+              <Origin>49.151 52.151</Origin>
+              <Rot>-0.2805613576787577</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>23</FrameNumber>
+            <Transform>
+              <Pos>69.25 -36.55</Pos>
+              <Scale>0.9996185302734375 0.9996185302734375</Scale>
+              <Origin>49.151 52.151</Origin>
+              <Rot>-0.09272035019608973</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>24</FrameNumber>
+            <Transform>
+              <Pos>69.3 -36.55</Pos>
+              <Scale>0.9996337890625 0.9996337890625</Scale>
+              <Origin>49.151 52.201</Origin>
+              <Rot>0.0917067510852056</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>25</FrameNumber>
+            <Transform>
+              <Pos>69.3 -36.5</Pos>
+              <Scale>0.9990692138671875 0.9990692138671875</Scale>
+              <Origin>49.101 52.251</Origin>
+              <Rot>0.2795608080572149</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>26</FrameNumber>
+            <Transform>
+              <Pos>69.2 -36.5</Pos>
+              <Scale>0.99859619140625 0.99859619140625</Scale>
+              <Origin>49.001 52.251</Origin>
+              <Rot>0.46760714525992797</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>27</FrameNumber>
+            <Transform>
+              <Pos>69.3 -36.5</Pos>
+              <Scale>0.9983062744140625 0.9983062744140625</Scale>
+              <Origin>49.051 52.151</Origin>
+              <Rot>0.655787173149363</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>28</FrameNumber>
+            <Transform>
+              <Pos>69.3 -36.5</Pos>
+              <Scale>0.9982757568359375 0.9982757568359375</Scale>
+              <Origin>49.101 52.201</Origin>
+              <Rot>0.844037242175467</Rot>
             </Transform>
             <Tween>motion</Tween>
             <EaseValue>0</EaseValue>
@@ -196,10 +493,10 @@
           <Frame>
             <FrameNumber>29</FrameNumber>
             <Transform>
-              <Pos>69.25 -36.1</Pos>
-              <Scale>0.9999847412109375 0.9999847412109375</Scale>
-              <Origin>49.4 52.451</Origin>
-              <Rot>-0.35336845345599793</Rot>
+              <Pos>69.25 -36.5</Pos>
+              <Scale>0.9999237060546875 0.9999237060546875</Scale>
+              <Origin>49.101 52.201</Origin>
+              <Rot>1.0300803496062223</Rot>
             </Transform>
           </Frame>
         </JointAnim>
@@ -213,7 +510,196 @@
             <A>255</A>
           </Frame>
           <Frame>
+            <FrameNumber>1</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>12</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>13</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
             <FrameNumber>14</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>15</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>16</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>17</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>18</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>19</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>20</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>21</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>22</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>23</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>24</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>25</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>26</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>27</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>28</FrameNumber>
             <R>255</R>
             <G>255</G>
             <B>255</B>
@@ -232,21 +718,210 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>siegeTowerSheet</Tex>
-            <TexRect>202 56 101 98</TexRect>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>12</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>13</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>14</FrameNumber>
             <Tex>siegeTowerSheet</Tex>
-            <TexRect>202 56 101 98</TexRect>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>15</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>16</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>17</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>18</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>19</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>20</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>21</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>22</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>23</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>24</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>25</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>26</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>27</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>28</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>29</FrameNumber>
             <Tex>siegeTowerSheet</Tex>
-            <TexRect>202 56 101 98</TexRect>
+            <TexRect>318 0 101 98</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -258,8 +933,151 @@
             <Transform>
               <Pos>-69.7 -36.1</Pos>
               <Scale>1 1</Scale>
-              <Origin>49.201 52.251</Origin>
-              <Rot>-0.6849466565568585</Rot>
+              <Origin>49.35 52.151</Origin>
+              <Rot>-0.14168336578552357</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Transform>
+              <Pos>-69.7 -36.05</Pos>
+              <Scale>0.9998016357421875 0.9998016357421875</Scale>
+              <Origin>49.3 52.201</Origin>
+              <Rot>0.0661872762556303</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Transform>
+              <Pos>-69.65 -36.05</Pos>
+              <Scale>0.9991302490234375 0.9991302490234375</Scale>
+              <Origin>49.3 52.251</Origin>
+              <Rot>0.2760188038074095</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Transform>
+              <Pos>-69.75 -36.15</Pos>
+              <Scale>0.9986419677734375 0.9986419677734375</Scale>
+              <Origin>49.25 52.251</Origin>
+              <Rot>0.48609427691504</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Transform>
+              <Pos>-69.75 -36.05</Pos>
+              <Scale>0.998382568359375 0.998382568359375</Scale>
+              <Origin>49.3 52.251</Origin>
+              <Rot>0.6996121520477068</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Transform>
+              <Pos>-69.75 -36.15</Pos>
+              <Scale>0.9983978271484375 0.9983978271484375</Scale>
+              <Origin>49.25 52.251</Origin>
+              <Rot>0.9099014769908707</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <Transform>
+              <Pos>-69.7 -36.05</Pos>
+              <Scale>0.9987030029296875 0.9987030029296875</Scale>
+              <Origin>49.3 52.251</Origin>
+              <Rot>1.1200975912958817</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <Transform>
+              <Pos>-69.75 -36.1</Pos>
+              <Scale>0.999237060546875 0.999237060546875</Scale>
+              <Origin>49.3 52.351</Origin>
+              <Rot>1.330101958002407</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Transform>
+              <Pos>-69.75 -36.1</Pos>
+              <Scale>0.9998779296875 0.9998779296875</Scale>
+              <Origin>49.3 52.401</Origin>
+              <Rot>1.5399071202593944</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <Transform>
+              <Pos>-69.65 -36.1</Pos>
+              <Scale>0.9994354248046875 0.9994354248046875</Scale>
+              <Origin>49.3 52.301</Origin>
+              <Rot>1.746323942661474</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <Transform>
+              <Pos>-69.75 -36.1</Pos>
+              <Scale>0.99884033203125 0.99884033203125</Scale>
+              <Origin>49.35 52.401</Origin>
+              <Rot>1.956285965106667</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Transform>
+              <Pos>-69.7 -36.1</Pos>
+              <Scale>0.99847412109375 0.99847412109375</Scale>
+              <Origin>49.4 52.451</Origin>
+              <Rot>2.169739924373172</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>12</FrameNumber>
+            <Transform>
+              <Pos>-69.65 -36.1</Pos>
+              <Scale>0.9983367919921875 0.9983367919921875</Scale>
+              <Origin>49.45 52.351</Origin>
+              <Rot>2.3800108735048147</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>13</FrameNumber>
+            <Transform>
+              <Pos>-69.7 -36.15</Pos>
+              <Scale>0.99853515625 0.99853515625</Scale>
+              <Origin>49.45 52.401</Origin>
+              <Rot>2.590256522606101</Rot>
             </Transform>
             <Tween>motion</Tween>
             <EaseValue>0</EaseValue>
@@ -268,9 +1086,163 @@
             <FrameNumber>14</FrameNumber>
             <Transform>
               <Pos>-69.7 -36.1</Pos>
-              <Scale>0.9999847412109375 0.9999847412109375</Scale>
-              <Origin>49.151 53.25</Origin>
-              <Rot>2.1250502170688796</Rot>
+              <Scale>1 1</Scale>
+              <Origin>49.45 52.351</Origin>
+              <Rot>2.799268861806572</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>15</FrameNumber>
+            <Transform>
+              <Pos>-69.7 -36.1</Pos>
+              <Scale>0.99957275390625 0.99957275390625</Scale>
+              <Origin>49.45 52.351</Origin>
+              <Rot>3.0060609236062437</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>16</FrameNumber>
+            <Transform>
+              <Pos>-69.7 -36.05</Pos>
+              <Scale>0.999786376953125 0.999786376953125</Scale>
+              <Origin>49.45 52.301</Origin>
+              <Rot>-3.0717296823976357</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>17</FrameNumber>
+            <Transform>
+              <Pos>-69.65 -36.1</Pos>
+              <Scale>0.9991302490234375 0.9991302490234375</Scale>
+              <Origin>49.55 52.351</Origin>
+              <Rot>-2.8661530873194754</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>18</FrameNumber>
+            <Transform>
+              <Pos>-69.7 -36.1</Pos>
+              <Scale>0.9986419677734375 0.9986419677734375</Scale>
+              <Origin>49.5 52.301</Origin>
+              <Rot>-2.6603538519741856</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>19</FrameNumber>
+            <Transform>
+              <Pos>-69.65 -36.1</Pos>
+              <Scale>0.9983978271484375 0.9983978271484375</Scale>
+              <Origin>49.45 52.251</Origin>
+              <Rot>-2.454407876452832</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>20</FrameNumber>
+            <Transform>
+              <Pos>-69.7 -36.15</Pos>
+              <Scale>0.9983673095703125 0.9983673095703125</Scale>
+              <Origin>49.65 52.201</Origin>
+              <Rot>-2.2450903389914383</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>21</FrameNumber>
+            <Transform>
+              <Pos>-69.7 -36.1</Pos>
+              <Scale>0.998687744140625 0.998687744140625</Scale>
+              <Origin>49.5 52.201</Origin>
+              <Rot>-2.0391691308682223</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>22</FrameNumber>
+            <Transform>
+              <Pos>-69.7 -36.1</Pos>
+              <Scale>0.9991607666015625 0.9991607666015625</Scale>
+              <Origin>49.5 52.251</Origin>
+              <Rot>-1.8333597755107898</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>23</FrameNumber>
+            <Transform>
+              <Pos>-69.7 -36.1</Pos>
+              <Scale>0.99981689453125 0.99981689453125</Scale>
+              <Origin>49.45 52.151</Origin>
+              <Rot>-1.6277871751742652</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>24</FrameNumber>
+            <Transform>
+              <Pos>-69.65 -36.1</Pos>
+              <Scale>0.9995269775390625 0.9995269775390625</Scale>
+              <Origin>49.45 52.251</Origin>
+              <Rot>-1.4256452589539808</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>25</FrameNumber>
+            <Transform>
+              <Pos>-69.75 -36.1</Pos>
+              <Scale>0.998931884765625 0.998931884765625</Scale>
+              <Origin>49.4 52.101</Origin>
+              <Rot>-1.2167160103795205</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>26</FrameNumber>
+            <Transform>
+              <Pos>-69.75 -36.1</Pos>
+              <Scale>0.9985198974609375 0.9985198974609375</Scale>
+              <Origin>49.45 52.051</Origin>
+              <Rot>-1.010837146517637</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>27</FrameNumber>
+            <Transform>
+              <Pos>-69.7 -36.1</Pos>
+              <Scale>0.99835205078125 0.99835205078125</Scale>
+              <Origin>49.4 52.151</Origin>
+              <Rot>-0.8048525551604772</Rot>
+            </Transform>
+            <Tween>motion</Tween>
+            <EaseValue>0</EaseValue>
+          </Frame>
+          <Frame>
+            <FrameNumber>28</FrameNumber>
+            <Transform>
+              <Pos>-69.7 -36.1</Pos>
+              <Scale>0.9984588623046875 0.9984588623046875</Scale>
+              <Origin>49.4 52.101</Origin>
+              <Rot>-0.5988498543079048</Rot>
             </Transform>
             <Tween>motion</Tween>
             <EaseValue>0</EaseValue>
@@ -280,8 +1252,8 @@
             <Transform>
               <Pos>-69.7 -36.1</Pos>
               <Scale>1 1</Scale>
-              <Origin>49.4 52.301</Origin>
-              <Rot>-1.0994152159542174</Rot>
+              <Origin>49.4 52.151</Origin>
+              <Rot>-0.3917360826485515</Rot>
             </Transform>
           </Frame>
         </JointAnim>
@@ -295,7 +1267,196 @@
             <A>255</A>
           </Frame>
           <Frame>
+            <FrameNumber>1</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>12</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>13</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
             <FrameNumber>14</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>15</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>16</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>17</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>18</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>19</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>20</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>21</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>22</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>23</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>24</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>25</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>26</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>27</FrameNumber>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <A>255</A>
+          </Frame>
+          <Frame>
+            <FrameNumber>28</FrameNumber>
             <R>255</R>
             <G>255</G>
             <B>255</B>
@@ -314,21 +1475,210 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>siegeTowerSheet</Tex>
-            <TexRect>202 56 101 98</TexRect>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>1</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>2</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>3</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>4</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>5</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>6</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>7</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>8</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>9</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>10</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>11</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>12</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>13</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>14</FrameNumber>
             <Tex>siegeTowerSheet</Tex>
-            <TexRect>202 56 101 98</TexRect>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>15</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>16</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>17</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>18</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>19</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>20</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>21</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>22</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>23</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>24</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>25</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>26</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>27</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
+            <FlipState>0</FlipState>
+            <Visible>true</Visible>
+          </Frame>
+          <Frame>
+            <FrameNumber>28</FrameNumber>
+            <Tex>siegeTowerSheet</Tex>
+            <TexRect>318 0 101 98</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>29</FrameNumber>
             <Tex>siegeTowerSheet</Tex>
-            <TexRect>202 56 101 98</TexRect>
+            <TexRect>318 0 101 98</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -340,7 +1690,7 @@
             <Transform>
               <Pos>2.15 -32.7</Pos>
               <Scale>1 1</Scale>
-              <Origin>98.101 267</Origin>
+              <Origin>143.901 271.6</Origin>
               <Rot>0</Rot>
             </Transform>
             <Tween>motion</Tween>
@@ -351,7 +1701,7 @@
             <Transform>
               <Pos>2.15 -30.7</Pos>
               <Scale>1.0000152587890625 1.0000152587890625</Scale>
-              <Origin>98.101 266.95</Origin>
+              <Origin>143.901 271.55</Origin>
               <Rot>-0.025308818787350026</Rot>
             </Transform>
             <Tween>motion</Tween>
@@ -362,7 +1712,7 @@
             <Transform>
               <Pos>-0.85 -33.7</Pos>
               <Scale>1.000030517578125 1.000030517578125</Scale>
-              <Origin>98.00099999999999 267.05</Origin>
+              <Origin>143.80100000000002 271.65</Origin>
               <Rot>0.06968081097359624</Rot>
             </Transform>
             <Tween>motion</Tween>
@@ -373,7 +1723,7 @@
             <Transform>
               <Pos>2.15 -32.7</Pos>
               <Scale>1.0000152587890625 1.0000152587890625</Scale>
-              <Origin>98.101 267</Origin>
+              <Origin>143.901 271.6</Origin>
               <Rot>0.00904808980354421</Rot>
             </Transform>
           </Frame>
@@ -414,28 +1764,28 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>siegeTowerSheet</Tex>
-            <TexRect>0 56 201 284</TexRect>
+            <TexRect>0 0 317 287</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>8</FrameNumber>
             <Tex>siegeTowerSheet</Tex>
-            <TexRect>0 56 201 284</TexRect>
+            <TexRect>0 0 317 287</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>20</FrameNumber>
             <Tex>siegeTowerSheet</Tex>
-            <TexRect>0 56 201 284</TexRect>
+            <TexRect>0 0 317 287</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
           <Frame>
             <FrameNumber>29</FrameNumber>
             <Tex>siegeTowerSheet</Tex>
-            <TexRect>0 56 201 284</TexRect>
+            <TexRect>0 0 317 287</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
@@ -445,7 +1795,7 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Transform>
-              <Pos>3.25 -6.75</Pos>
+              <Pos>12.25 -15.75</Pos>
               <Scale>1 1</Scale>
               <Origin>130.5 26.401</Origin>
               <Rot>0</Rot>
@@ -467,7 +1817,7 @@
           <Frame>
             <FrameNumber>0</FrameNumber>
             <Tex>siegeTowerSheet</Tex>
-            <TexRect>0 0 262 55</TexRect>
+            <TexRect>0 288 262 55</TexRect>
             <FlipState>0</FlipState>
             <Visible>true</Visible>
           </Frame>
