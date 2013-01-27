@@ -123,6 +123,10 @@ namespace Spineless.Entities
                 {
                     SwitchToState(UnitState.Die);
                 }
+                else
+                {
+                    SwitchToState(UnitState.Hit);
+                }
             }
         }
 
