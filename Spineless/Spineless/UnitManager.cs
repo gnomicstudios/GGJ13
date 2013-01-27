@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework;
 
 using Spineless.AI;
 using FarseerPhysics.Dynamics;
+using Gnomic.Physics;
 
 namespace Spineless
 {
@@ -43,10 +44,42 @@ namespace Spineless
         Dictionary<int, float> lanes = new Dictionary<int, float>();
         Dictionary<int, Category> laneCategories = new Dictionary<int, Category>();
         Random random = new Random();
+        
+        const float KNIGHT_SPAWN_ACCELERATION = 0.02f;
+        const float KNIGHT_SPAWN_RATE_DEFAULT = 0.2f;
+        
+        const float ENEMY_SPAWN_ACCELERATION = 0.05f;
+        const float ENEMY_SPAWN_RATE_DEFAULT = 0.8f;
+
+
+        float spawnRateEnemy = ENEMY_SPAWN_RATE_DEFAULT;
+        float spawnRateKnight = KNIGHT_SPAWN_RATE_DEFAULT;
+
+        float spawnIntervalEnemy = 1f / ENEMY_SPAWN_RATE_DEFAULT;
+        float spawnIntervalKnight = 1f / ENEMY_SPAWN_RATE_DEFAULT;
+
+        double lastSpawnTimeEnemy = 3.0f;
+        double lastSpawnTimeKnight = 4.0f;
 
         public void Update(float dt)
         {
-            
+            spawnRateEnemy += dt * ENEMY_SPAWN_ACCELERATION;
+            if (screen.TotalTime - lastSpawnTimeEnemy > spawnIntervalEnemy)
+            {
+                // spawn enemy
+                AddUnitToScene(UnitType.Grunt, screen.Vehicle.Physics.Bodies[0].Position + new Vector2(ConvertUnits.ToSimUnits(screen.ParentGame.ScreenWidth), 0.0f));
+                lastSpawnTimeEnemy = screen.TotalTime;
+                spawnIntervalEnemy = 1f / spawnRateEnemy;
+            }
+
+            spawnRateKnight += dt * KNIGHT_SPAWN_ACCELERATION;
+            if (screen.TotalTime - lastSpawnTimeKnight > spawnIntervalKnight)
+            {
+                // spawn Knight
+                AddUnitToScene(UnitType.Knight, screen.Vehicle.Physics.Bodies[0].Position - new Vector2(ConvertUnits.ToSimUnits(screen.ParentGame.ScreenWidth * 0.3f), 0.0f));
+                lastSpawnTimeKnight = screen.TotalTime;
+                spawnIntervalKnight = 1f / spawnRateKnight;
+            }
         }
 
         public UnitManager(LevelScreen screen)
@@ -58,7 +91,7 @@ namespace Spineless
 
             {
                 unitSettings = new Settings {
-                    Health=100, Damage=30, AttackInterval=0.1f, Speed=2000
+                    Health=100, Damage=30, AttackInterval=0.1f, Speed=4000
                 };
 
                 enemyClipNames[UnitType.Grunt] = "enemy";
@@ -68,7 +101,7 @@ namespace Spineless
 
             {
                 unitSettings = new Settings {
-                    Health=100, Damage=30, AttackInterval=0.1f, Speed=2000
+                    Health=100, Damage=30, AttackInterval=0.1f, Speed=4000
                 };
 
                 enemyClipNames[UnitType.Captain] = "enemy";
@@ -78,7 +111,7 @@ namespace Spineless
 
             {
                 unitSettings = new Settings {
-                    Health=200, Damage=30, AttackInterval=0.1f, Speed=2000
+                    Health=100, Damage=30, AttackInterval=0.1f, Speed=4000
                 };
 
                 enemyClipNames[UnitType.Boss] = "enemy";
@@ -88,7 +121,7 @@ namespace Spineless
 
             {
                 unitSettings = new Settings {
-                    Health=100, Damage=30, AttackInterval=0.1f, Speed=2000
+                    Health=200, Damage=40, AttackInterval=0.1f, Speed=4000
                 };
 
                 enemyClipNames[UnitType.Knight] = "knight";
@@ -131,7 +164,10 @@ namespace Spineless
                     e.Physics.Bodies[0].CollisionCategories = laneCategories[e.LaneId] & cat;
                     e.Physics.Bodies[0].CollidesWith = laneCategories[e.LaneId] | collidesWithCat | otherCat;
 
-                    e.Physics.Position = pos;
+                    if (pos.X < 1.0f)
+                        pos.X = 1.0f;
+
+                    e.Physics.Position = ConvertUnits.ToDisplayUnits(pos);
                     e.Physics.Enabled = true;
                     
                     e.Activate();
