@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework.Graphics;
 using FarseerPhysics.Dynamics;
 using Microsoft.Xna.Framework;
+using FarseerPhysics.Dynamics.Joints;
 
 namespace Spineless.Entities
 {
@@ -17,6 +18,7 @@ namespace Spineless.Entities
         public bool IsActive;
         public ProjectileType Type;
         public string DefaultAnimName;
+        public RevoluteJoint HitJoint;
 
         public Projectile()
         {

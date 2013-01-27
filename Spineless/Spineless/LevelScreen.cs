@@ -150,7 +150,7 @@ namespace Spineless
                         if (distance <= radius)
                         {
                             // push
-                            Vector2 blastVector = (u.Position - pos) * 0.5f;
+                            Vector2 blastVector = (u.Position - pos) * 0.3f;
 
                             if(blastVector.Y > 0)
                                 blastVector.Y *= -1; // make things always fly
