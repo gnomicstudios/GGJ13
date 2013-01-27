@@ -346,6 +346,8 @@ namespace Gnomic.UI
         protected int layerID = 0;
         public virtual int LayerID { get { return layerID; } }
 
+        public virtual float DrawOrder { get { return offset.Y; } }
+
         #region IEditableDiagnosticsProvider Members
         
         Vector2 ToScreenSpace(Vector2 midSpace)

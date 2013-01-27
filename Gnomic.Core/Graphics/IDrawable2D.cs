@@ -10,6 +10,7 @@ namespace Gnomic.Graphics
     {
         void Draw2D(SpriteBatch spriteBatch);
         int LayerID { get; }
+        float DrawOrder { get; }
         bool IsVisible { get; }
     }
 }
